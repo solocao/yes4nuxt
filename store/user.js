@@ -8,6 +8,7 @@ import {
   fbSignOut,
 } from "../utils/firebaseHelper";
 
+
 export const useAuthStore = defineStore('authStore', {
   // convert to a function
   state: () => ({
@@ -21,6 +22,7 @@ export const useAuthStore = defineStore('authStore', {
   },
   actions: {
     async nuxtServerInit () {
+      console.log('nuxtServerInit')
       return new Promise((resolve) => {
         fbAuthStateListener(async (user) => {
           this.user = user ? user : null;
@@ -28,6 +30,7 @@ export const useAuthStore = defineStore('authStore', {
           if (user) {
             const profile = (await fbGetUserProfile());
             this.profile = profile;
+            console.log('PROFILE')
             console.log('Profile: ', profile);
           }
           resolve(true);
@@ -35,13 +38,15 @@ export const useAuthStore = defineStore('authStore', {
       });
     },
     initializeAuthListener() {
+      console.log('initializeAuthListener')
       return new Promise((resolve) => {
         fbAuthStateListener(async (user) => {
+          console.log('fbAuthStateListener-user', user)
           this.user = user ? user : null;
-
           if (user) {
             const profile = (await fbGetUserProfile());
             this.profile = profile;
+            console.log('profile', profile)
           }
           resolve(true);
         });

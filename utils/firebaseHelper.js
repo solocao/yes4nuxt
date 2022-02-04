@@ -11,6 +11,7 @@ import {
   updateDoc
 } from 'firebase/firestore/lite';
 
+// MRS pls create a Firestore Service separated from Auth Service
 import {
   getAuth,
   signOut,
@@ -80,10 +81,12 @@ export const fbSignOut = async () => {
 export const fbAuthStateListener = (callback) => {
   console.log('Auth state  called');
   onAuthStateChanged(auth, (user) => {
+    console.log(user)
     if (user) {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
-      callback(user);
+      return user
+      // callback(user);
     } else {
       // User is signed out
       callback(null);
@@ -133,9 +136,12 @@ export const fbGetUserProfile = async () => {
 
 
 // Add new post
+// MRS when you get in to this Firestore Service, remember to implement like this:
+// add(collection, id, data) ... collection is always plural, so singular is used, for instance like this:
+// v-for(let post of posts)
 async function addPost(userId, message, imageUrl, author) {
   const postCollection = collection(db, 'posts');
-  return postRef = await addDoc(postCollection, {
+  return postRef = await addDoc(postCollection, { // { ...data, id }
     userId: userId,
     message: message,
     imageUrl: imageUrl,
@@ -146,6 +152,13 @@ async function addPost(userId, message, imageUrl, author) {
 
 
 // Get a list of posts from your database
+// MRS get(collection, args: {nick, query: { }, first/stream ... I don't know how in Vue, api: true/false (default=true)})
+// MRS let me explain this api thing ... we discovered that using the Firestore API is faster than otherwise,
+// so if we need just the first instead of the stream, we use the API ... if we need to listen, api: false
+// nick is the program nickname in a multi-tenant platform, and is derived from the subdomain in hostname.split('.')[0]
+// in the special case that we want a different nick, which is the case of cross-platform collections
+// (ie, products in our rewards programs are unique for the whole platform and we specify args: {nick: 'yes4web', ...})
+// with nick, we will create and use subcollections for each program, ie users/yesmkt/users or products/pepsico/products
 async function getPosts(db) {
   const postCollection = collection(db, 'posts');
   const postSnapshot = await getDocs(postCollection);
@@ -153,16 +166,25 @@ async function getPosts(db) {
   return postList;
 }
 
+// MRS we never use delete, it's very dangerous, all documents are active: true/false, you can remove this
 async function deletePost(postId) {
  return await deleteDoc(doc(db, 'posts', postId));
 }
 
+// much more generic is update(collection, id, data)
 async function updatePostText(postId, { message } ) {
   return await updateDoc(doc(db, 'posts', postId), {
     message: message,
     createdOn: Timestamp.fromDate(new Date())
   });
 }
+
+// MRS ... LATER, at least, 2 more methods:
+// returns ain ID in case we need and ID before writing to the db and will use later set()
+function id() { return doc('_').doc().id }
+function set(collection, id, data) { ... }
+
+
 
 export {
   db,
