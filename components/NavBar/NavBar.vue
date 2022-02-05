@@ -45,7 +45,7 @@
       </transition>
 
       <!-- Drawer Menu -->
-      <aside class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30" :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
+      <aside class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-50" :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
 
         <div class="close">
           <button class="absolute top-0 right-0 mt-4 mr-4" @click=" isOpen = false">
@@ -67,7 +67,7 @@
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Home</a></li>
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Services</a></li>
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Features</a></li>
-          <li><button @click="logout" class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white">Log Out</button></li>
+          <li><a @click="logout" class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white">Log Out</a></li>
         </ul>
 
         <div class="follow">
@@ -138,9 +138,13 @@ export default defineComponent({
 
     const drawer = () => isOpen.value = !isOpen.value;
 
-    const logout = async () => {
-      store.logoutUser()
-      // router.replace("/LoginPage");
+    const logout = () => {
+      store.logoutUser().then((res) => {
+        if(res) {
+          router.push('/LoginPage');
+        }
+      })
+
     }
 
     watch(isOpen, (newVal, oldVal) => {

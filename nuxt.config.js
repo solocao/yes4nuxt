@@ -31,8 +31,7 @@ export default {
   ],
 
   router: {
-    middleware:['server-init'],
-    middleware:['auth']
+    middleware:['auth'],
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -40,6 +39,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/svg-sprite',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
