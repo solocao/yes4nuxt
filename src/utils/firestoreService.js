@@ -54,13 +54,11 @@ async function getItemListByQuery(collectionName, param, value) {
 }
 
 // much more generic is update(collection, id, data)
-async function updatePostText(postId, { message } ) {
-  return await updateDoc(doc(db, 'posts', postId), {
-    message: message,
-    createdOn: Timestamp.fromDate(new Date())
+async function updateItem(collectionName, id, payload) {
+  return await updateDoc(doc(db, collectionName, id), {
+    payload
   });
 }
-
 // MRS ... LATER, at least, 2 more methods:
 // returns ain ID in case we need and ID before writing to the db and will use later set()
 // function id() { return doc('_').doc().id }
@@ -73,5 +71,5 @@ export {
   getItem,
   setItem,
   getItemListByQuery,
-  updatePostText,
+  updateItem
 }

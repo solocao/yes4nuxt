@@ -1,0 +1,32 @@
+{
+  "Counter": {
+    "description": "Auto imported from components/Counter.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/NavBar/NavBar.vue"
+  },
+  "NavBarTailwind": {
+    "description": "Auto imported from components/NavBar/Tailwind.vue"
+  },
+  "FormsLoadingButton": {
+    "description": "Auto imported from components/Forms/LoadingButton.vue"
+  },
+  "FormsLoginForm": {
+    "description": "Auto imported from components/Forms/LoginForm.vue"
+  },
+  "FormsNewPost": {
+    "description": "Auto imported from components/Forms/NewPost.vue"
+  },
+  "FormsSignupForm": {
+    "description": "Auto imported from components/Forms/SignupForm.vue"
+  },
+  "FormsTextInput": {
+    "description": "Auto imported from components/Forms/TextInput.vue"
+  },
+  "ToolsErrorMsg": {
+    "description": "Auto imported from components/Tools/ErrorMsg.vue"
+  },
+  "ToolsLoader": {
+    "description": "Auto imported from components/Tools/Loader.vue"
+  }
+}

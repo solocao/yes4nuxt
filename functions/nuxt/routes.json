@@ -1,0 +1,23 @@
+[
+  {
+    "name": "LoginPage",
+    "path": "/LoginPage",
+    "component": "/Users/zemunkh/Desktop/yes4nuxt/src/pages/LoginPage.vue",
+    "chunkName": "pages/LoginPage",
+    "_name": "_c703bbf6"
+  },
+  {
+    "name": "post-id",
+    "path": "/post/:id?",
+    "component": "/Users/zemunkh/Desktop/yes4nuxt/src/pages/post/_id.vue",
+    "chunkName": "pages/post/_id",
+    "_name": "_23870f64"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/zemunkh/Desktop/yes4nuxt/src/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_fddd7242"
+  }
+]
