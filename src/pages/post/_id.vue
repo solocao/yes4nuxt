@@ -8,13 +8,13 @@
     <div class="w-3/4 mx-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
       <img class="object-cover w-full h-96" :src="post.imageUrl" alt="Post Image"/>
 
-      <div class="absolute top-32 left-0 px-6 py-4">
+      <div class="absolute top-32 p-16 w-3/4">
         <p class="leading-normal text-gray-100">{{ formatDate(post.createdOn) }}</p>
         <h4 class="mb-3 text-2xl font-semibold tracking-tight text-white">{{ post.title }}</h4>
         <br>
         <br>
         <br>
-        <p class="leading-normal text-gray-100">{{ post.message }}</p>
+        <p class="leading-normal text-ellipsis text-gray-100">{{ post.message }}</p>
       </div>
     </div>
     <br>

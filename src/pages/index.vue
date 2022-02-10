@@ -41,12 +41,9 @@
 import Counter from "~/components/Counter.vue";
 import NavBar from "~/components/NavBar/NavBar.vue"
 import NewPost from "~/components/Forms/NewPost.vue";
-import { ref, onMounted } from "@nuxtjs/composition-api";
+import { onMounted } from "@nuxtjs/composition-api";
 import { useAuthStore } from "~/store/user";
 import { usePostStore } from "~/store/post";
-import ErrorMsg from "../components/Tools/ErrorMsg.vue";
-import Loader from "../components/Tools/Loader.vue";
-
 
 export default {
   name: "IndexPage",
