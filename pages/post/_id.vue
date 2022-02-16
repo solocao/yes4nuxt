@@ -33,30 +33,23 @@
 import NavBar from "~/components/NavBar/NavBar.vue"
 import { defineComponent, computed, useRoute } from "@nuxtjs/composition-api";
 // import { useAuthStore } from "~/store/user";
-import { usePostStore } from "~/store/post";
+import { useStore } from "~/store/store";
 
 export default defineComponent ({
   components: { NavBar },
   setup() {
-
     const route = useRoute()
-
-    const postStore = usePostStore()
-
+    const store = useStore()
     const id = computed(() => route.value.params.id)
-
     console.log('postId: ', id.value);
-
     const post = computed(() => {
-     return postStore.posts.find(p => p.id === id.value)
+     return store.posts.find(p => p.id === id.value)
     })
-
     console.log('Post: ', post.value.title);
     const formatDate = (date) => {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date.seconds * 1000).toLocaleDateString('en', options)
     }
-
     return {
       post,
       formatDate

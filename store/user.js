@@ -6,10 +6,9 @@ import {
   fbGetUserProfile,
   fbSignIn,
   fbSignOut,
-} from "../utils/authService";
+} from "~/plugins/auth";
 
 export const useAuthStore = defineStore('authStore', {
-  // convert to a function
   state: () => ({
     user: null,
     profile: null,

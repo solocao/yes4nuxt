@@ -155,7 +155,7 @@ export function resolveRouteComponents (route, fn) {
             window.sessionStorage
           ) {
             const timeNow = Date.now()
-            const previousReloadTime = parseInt(window.sessionStorage.getItem('nuxt-reload'))
+            const previousReloadTime = parseInt(window.sessionStorage.get('nuxt-reload'))
 
             // check for previous reload time not to reload infinitely
             if (!previousReloadTime || previousReloadTime + 60000 < timeNow) {
