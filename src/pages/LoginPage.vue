@@ -41,21 +41,34 @@
 
 
 <script>
-import { ref, defineComponent } from "@nuxtjs/composition-api";
+import { ref, useMeta, defineComponent } from "@nuxtjs/composition-api";
 import LoginForm from "~/components/Forms/LoginForm.vue";
 import SignupForm from "~/components/Forms/SignupForm.vue";
+import { useTenantStore } from '../store/tenant'
+
 
 export default defineComponent({
+    head() {
+
+    },
     setup() {
-        const openTab = ref(1);
-        const toggleTabs = (tabNumber) => {
-          openTab.value = tabNumber;
-          console.log('Value: ', openTab.value);
-        };
-        return {
-            openTab,
-            toggleTabs,
-        };
+      const { title } = useMeta()
+
+      const tenantStore = useTenantStore()
+
+      const openTab = ref(1);
+
+      title.value = `👉 ${tenantStore.tenantName}`
+
+      const toggleTabs = (tabNumber) => {
+        openTab.value = tabNumber;
+        console.log('Value: ', openTab.value);
+      };
+      return {
+        openTab,
+        toggleTabs,
+        tenantStore
+      };
     },
     components: { LoginForm, SignupForm }
 })

@@ -33,7 +33,7 @@
 
 <script>
 
-  import { defineComponent, useMeta } from '@nuxtjs/composition-api'
+  import { useMeta, defineComponent } from '@nuxtjs/composition-api'
   import { useCounterStore } from '../store/counter'
   import { useTenantStore } from '../store/tenant'
 
@@ -42,14 +42,13 @@
 
     },
     setup() {
-
       const { title } = useMeta()
-
-      title.value = "🍕 Hi"
 
       const counterStore = useCounterStore()
 
       const tenantStore = useTenantStore()
+
+      title.value = `👉 ${tenantStore.tenantName}`
 
       const increment = () => counterStore.increment()
       const decrement = () => counterStore.decrement()
