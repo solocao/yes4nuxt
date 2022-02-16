@@ -6,9 +6,9 @@ import { useTenantStore } from '~/store/tenant'
 export default function ({ $pinia, ssrContext }) {
 
   if(process.server) {
-    console.log('Req object Zee: ', ssrContext.req.headers.host);
+    // console.log('Req object Zee: ', ssrContext.req.headers.host);
     const theNick = getNick(ssrContext.req);
-    console.log('The nick from req: ', theNick.nick);
+    // console.log('The nick from req: ', theNick.nick);
     const store = useTenantStore($pinia)
 
     store.setNick(theNick.nick)
@@ -17,7 +17,7 @@ export default function ({ $pinia, ssrContext }) {
   $pinia.use(
     createPersistedStatePlugin({
       storage: {
-        getItem: (key) => {
+        getItem: (key) => { // Note MRS: You mistyped getItem as get
           if (process.server) {
             const parsedCookies = cookie.parse(ssrContext.req.headers.cookie)
             return parsedCookies[key]

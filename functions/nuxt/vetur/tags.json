@@ -2,12 +2,6 @@
   "Counter": {
     "description": "Auto imported from components/Counter.vue"
   },
-  "NavBar": {
-    "description": "Auto imported from components/NavBar/NavBar.vue"
-  },
-  "NavBarTailwind": {
-    "description": "Auto imported from components/NavBar/Tailwind.vue"
-  },
   "FormsLoadingButton": {
     "description": "Auto imported from components/Forms/LoadingButton.vue"
   },
@@ -22,6 +16,12 @@
   },
   "FormsTextInput": {
     "description": "Auto imported from components/Forms/TextInput.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/NavBar/NavBar.vue"
+  },
+  "NavBarTailwind": {
+    "description": "Auto imported from components/NavBar/Tailwind.vue"
   },
   "ToolsErrorMsg": {
     "description": "Auto imported from components/Tools/ErrorMsg.vue"

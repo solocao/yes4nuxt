@@ -32,7 +32,7 @@
       </div>
 
       <!-- Url Input -->
-      <div class=" w-full mt-6 flex rounded-md shadow-sm">
+      <div class="w-full mt-6 flex rounded-md shadow-sm">
         <TextInput
           v-model="imageUrl"
           placeholder="www.gettyimages.com"

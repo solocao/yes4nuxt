@@ -13,6 +13,7 @@ import {
   signOut,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  sendPasswordResetEmail,
   onAuthStateChanged,
 } from 'firebase/auth';
 
@@ -77,6 +78,11 @@ export const fbSignOut = async () => {
   await signOut(auth);
   return true;
 };
+
+export const fbResetPassword = async (email) => {
+  const response = await sendPasswordResetEmail(auth, email);
+  return response
+}
 
 export const fbAuthStateListener = (callback) => {
   console.log('Auth state  called');

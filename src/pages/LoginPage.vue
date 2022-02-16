@@ -64,6 +64,7 @@ export default defineComponent({
         openTab.value = tabNumber;
         console.log('Value: ', openTab.value);
       };
+
       return {
         openTab,
         toggleTabs,
