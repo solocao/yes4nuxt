@@ -4,9 +4,12 @@ import {
   fbAuthStateListener,
   fbCreateAccount,
   fbGetUserProfile,
+  fbResetPassword,
   fbSignIn,
   fbSignOut,
 } from "~/plugins/auth";
+import { list } from '~/plugins/firestore'
+
 
 export const useAuthStore = defineStore('authStore', {
   state: () => ({
@@ -19,20 +22,6 @@ export const useAuthStore = defineStore('authStore', {
     userError: (state) => state.error,
   },
   actions: {
-    // async nuxtServerInit () {
-    //   return new Promise((resolve) => {
-    //     fbAuthStateListener(async (user) => {
-    //       this.user = user ? user : null;
-    //       console.log('Running user: ', user);
-    //       if (user) {
-    //         const profile = (await fbGetUserProfile());
-    //         this.profile = profile;
-    //         console.log('Profile: ', profile);
-    //       }
-    //       resolve(true);
-    //     });
-    //   });
-    // },
     async initializeAuthListener() {
       return new Promise((resolve) => {
         fbAuthStateListener(async (user) => {
@@ -85,5 +74,23 @@ export const useAuthStore = defineStore('authStore', {
         return false;
       }
     },
+    async resetPassword(email) {
+      try {
+        await list('users', 'email', email).then(async (snap) => {
+          if(!snap.empty) {
+            console.log("User is already registered, So it's ok");
+            this.error = '';
+            await fbResetPassword(email)
+            return true;
+          } else {
+            this.error = 'This is not a registered user.';
+            return false;
+          }
+        });
+      } catch (e) {
+        this.error = e.code;
+        return false;
+      }
+    }
   },
 });
