@@ -11,13 +11,8 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  props: {
-
-  },
-  setup (props, { emit }) {
-
-    const click = () => emit('click', '');
-
+  setup ({ emit }) {
+    const click = () => emit('click');
     return {
       click
     }

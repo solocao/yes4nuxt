@@ -7,7 +7,7 @@
 
     <ul class="flex flex-wrap">
       <li
-        v-for="post of storePost.posts"
+        v-for="post of store.posts"
         :key="post.id"
         class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
       >
@@ -19,6 +19,7 @@
             v-if="post.imageUrl"
             class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
             :src="post.imageUrl"
+            :alt="post.title"
           />
 
           <div
@@ -41,26 +42,26 @@
 import Counter from "~/components/Counter.vue";
 import NavBar from "~/components/NavBar/NavBar.vue"
 import NewPost from "~/components/Forms/NewPost.vue";
-import { onMounted } from "@nuxtjs/composition-api";
+import { ref, onMounted } from "@nuxtjs/composition-api";
 import { useAuthStore } from "~/store/user";
-import { usePostStore } from "~/store/post";
+import { useStore } from "~/store/store";
+import ErrorMsg from "../components/Tools/ErrorMsg.vue";
+import Loader from "../components/Tools/Loader.vue";
+
 
 export default {
   name: "IndexPage",
   components: { Counter, NavBar, NewPost },
   setup() {
-
-    const storeUser = useAuthStore();
-    const storePost = usePostStore();
-
+    const storeUser = useAuthStore()
+    const store = useStore()
     onMounted(async () => {
       console.log('Userid: ', storeUser.user.uid);
-      storePost.loadPosts(storeUser.user.uid)
+      store.list('posts', storeUser.user.uid)
     })
-
     return {
       storeUser,
-      storePost,
+      store
     }
   }
 }

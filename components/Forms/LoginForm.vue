@@ -82,6 +82,7 @@ export default defineComponent({
 
     const toggleLoginView = () => {
       loginView.value = !loginView.value;
+      store.error = ''
       console.log('Value: ', loginView.value);
     };
 

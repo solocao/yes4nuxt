@@ -27,7 +27,7 @@
       </BackButton>
 
       <!-- Error Message -->
-      <ErrorMsg header="Error" :errMessage="errorMsg" />
+      <ErrorMsg header="Error" :errMessage="store.error" />
     </div>
 
   </div>
@@ -36,8 +36,7 @@
 <script>
 
 import { ref, defineComponent, useRouter } from "@nuxtjs/composition-api";
-import { fbResetPassword } from "../../utils/authService"
-import { getItemListByQuery } from "../../utils/firestoreService"
+import { useAuthStore } from "~/store/user";
 import ErrorMsg from "../Tools/ErrorMsg.vue";
 import LoadingButton from './LoadingButton'
 import TextInput from './TextInput'
@@ -55,46 +54,26 @@ export default defineComponent({
   },
   setup(props, { emit }) {
     const loading = ref(false)
-
     const email = ref('');
-
-    const errorMsg = ref('');
-
-    const router = useRouter();
+    const store = useAuthStore();
 
     const switchView = () => {
-      console.log('clicked me');
-      emit('switchView', '')
+      emit('switchView')
     };
 
-    const reset = () => {
+    const reset = async () => {
+      store.error = ''
       loading.value = true
-      getItemListByQuery('users', 'email', email.value).then((querySnapshot) => {
-        if(!querySnapshot.empty) {
-          console.log("User is already registered, So it's ok");
-          errorMsg.value = "";
-          fbResetPassword(email.value).then((res) => {
-            loading.value = false
-            emit('switchView', '')
-            console.log("Password Reset link has sent!: ", res)
-          }).catch((err) => {
-            // An error happened.
-            loading.value = false
-            errorMsg.value = err.message;
-            console.log("Error when sending!")
-          });
-        } else {
-          errorMsg.value = "This is not a registered user.";
-          console.log("Non registered email");
-        }
-      });
+      const res = await store.resetPassword(email.value)
+      if(res) emit('switchView');
+      loading.value = false
     }
 
 
     return {
       loading,
       email,
-      errorMsg,
+      store,
       switchView,
       reset
     }

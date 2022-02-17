@@ -4,12 +4,14 @@ import {
   fbAuthStateListener,
   fbCreateAccount,
   fbGetUserProfile,
+  fbResetPassword,
   fbSignIn,
   fbSignOut,
-} from "../utils/authService";
+} from "~/plugins/auth";
+import { list } from '~/plugins/firestore'
+
 
 export const useAuthStore = defineStore('authStore', {
-  // convert to a function
   state: () => ({
     user: null,
     profile: null,
@@ -20,20 +22,6 @@ export const useAuthStore = defineStore('authStore', {
     userError: (state) => state.error,
   },
   actions: {
-    // async nuxtServerInit () {
-    //   return new Promise((resolve) => {
-    //     fbAuthStateListener(async (user) => {
-    //       this.user = user ? user : null;
-    //       console.log('Running user: ', user);
-    //       if (user) {
-    //         const profile = (await fbGetUserProfile());
-    //         this.profile = profile;
-    //         console.log('Profile: ', profile);
-    //       }
-    //       resolve(true);
-    //     });
-    //   });
-    // },
     async initializeAuthListener() {
       return new Promise((resolve) => {
         fbAuthStateListener(async (user) => {
@@ -86,5 +74,21 @@ export const useAuthStore = defineStore('authStore', {
         return false;
       }
     },
+    async resetPassword(email) {
+      try {
+        await list('users', 'email', email).then(async (snap) => {
+          if(!snap.empty) {
+            this.error = '';
+            await fbResetPassword(email)
+            return true;
+          } else {
+            return false;
+          }
+        });
+      } catch (e) {
+        this.error = e.code;
+        return false;
+      }
+    }
   },
 });

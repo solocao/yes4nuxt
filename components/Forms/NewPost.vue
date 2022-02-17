@@ -1,5 +1,4 @@
 <template>
-  <!-- Container -->
   <div class="w-1/2 h-80 mx-auto rounded-lg shadow-2xl my-8 bg-gray-100">
     <div
       class="max-w-2xl h-80 flex flex-col items-center justify-center px-4"
@@ -57,8 +56,8 @@
 <script>
 
 import { ref, computed, defineComponent } from '@nuxtjs/composition-api'
-import { useAuthStore } from "~/store/user";
-import { usePostStore } from "~/store/post";
+import { useAuthStore } from "~/store/user"
+import { useStore } from "~/store/store"
 import LoadingButton from './LoadingButton'
 import TextInput from './TextInput'
 import ErrorMsg from "../Tools/ErrorMsg";
@@ -70,19 +69,12 @@ export default defineComponent({
   },
   setup () {
     const userStore = useAuthStore()
-
-    const postStore = usePostStore()
-
+    const store = useStore()
     const loading = ref(false)
-
     const title = ref('')
-
     const message = ref('')
-
     const imageUrl = ref('')
-
     const errorMessage = ref('')
-
     const isUrlOk = computed(() => {
       var regex = new RegExp(
         '^(https?:\\/\\/)?' + // protocol
@@ -106,8 +98,14 @@ export default defineComponent({
       console.log('Clicked to add new post: ', imageUrl.value);
 
       if(isUrlOk) {
-
-        postStore.addPost({
+        console.log('posts', {
+          userId: userStore.user.uid,
+          title: title.value,
+          message: message.value,
+          imageUrl: imageUrl.value,
+          createdOn: new Date()
+        })
+        store.add('posts', {
           userId: userStore.user.uid,
           title: title.value,
           message: message.value,
@@ -115,7 +113,7 @@ export default defineComponent({
           createdOn: new Date()
         }).then((res) => {
           if(res.length > 0) {
-            postStore.loadPosts(userStore.user.uid)
+            store.list('posts', userStore.user.uid)
             title.value = ''
             message.value = ''
             imageUrl.value = ''
