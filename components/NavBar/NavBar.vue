@@ -12,9 +12,13 @@
           <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
         </b-nav-form>
 
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
+        <b-nav-item-dropdown :text="$i18n.locale" right>
+          <b-dropdown-item
+            variant="outline-primary"
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            @click.prevent.stop="$i18n.setLocale(locale.code)">{{ locale.name }}
+          </b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown right>
@@ -31,7 +35,7 @@
 </template>
 
 <script>
-import { defineComponent, useRouter } from "@nuxtjs/composition-api";
+import { defineComponent, useRouter, computed, useContext } from "@nuxtjs/composition-api";
 import { useAuthStore } from "~/store/user";
 import { useStore } from "~/store/store";
 
@@ -40,6 +44,11 @@ export default defineComponent({
     const router = useRouter();
     const authStore = useAuthStore();
     const store = useStore();
+    const { app } = useContext();
+
+    const availableLocales = computed(() => {
+      return app.i18n.locales.filter(i => i.code !== app.i18n.locale)
+    });
 
     const logout = () => {
       authStore.logoutUser().then((res) => {
@@ -53,7 +62,8 @@ export default defineComponent({
     return {
       authStore,
       logout,
-      store
+      availableLocales,
+      store,
     };
   }
 });

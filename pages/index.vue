@@ -2,6 +2,7 @@
   <div>
     <nav-bar/>
     <b-container class="mt-5">
+      <p>Current language: {{$i18n.locale }}</p>
       <h2>Main page</h2>
     </b-container>
   </div>

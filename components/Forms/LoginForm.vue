@@ -1,13 +1,12 @@
 <template>
   <div>
     <p>Current language: {{$i18n.locale }}</p>
-    <a
+    <b-button
+      variant="outline-primary"
       v-for="locale in availableLocales"
       :key="locale.code"
       @click.prevent.stop="$i18n.setLocale(locale.code)">{{ locale.name }}
-    </a>
-
-    <b-button @click="setLocale" variant="primary">Set Portuguese</b-button>
+    </b-button>
 
     <b-container class="mt-4">
       <loader :isLoading="isActive"/>
@@ -24,10 +23,11 @@
           </ValidationProvider>
 
 
-          <ValidationProvider name="password" rules="required|alpha|min:6" v-slot="{ errors }">
+          <ValidationProvider name="password" rules="required|min:6" v-slot="{ errors }">
             <b-form-input
               label="Password"
               v-model="form.password"
+              type="password"
               :placeholder="$t('password')"
             >
             </b-form-input>
@@ -44,7 +44,7 @@
 
 <script>
 import { ref, reactive, defineComponent, computed, useContext, useRouter } from "@nuxtjs/composition-api";
-import { ValidationProvider, ValidationObserver, localeChanged } from "vee-validate";
+import { ValidationProvider, ValidationObserver } from "vee-validate";
 import { useAuthStore } from "~/store/user";
 import ErrorMsg from "../Tools/ErrorMsg.vue";
 import Loader from "../Tools/Loader.vue";
@@ -73,20 +73,10 @@ export default defineComponent({
       return app.i18n.locales.filter(i => i.code !== app.i18n.locale)
     });
 
-    const setLocale = () => {
-      app.i18n.locale = 'pt_PT'; // locale changed
-      localeChanged();
-    }
-
-    // const switchLocalePath = (code) => {
-    //   app.i18n.locale = code; // locale changed
-    //   localeChanged();
-    // }
-
     const login = async () => {
       isActive.value = true
       await logInUser(form.email, form.password)
-      // router.push('/')
+      router.push('/')
       isActive.value = false
     }
 
@@ -104,7 +94,6 @@ export default defineComponent({
       login,
       store,
       isActive,
-      setLocale,
       availableLocales
     }
   }
