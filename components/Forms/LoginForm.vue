@@ -1,82 +1,92 @@
 <template>
-  <div class="mt-8 space-y-6">
-    <loader :isLoading="isActive"/>
-    <error-msg header="Error" :errMessage="store.error" />
-    <div v-if="loginView">
-      <ResetForm
-        @switchView="toggleLoginView"
-      />
-    </div>
-    <div v-else>
-      <div class="rounded-md shadow-sm -space-y-px">
-        <div>
-          <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" v-model="loginForm.email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
-        </div>
-        <div>
-          <label for="password" class="sr-only">Password</label>
-          <input id="password" v-model="loginForm.password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
-        </div>
-      </div>
+  <div>
+    <p>Current language: {{$i18n.locale }}</p>
+    <a
+      v-for="locale in availableLocales"
+      :key="locale.code"
+      @click.prevent.stop="$i18n.setLocale(locale.code)">{{ locale.name }}
+    </a>
 
-      <div class="flex items-center justify-between py-4">
-        <div class="text-sm">
-          <button @click="toggleLoginView" class="font-medium text-indigo-600 hover:text-indigo-500">
-            Forgot your password?
-          </button>
-        </div>
-      </div>
+    <b-button @click="setLocale" variant="primary">Set Portuguese</b-button>
 
-      <div>
-        <button
-          type="submit"
-          class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          @click="loginWithEmail()"
-        >
-          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-            <!-- Heroicon name: solid/lock-closed -->
-            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-            </svg>
-          </span>
-          Sign in
+    <b-container class="mt-4">
+      <loader :isLoading="isActive"/>
 
-        </button>
-      </div>
-    </div>
+      <ValidationObserver v-slot="{ invalid }">
+        <b-form @submit.prevent="login">
+          <ValidationProvider name="email" rules="required|email" v-slot="{ errors }">
+            <b-form-input
+              v-model="form.email"
+              :placeholder="$t('email')"
+            >
+            </b-form-input>
+            <span class="is-invalid">{{ errors[0] }}</span>
+          </ValidationProvider>
+
+
+          <ValidationProvider name="password" rules="required|alpha|min:6" v-slot="{ errors }">
+            <b-form-input
+              label="Password"
+              v-model="form.password"
+              :placeholder="$t('password')"
+            >
+            </b-form-input>
+            <span class="is-invalid">{{ errors[0] }}</span>
+          </ValidationProvider>
+          <b-button type="submit" :disabled="invalid" variant="primary">Submit</b-button>
+        </b-form>
+      </ValidationObserver>
+
+    </b-container>
   </div>
 </template>
 
 
 <script>
-import { ref, reactive, defineComponent, useRouter } from "@nuxtjs/composition-api";
+import { ref, reactive, defineComponent, computed, useContext, useRouter } from "@nuxtjs/composition-api";
+import { ValidationProvider, ValidationObserver, localeChanged } from "vee-validate";
 import { useAuthStore } from "~/store/user";
 import ErrorMsg from "../Tools/ErrorMsg.vue";
 import Loader from "../Tools/Loader.vue";
 import ResetForm from "./ResetForm.vue";
 
 export default defineComponent({
-  components: { ErrorMsg, Loader, ResetForm },
+  components: { ErrorMsg, Loader, ResetForm,  ValidationProvider, ValidationObserver },
   setup() {
     const isActive = ref(false)
 
     const loginView = ref(false)
 
+    const { app } = useContext();
     const store = useAuthStore();
 
     const { logInUser } = store;
 
     const router = useRouter();
 
-    const loginForm = reactive({
+    const form = reactive({
       email: "",
       password: ""
     });
 
-    const loginWithEmail = async () => {
+    const availableLocales = computed(() => {
+      return app.i18n.locales.filter(i => i.code !== app.i18n.locale)
+    });
+
+    const setLocale = () => {
+      app.i18n.locale = 'pt_PT'; // locale changed
+      localeChanged();
+    }
+
+    // const switchLocalePath = (code) => {
+    //   app.i18n.locale = code; // locale changed
+    //   localeChanged();
+    // }
+
+    const login = async () => {
       isActive.value = true
-      await logInUser(loginForm.email, loginForm.password)
-      router.push('/')
+      await logInUser(form.email, form.password)
+      // router.push('/')
       isActive.value = false
     }
 
@@ -86,15 +96,24 @@ export default defineComponent({
       console.log('Value: ', loginView.value);
     };
 
+
     return {
       loginView,
       toggleLoginView,
-      loginForm,
-      loginWithEmail,
+      form,
+      login,
       store,
-      isActive
+      isActive,
+      setLocale,
+      availableLocales
     }
   }
 })
 
 </script>
+
+<style scoped>
+  .is-invalid {
+    color: red;
+  }
+</style>

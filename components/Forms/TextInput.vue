@@ -5,8 +5,8 @@
         h-6
         w-6
         ml-2
-        text-indigo-700
-        " :name="iconName" />
+        text-indigo-700"
+      :name="iconName" />
     </div>
     <input
       class="

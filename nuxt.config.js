@@ -16,7 +16,8 @@ module.exports = {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/persistedstate.js'
+    '@/plugins/persistedstate.js',
+    '@/plugins/validate.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -24,8 +25,6 @@ module.exports = {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
     '@pinia/nuxt',
   ],
@@ -35,12 +34,51 @@ module.exports = {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/svg-sprite',
+    'bootstrap-vue/nuxt',
+    'nuxt-i18n',
   ],
+  i18n: {
+    lazy: true,
+    loadLanguagesAsync: true,
+    locales: [
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.js'
+      },
+      {
+        name: 'Mongolian',
+        code: 'mn',
+        iso: 'mn',
+        file: 'mn.js'
+      },
+      {
+        name: 'Portuguese',
+        code: 'pt',
+        iso: 'pt',
+        file: 'pt.js'
+      },
+    ],
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    strategy: 'prefix_and_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
+    parsePages: false,
+    pages: {
+      '/LoginPage': {
+        mn: '/нэвтрэх',
+        en: '/LoginPage'
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -56,5 +94,14 @@ module.exports = {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ['vee-validate/dist/rules',
+                'vee-validate/dist/locale/mn',
+                'vee-validate/dist/locale/pt',
+                'vee-validate/dist/locale/en'
+    ],
+    extend(config, ctx) {
+      // ...
+    }
+  },
 }
