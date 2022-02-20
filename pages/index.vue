@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav-bar />
-    <br>
-    <br>
+    <br />
+    <br />
     <NewPost />
 
     <ul class="flex flex-wrap">
@@ -16,19 +16,16 @@
           class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
         >
           <img
-            v-if="post.imageUrl"
+            v-if="post.image"
             class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-            :src="post.imageUrl"
-            :alt="post.title"
+            :src="post.image"
+            :alt="post.headline"
           />
-
           <div
             class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
           >
-            <h2 class="font-bold">{{ post.title }}</h2>
-            <p class="font-bold text-gray-600 text-sm">
-              {{ post.message }}
-            </p>
+            <h2 class="font-bold">{{ post.headline }}</h2>
+            <p class="font-bold text-gray-600 text-sm" v-html="post.body"></p>
           </div>
         </NuxtLink>
       </li>
@@ -39,34 +36,33 @@
 </template>
 
 <script>
-import Counter from "~/components/Counter.vue";
-import NavBar from "~/components/NavBar/NavBar.vue"
-import NewPost from "~/components/Forms/NewPost.vue";
-import { ref, onMounted } from "@nuxtjs/composition-api";
-import { useAuthStore } from "~/store/user";
-import { useStore } from "~/store/store";
-import ErrorMsg from "../components/Tools/ErrorMsg.vue";
-import Loader from "../components/Tools/Loader.vue";
-
+import Counter from '~/components/Counter.vue'
+import NavBar from '~/components/NavBar/NavBar.vue'
+import NewPost from '~/components/Forms/NewPost.vue'
+import { ref, onMounted } from '@nuxtjs/composition-api'
+import { useAuthStore } from '~/store/user'
+import { useStore } from '~/store/store'
+import ErrorMsg from '../components/Tools/ErrorMsg.vue'
+import Loader from '../components/Tools/Loader.vue'
 
 export default {
-  name: "IndexPage",
+  name: 'IndexPage',
   components: { Counter, NavBar, NewPost },
   setup() {
     const storeUser = useAuthStore()
     const store = useStore()
     onMounted(async () => {
-      console.log('Userid: ', storeUser.user.uid);
-      store.list('posts', storeUser.user.uid)
+      console.log('Userid: ', storeUser.user.uid)
+      await store.list('posts', { where: [['active', '==', true]] })
+      console.log(store.posts)
     })
     return {
       storeUser,
-      store
+      store,
     }
-  }
+  },
 }
 </script>
-
 
 <style class="postcss">
 .article-card {

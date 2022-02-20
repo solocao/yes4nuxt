@@ -14,9 +14,9 @@ export const useStore = defineStore('global', {
     decrement() {
       this.counter--
     },
-    async list(collection, userId) {
+    async list(collection, args) {
       try {
-        const data = await list(collection, 'userId', userId)
+        const data = await list(collection, args)
         this[collection] = data ? data: null
         this.error = null;
         return this[collection]

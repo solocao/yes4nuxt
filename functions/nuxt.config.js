@@ -16,7 +16,7 @@ module.exports = {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/persistedstate.js'
+    '@/plugins/persisted-state.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

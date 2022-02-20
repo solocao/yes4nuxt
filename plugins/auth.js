@@ -17,31 +17,10 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 
-const config = {
-  // apiKey: process.env.API_KEY,
-  // authDomain: process.env.AUTH_DOMAIN,
-  // projectId: process.env.PROJECT_ID,
-  // storageBucket: process.env.STORAGE_BUCKET,
-  // messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  // appId: process.env.APP_ID,
-  // measurementId: process.env.MEASUREMENT_ID
+import { fbApp } from './firebase'
 
-  apiKey: 'AIzaSyC551QqnL5TmoX5F0PIcf8o8Nfb1gXsVVM', //process.env.API_KEY,
-  authDomain: 'yesmkt-demo.firebaseapp.com', // process.env.AUTH_DOMAIN,
-  projectId: 'yesmkt-demo', // process.env.PROJECT_ID,
-  storageBucket: 'yesmkt-demo.appspot.com', // process.env.STORAGE_BUCKET,
-  messagingSenderId: '2056023461', // process.env.MESSAGING_SENDER_ID,
-  appId: '1:2056023461:web:ce09dd379322fa4ec58c4c', // process.env.APP_ID,
-  measurementId: 'G-HQDW29BSYF', // process.env.MEASUREMENT_ID
-
-};
-
-const app = initializeApp(config);
-const db = getFirestore(app);
-const auth = getAuth(app);
-
-
-export const firebaseApp = app
+const db = getFirestore(fbApp);
+const auth = getAuth(fbApp);
 
 export const fbCreateAccount = async (
   email,
