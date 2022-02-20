@@ -41,7 +41,7 @@
 
 
 <script>
-import { ref, defineComponent } from "@nuxtjs/composition-api";
+
 import LoginForm from "~/components/Forms/LoginForm.vue";
 import SignupForm from "~/components/Forms/SignupForm.vue";
 

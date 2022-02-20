@@ -42,7 +42,6 @@
 </template>
 
 <script>
-import { defineComponent, useMeta } from '@nuxtjs/composition-api'
 import { useStore } from '../store/store'
 // import { useTenantStore } from '../store/tenant'
 

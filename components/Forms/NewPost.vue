@@ -56,7 +56,7 @@
 
 <script>
 
-import { ref, computed, defineComponent } from '@nuxtjs/composition-api'
+
 import { useAuthStore } from "~/store/user"
 import { useStore } from "~/store/store"
 import LoadingButton from './LoadingButton'

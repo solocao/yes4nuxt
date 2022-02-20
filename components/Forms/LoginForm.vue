@@ -49,7 +49,7 @@
 
 
 <script>
-import { ref, reactive, defineComponent, useRouter } from "@nuxtjs/composition-api";
+
 import { useAuthStore } from "~/store/user";
 import ErrorMsg from "../Tools/ErrorMsg.vue";
 import Loader from "../Tools/Loader.vue";

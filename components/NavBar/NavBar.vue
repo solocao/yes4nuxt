@@ -121,7 +121,7 @@
 
 
 <script>
-import { ref, watch, defineComponent, useRouter, onMounted } from "@nuxtjs/composition-api";
+
 import { useAuthStore } from "~/store/user";
 import TailWind from '@/components/NavBar/Tailwind.vue'
 

@@ -1,5 +1,4 @@
 module.exports = {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'yes4nuxt',
     meta: [
@@ -11,50 +10,36 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/persisted-state.js'
+  css: [
+    'primevue/resources/themes/saga-blue/theme.css',
+    'primevue/resources/primevue.css',
+    'primeicons/primeicons.css'
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  plugins: ['@/plugins/persisted-state.js'],
+
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/composition-api/module',
+
     '@pinia/nuxt',
   ],
 
   router: {
-    middleware:['auth'],
+    middleware: ['auth'],
   },
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-    '@nuxtjs/svg-sprite',
-  ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/svg-sprite'],
+
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
       lang: 'en',
     },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }

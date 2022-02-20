@@ -35,7 +35,7 @@
 
 <script>
 
-import { ref, defineComponent, useRouter } from "@nuxtjs/composition-api";
+
 import { useAuthStore } from "~/store/user";
 import ErrorMsg from "../Tools/ErrorMsg.vue";
 import LoadingButton from './LoadingButton'

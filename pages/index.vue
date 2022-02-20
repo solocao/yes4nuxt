@@ -39,7 +39,7 @@
 import Counter from '~/components/Counter.vue'
 import NavBar from '~/components/NavBar/NavBar.vue'
 import NewPost from '~/components/Forms/NewPost.vue'
-import { ref, onMounted } from '@nuxtjs/composition-api'
+
 import { useAuthStore } from '~/store/user'
 import { useStore } from '~/store/store'
 import ErrorMsg from '../components/Tools/ErrorMsg.vue'

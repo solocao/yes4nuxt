@@ -17,7 +17,7 @@
 
 <script>
 
-import { ref, defineComponent } from '@nuxtjs/composition-api'
+
 
 export default defineComponent({
   props: {

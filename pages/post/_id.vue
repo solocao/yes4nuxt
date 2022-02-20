@@ -31,7 +31,7 @@
 <script>
 
 import NavBar from "~/components/NavBar/NavBar.vue"
-import { defineComponent, computed, useRoute } from "@nuxtjs/composition-api";
+
 // import { useAuthStore } from "~/store/user";
 import { useStore } from "~/store/store";
 
