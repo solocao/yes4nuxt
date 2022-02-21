@@ -1,19 +1,7 @@
 import { useAuthStore } from "../store/user";
 
-export default async function ({app, route, redirect }){
+export default defineNuxtRouteMiddleware((to, from) => {
   const store = useAuthStore()
-  // await store.initializeAuthListener()
   console.log('LOGGED IN: ', store.isLoggedIn);
-
-  if (route.path !== '/LoginPage') {
-    if (!store.isLoggedIn) {
-      return redirect('/LoginPage')
-    }
-  } else {
-    if (route.path === '/LoginPage') {
-      if(store.isLoggedIn) {
-        return redirect('/')
-      }
-    }
-  }
-}
+  if (to.name !== '/login' && !store.isLoggedIn) return navigateTo('/login')
+})

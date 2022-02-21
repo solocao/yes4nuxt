@@ -1,21 +1,13 @@
 import { createPersistedStatePlugin } from 'pinia-plugin-persistedstate-2'
 import Cookies from 'js-cookie'
 import cookie from 'cookie'
-// import { useTenantStore } from '~/store/tenant'
 import { useStore } from '~/store/store'
 
 export default function ({ $pinia, ssrContext }) {
 
   if(process.server) {
-    // NOTE ZEE: I refactored this to use a generic store ... do you think there is any drawback in this approach?
-    // NOTE MRS: I agree with this type of structure.
-    // NOTE MRS: It should main branch, then I can start from here
-    // console.log('Req object Zee: ', ssrContext.req.headers.host);
     const theNick = getNick(ssrContext.req);
-    // console.log('The nick from req: ', theNick.nick);
-    // const tenantStore = useTenantStore($pinia)
     const store = useStore($pinia)
-    // tenantStore.setNick(theNick.nick)
     store.$patch((state) => {
       state.nick = theNick.nick
     })
@@ -24,7 +16,7 @@ export default function ({ $pinia, ssrContext }) {
   $pinia.use(
     createPersistedStatePlugin({
       storage: {
-        getItem: (key) => { // Note to MRS: You mistyped getItem as get
+        getItem: (key) => {
           if (process.server) {
             const parsedCookies = cookie.parse(ssrContext.req.headers.cookie)
             return parsedCookies[key]

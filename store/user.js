@@ -7,8 +7,8 @@ import {
   fbResetPassword,
   fbSignIn,
   fbSignOut,
-} from "~/plugins/auth";
-import { list } from '~/plugins/firestore'
+} from "~~/utils/auth";
+import { list } from '~~/utils/firestore'
 
 
 export const useAuthStore = defineStore('authStore', {
@@ -24,11 +24,11 @@ export const useAuthStore = defineStore('authStore', {
   actions: {
     async initializeAuthListener() {
       return new Promise((resolve) => {
-        fbAuthStateListener(async (user) => {
+        fbAuthStateListener(($nuxt.$firebaseAuth), async (user) => {
           this.user = user ? user : null;
           console.log('Running user: ', user);
           if (user) {
-            const profile = (await fbGetUserProfile());
+            const profile = (await fbGetUserProfile($nuxt.$firebaseAuth, $nuxt.$firestoreDb));
             this.profile = profile;
             console.log('Profile: ', profile);
           }
@@ -38,7 +38,7 @@ export const useAuthStore = defineStore('authStore', {
     },
     async logInUser(email, password) {
       try {
-        const response = await fbSignIn(email, password);
+        const response = await fbSignIn($nuxt.$firebaseAuth, email, password);
         this.user = response.user ? response.user : null;
         this.error = '';
         return true;
@@ -50,7 +50,7 @@ export const useAuthStore = defineStore('authStore', {
     },
     async logoutUser() {
       try {
-        await fbSignOut();
+        await fbSignOut($nuxt.$firebaseAuth);
         console.log('Logged out sucess');
         this.user = null;
         this.profile = null;
@@ -63,7 +63,7 @@ export const useAuthStore = defineStore('authStore', {
     },
     async createAccount(email, password, firstname, lastname, phone) {
       try {
-        const {user, profile} = await fbCreateAccount(email, password, firstname, lastname, phone);
+        const {user, profile} = await fbCreateAccount($nuxt.$firebaseAuth, $nuxt.$firestoreDb, email, password, firstname, lastname, phone);
         this.user = user ? user : null;
         this.profile = profile ? profile : null;
         this.error = '';
@@ -76,10 +76,10 @@ export const useAuthStore = defineStore('authStore', {
     },
     async resetPassword(email) {
       try {
-        await list('users', 'email', email).then(async (snap) => {
+        await list($nuxt.$firestoreDb, 'users', 'email', email).then(async (snap) => {
           if(!snap.empty) {
             this.error = '';
-            await fbResetPassword(email)
+            await fbResetPassword($nuxt.$firebaseAuth, email)
             return true;
           } else {
             return false;
