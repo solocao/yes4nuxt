@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
-    <div v-if="isLoading" class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-50 flex flex-col items-center justify-center">
-      <div class="rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4">
+    <div v-if="isLoading" class="loading">
+      <div class="card">
         <div class="sk-chase">
           <div class="sk-chase-dot"></div>
           <div class="sk-chase-dot"></div>
@@ -29,6 +29,26 @@ export default defineComponent({
 </script>
 
 <style lang="css">
+
+.loading {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(#333, 0.4);
+	z-index: 9999;
+}
+
+.card {
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 40vh auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(#333, 0.5);
+}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
@@ -58,7 +78,7 @@ export default defineComponent({
   display: block;
   width: 25%;
   height: 25%;
-  background-color: #3498db;
+  background-color: rgba(#333, 0.4);
   border-radius: 100%;
   animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
 }

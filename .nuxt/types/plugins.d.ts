@@ -9,10 +9,11 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt3/dist/meta/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt3/dist/pages/runtime/router").default> &
-  InjectionType<typeof import("../dist.plugin.1608af53").default> &
+  InjectionType<typeof import("../dist.plugin.0e8dcab4").default> &
   InjectionType<typeof import("../../plugins/firebase.client").default> &
   InjectionType<typeof import("../../plugins/persistedstate").default> &
   InjectionType<typeof import("../../plugins/primevue").default> &
+  InjectionType<typeof import("../../plugins/validate").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/nitro/dist/runtime/app/nitro.client").default> &
   InjectionType<typeof import("#build/components").default>
 

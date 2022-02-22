@@ -14,7 +14,7 @@ import { createRenderer } from 'vue-bundle-renderer';
 import devalue from '@nuxt/devalue';
 import defu from 'defu';
 import { joinURL } from 'ufo';
-import htmlTemplate from '/Users/zemunkh/Documents/GitHub/.nuxt/views/document.template.mjs';
+import htmlTemplate from '/Users/zemunkh/Documents/yes4nuxt/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'vue/server-renderer';
 
 const _runtimeConfig = {public:{firebaseApiKey:"AIzaSyC551QqnL5TmoX5F0PIcf8o8Nfb1gXsVVM",firebaseAuthDomain:"yesmkt-demo.firebaseapp.com",firebaseProjectId:"yesmkt-demo",firebaseStorageBucket:"yesmkt-demo.appspot.com",firebaseMessagingSenderId:"2056023461",firebaseAppId:"1:2056023461:web:ce09dd379322fa4ec58c4c",firebaseMeasurementId:"G-HQDW29BSYF",app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",assetsPath:{},cdnURL:null}},private:{}};
@@ -145,10 +145,10 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "/_nuxt/Users/zemunkh/Documents/GitHub/dist" + "/" + "1645464692";
+const STATIC_ASSETS_BASE = "/_nuxt/Users/zemunkh/Documents/yes4nuxt/dist" + "/" + "1645524335";
 const PAYLOAD_JS = "/payload.js";
-const getClientManifest = cachedImport(() => import('/Users/zemunkh/Documents/GitHub/.nuxt/dist/server/client.manifest.mjs'));
-const getSSRApp = cachedImport(() => import('/Users/zemunkh/Documents/GitHub/.nuxt/dist/server/server.mjs'));
+const getClientManifest = cachedImport(() => import('/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist/server/client.manifest.mjs'));
+const getSSRApp = cachedImport(() => import('/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist/server/server.mjs'));
 const getSSRRenderer = cachedResult(async () => {
   const clientManifest = await getClientManifest();
   if (!clientManifest) {

@@ -1,12 +1,12 @@
 
 // --------------------
-// Request: /Users/zemunkh/Documents/GitHub/node_modules/nuxt3/dist/app/entry
+// Request: /Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry
 // Parents: 
 // - <entry> ($id_c757eb9e)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // --------------------
-const $id_02c377a4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_947c0482 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const entry = true ? (ctx) => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default(ctx)) : () => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default);
 if (false) {
   entry();
@@ -19,27 +19,27 @@ __vite_ssr_exports__.default = entry;
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/bootstrap.mjs
 // Parents: 
-// - /Users/zemunkh/Documents/GitHub/node_modules/nuxt3/dist/app/entry ($id_02c377a4)
+// - /Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry ($id_947c0482)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs ($id_9b57c59a)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/root-component.mjs ($id_0f4509d4)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/app-component.mjs ($id_c14d9387)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs ($id_2cd6dcc5)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs ($id_935a2b05)
 // --------------------
 const $id_fef466a9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/root-component.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/app-component.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs");
 
 let entry;
 const plugins = __vite_ssr_import_1__.normalizePlugins(__vite_ssr_import_3__.default);
@@ -99,27 +99,31 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt3/dist/pages/runtime/page.mjs ($id_485c89bf)
 // - /node_modules/nuxt3/dist/pages/runtime/utils.mjs ($id_e1b210cc)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/layouts.mjs ($id_4e4982d8)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs ($id_1cf59b84)
 // - /pages/index.vue?macro=true ($id_5dd70240)
-// - /pages/login.vue?macro=true ($id_213baa8a)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
 // - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs ($id_1db78f37)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
 // - /node_modules/nuxt3/dist/app/compat/capi.mjs ($id_7674cc72)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
 // - /node_modules/primevue/button/button.esm.js ($id_9578581f)
 // - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
 // - /node_modules/primevue/inputtext/inputtext.esm.js ($id_743d0bd5)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/components.mjs ($id_98b03e47)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs ($id_637b83c5)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /components/Header/Header.vue ($id_73b23c04)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
 
 // --------------------
-const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/vue/dist/vue.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/vue/dist/vue.cjs.js\".") })
+const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue/dist/vue.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue/dist/vue.cjs.js\".") })
 
 
 // --------------------
@@ -310,7 +314,7 @@ function defineGetter(obj, key, val) {
 // Dependencies: 
 
 // --------------------
-const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/hookable/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/hookable/dist/index.mjs\".") })
+const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/hookable/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/hookable/dist/index.mjs\".") })
 
 
 // --------------------
@@ -440,7 +444,7 @@ Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, 
 // Dependencies: 
 
 // --------------------
-const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/unenv/runtime/mock/proxy.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/unenv/runtime/mock/proxy.mjs\".") })
+const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs\".") })
 
 
 // --------------------
@@ -558,7 +562,7 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable:
 // Dependencies: 
 
 // --------------------
-const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/vue-router/dist/vue-router.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/vue-router/dist/vue-router.cjs.js\".") })
+const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js\".") })
 
 
 // --------------------
@@ -771,7 +775,7 @@ function generateKey(keys) {
 // Dependencies: 
 
 // --------------------
-const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/murmurhash-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/murmurhash-es/dist/index.mjs\".") })
+const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs\".") })
 
 
 // --------------------
@@ -860,7 +864,7 @@ function writeServerCookie(res, name, value, opts = {}) {
 // Dependencies: 
 
 // --------------------
-const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/cookie-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/cookie-es/dist/index.mjs\".") })
+const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/cookie-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/cookie-es/dist/index.mjs\".") })
 
 
 // --------------------
@@ -871,7 +875,7 @@ const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/h3/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/h3/dist/index.mjs\".") })
+const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/h3/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/h3/dist/index.mjs\".") })
 
 
 // --------------------
@@ -881,7 +885,7 @@ const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/destr/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/destr/dist/index.mjs\".") })
+const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/destr/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/destr/dist/index.mjs\".") })
 
 
 // --------------------
@@ -957,11 +961,11 @@ Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, confi
 // Dependencies: 
 
 // --------------------
-const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/@vue/shared/dist/shared.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/@vue/shared/dist/shared.cjs.js\".") })
+const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js\".") })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
@@ -969,7 +973,7 @@ const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/primevue/resources/primevue.css ($id_736dcf3c)
 // - /node_modules/primeicons/primeicons.css ($id_f890f676)
 // --------------------
-const $id_9b57c59a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_f4c7371f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/primevue/resources/themes/saga-blue/theme.css");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/primevue/resources/primevue.css");
@@ -982,7 +986,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/primeicon
 // --------------------
 // Request: /node_modules/primevue/resources/themes/saga-blue/theme.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs ($id_9b57c59a)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
 // Dependencies: 
 
 // --------------------
@@ -994,7 +998,7 @@ __vite_ssr_exports__.default = ":root {\n  --surface-a:#ffffff;\n  --surface-b:#
 // --------------------
 // Request: /node_modules/primevue/resources/primevue.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs ($id_9b57c59a)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
 // Dependencies: 
 
 // --------------------
@@ -1006,7 +1010,7 @@ __vite_ssr_exports__.default = ".p-component, .p-component * {\n    box-sizing: 
 // --------------------
 // Request: /node_modules/primeicons/primeicons.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs ($id_9b57c59a)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
 // Dependencies: 
 
 // --------------------
@@ -1016,7 +1020,7 @@ __vite_ssr_exports__.default = "@font-face {\n    font-family: 'primeicons';\n  
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
@@ -1024,13 +1028,14 @@ __vite_ssr_exports__.default = "@font-face {\n    font-family: 'primeicons';\n  
 // - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs ($id_1db78f37)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
 // - /plugins/persistedstate.js ($id_88d211c2)
 // - /plugins/primevue.ts ($id_934480b9)
+// - /plugins/validate.js ($id_eb85e80e)
 // - /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs ($id_7b587af2)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/components.mjs ($id_98b03e47)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs ($id_637b83c5)
 // --------------------
-const $id_3de84f15 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_b63089b7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/plugins/preload.server.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs");
@@ -1039,15 +1044,17 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/router.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/plugins/persistedstate.js");
 
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/plugins/primevue.ts");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/plugins/validate.js");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/components.mjs");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs");
+
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs");
 
 __vite_ssr_exports__.default = [
   __vite_ssr_import_0__.default,
@@ -1058,7 +1065,8 @@ __vite_ssr_exports__.default = [
   __vite_ssr_import_5__.default,
   __vite_ssr_import_6__.default,
   __vite_ssr_import_7__.default,
-  __vite_ssr_import_8__.default
+  __vite_ssr_import_8__.default,
+  __vite_ssr_import_9__.default
 ];
 }
 
@@ -1066,7 +1074,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/plugins/preload.server.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // --------------------
@@ -1089,7 +1097,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -1543,13 +1551,13 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
 // - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/meta.config.mjs ($id_bacdebfd)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs ($id_cca9cda5)
 // --------------------
 const $id_9fd5f35e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1560,7 +1568,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/meta.config.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_3__.defineNuxtPlugin((nuxtApp) => {
   __vite_ssr_import_2__.useMeta(__vite_ssr_import_4__.default.globalMeta);
@@ -1795,21 +1803,21 @@ Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configur
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/meta.config.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // Dependencies: 
 
 // --------------------
-const $id_bacdebfd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[],"style":[],"script":[]},"mixinKey":"created"};
+const $id_cca9cda5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"}],"script":[{"src":"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"}],"style":[]},"mixinKey":"created"};
 }
 
 
 // --------------------
 // Request: /node_modules/nuxt3/dist/pages/runtime/router.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
@@ -1817,8 +1825,8 @@ __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name
 // - /node_modules/nuxt3/dist/pages/runtime/page.mjs ($id_485c89bf)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs ($id_421f6e7d)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/middleware.mjs ($id_48d54ff7)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs ($id_81eff317)
 // --------------------
 const $id_a4d6cb5b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1833,9 +1841,9 @@ const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/middleware.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_5__.defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("NuxtPage", __vite_ssr_import_3__.default);
@@ -2023,7 +2031,7 @@ Object.defineProperty(__vite_ssr_exports__, "wrapInKeepAlive", { enumerable: tru
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
 // - /node_modules/nuxt3/dist/pages/runtime/utils.mjs ($id_e1b210cc)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/layouts.mjs ($id_4e4982d8)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs ($id_1cf59b84)
 // --------------------
 const $id_9b68c93f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -2032,7 +2040,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-route
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/utils.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/layouts.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs");
 
 const defaultLayoutTransition = { name: "layout", mode: "out-in" };
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
@@ -2059,13 +2067,13 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/layouts.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // --------------------
-const $id_4e4982d8 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_1cf59b84 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 __vite_ssr_exports__.default = {};
@@ -2073,7 +2081,7 @@ __vite_ssr_exports__.default = {};
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
@@ -2082,7 +2090,7 @@ __vite_ssr_exports__.default = {};
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
 // --------------------
-const $id_421f6e7d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_238f4431 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/index.vue?macro=true");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/pages/login.vue?macro=true");
@@ -2091,7 +2099,7 @@ __vite_ssr_exports__.default = [
   {
     name: "index",
     path: "/",
-    file: "/Users/zemunkh/Documents/GitHub/pages/index.vue",
+    file: "/Users/zemunkh/Documents/yes4nuxt/pages/index.vue",
     children: [],
     meta: __vite_ssr_import_0__.meta,
     component: () => __vite_ssr_dynamic_import__('/pages/index.vue')
@@ -2099,7 +2107,7 @@ __vite_ssr_exports__.default = [
   {
     name: "login",
     path: "/login",
-    file: "/Users/zemunkh/Documents/GitHub/pages/login.vue",
+    file: "/Users/zemunkh/Documents/yes4nuxt/pages/login.vue",
     children: [],
     meta: __vite_ssr_import_1__.meta,
     component: () => __vite_ssr_dynamic_import__('/pages/login.vue')
@@ -2111,7 +2119,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /pages/index.vue?macro=true
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs ($id_421f6e7d)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/user.js ($id_6c3c060a)
@@ -2172,7 +2180,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -2182,9 +2190,9 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // Request: /node_modules/nuxt3/dist/pages/runtime/composables.mjs
 // Parents: 
 // - /pages/index.vue?macro=true ($id_5dd70240)
-// - /pages/login.vue?macro=true ($id_213baa8a)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // - /pages/index.vue ($id_cca58e97)
-// - /pages/login.vue ($id_b0922173)
 // - /middleware/auth.js ($id_3fdca93e)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
@@ -2254,9 +2262,9 @@ Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: tru
 // Request: /store/user.js
 // Parents: 
 // - /pages/index.vue?macro=true ($id_5dd70240)
-// - /pages/login.vue?macro=true ($id_213baa8a)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // - /pages/index.vue ($id_cca58e97)
-// - /pages/login.vue ($id_b0922173)
 // - /middleware/auth.js ($id_3fdca93e)
 // Dependencies: 
 // - /node_modules/pinia/dist/pinia.mjs ($id_b1920624)
@@ -2364,11 +2372,11 @@ Object.defineProperty(__vite_ssr_exports__, "useAuthStore", { enumerable: true, 
 // Parents: 
 // - /store/user.js ($id_6c3c060a)
 // - /store/store.js ($id_fa1a709a)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs ($id_1db78f37)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
 // Dependencies: 
 
 // --------------------
-const $id_b1920624 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/pinia/dist/pinia.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/pinia/dist/pinia.mjs\".") })
+const $id_b1920624 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/pinia/dist/pinia.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/pinia/dist/pinia.mjs\".") })
 
 
 // --------------------
@@ -11856,7 +11864,7 @@ __vite_ssr_exportAll__(__vite_ssr_import_0__);
 // Dependencies: 
 
 // --------------------
-const $id_ad4b4642 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/@firebase/auth/dist/node-esm/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/@firebase/auth/dist/node-esm/index.js\".") })
+const $id_ad4b4642 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js\".") })
 
 
 // --------------------
@@ -11979,6 +11987,8 @@ Object.defineProperty(__vite_ssr_exports__, "list", { enumerable: true, configur
 // Parents: 
 // - /utils/firestore.js ($id_db0483a6)
 // - /pages/login.vue?macro=true ($id_213baa8a)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // - /pages/login.vue ($id_b0922173)
 // - /plugins/persistedstate.js ($id_88d211c2)
 // Dependencies: 
@@ -12056,6 +12066,9 @@ Object.defineProperty(__vite_ssr_exports__, "useStore", { enumerable: true, conf
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
 // - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
@@ -12065,7 +12078,7 @@ Object.defineProperty(__vite_ssr_exports__, "useStore", { enumerable: true, conf
 // Dependencies: 
 
 // --------------------
-const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/vue/server-renderer/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/vue/server-renderer/index.js\".") })
+const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue/server-renderer/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue/server-renderer/index.js\".") })
 
 
 // --------------------
@@ -12074,6 +12087,9 @@ const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
 // - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
@@ -12099,7 +12115,71 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // --------------------
 // Request: /pages/login.vue?macro=true
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs ($id_421f6e7d)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// Dependencies: 
+// - /store/store.js ($id_fa1a709a)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_213baa8a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+  const __vite_ssr_import_0__ = await __vite_ssr_import__("/store/store.js");
+
+  const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
+
+  const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/Forms/Register.vue");
+
+  const _sfc_main = ({
+    components: { LoginForm: __vite_ssr_import_1__.default, Register: __vite_ssr_import_2__.default },
+    setup() {
+      const store = __vite_ssr_import_0__.useStore();
+      return {
+        store,
+      }
+    }
+  })
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_login_form = __vite_ssr_import_3__.resolveComponent("login-form")
+  const _component_register = __vite_ssr_import_3__.resolveComponent("register")
+
+  _push(`<!--[--><div class="container" style="${__vite_ssr_import_4__.ssrRenderStyle({"width":"540px"})}"><div class="container mt-5"><ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Register</button></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_login_form, null, null, _parent))
+  _push(`</div><div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_register, null, null, _parent))
+  _push(`</div></div></div></div><h2 class="d-flex justify-content-center">${__vite_ssr_import_4__.ssrInterpolate($setup.store.counter)}</h2><div class="d-flex justify-content-center"><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div><!--]-->`)
+}
+
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]])
+const meta = undefined
+Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /components/Forms/LoginForm.vue
+// Parents: 
+// - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/login.vue ($id_b0922173)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
@@ -12107,11 +12187,12 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // - /store/user.js ($id_6c3c060a)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
 // - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /pages/login.vue?vue&type=style&index=0&scoped=true&lang.css ($id_e110bf24)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_213baa8a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_600babf2 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
@@ -12124,8 +12205,12 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
   const __vite_ssr_import_5__ = await __vite_ssr_import__("/components/Tools/ErrorMsg.vue");
 
+  const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/reusable/AppFormField.vue");
+
+  const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vee-validate/dist/vee-validate.esm.js");
+
   const _sfc_main = ({
-    components: { Loader: __vite_ssr_import_4__.default, ErrorMsg: __vite_ssr_import_5__.default },
+    components: { Loader: __vite_ssr_import_4__.default, ErrorMsg: __vite_ssr_import_5__.default, Form: __vite_ssr_import_7__.Form, AppFormField: __vite_ssr_import_6__.default },
     setup() {
       const authStore = __vite_ssr_import_3__.useAuthStore();
       const { logInUser } = authStore;
@@ -12133,12 +12218,14 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
       const store = __vite_ssr_import_2__.useStore();
 
       const isActive = __vite_ssr_import_0__.ref(false)
-      const email = __vite_ssr_import_0__.ref('');
-      const password = __vite_ssr_import_0__.ref('');
+      const user = __vite_ssr_import_0__.reactive({
+        email: '',
+        password: ''
+      })
 
       const loginWithEmail = async () => {
         isActive.value = true
-        await logInUser(email.value, password.value)
+        await logInUser(user.email, user.password)
         __vite_ssr_import_1__.navigateTo('/')
         isActive.value = false
       }
@@ -12146,92 +12233,100 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
       return {
         isActive,
         store,
-        email,
-        password,
+        user,
         authStore,
         loginWithEmail
       }
     }
   })
 
-  // import { useStore } from '~/store/store'
-  // const { $firebaseApp, $firebaseAuth  } = useNuxtApp();
-  // // alternatively, you can also use it here
-  // const store = useStore()
-  // onMounted(async () => {
-  //   $firebaseApp
-  // })
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Loader = __vite_ssr_import_6__.resolveComponent("Loader")
-  const _component_ErrorMsg = __vite_ssr_import_6__.resolveComponent("ErrorMsg")
-  const _component_InputText = __vite_ssr_import_6__.resolveComponent("InputText")
-  const _component_Button = __vite_ssr_import_6__.resolveComponent("Button")
+  const _component_loader = __vite_ssr_import_8__.resolveComponent("loader")
+  const _component_Form = __vite_ssr_import_8__.resolveComponent("Form")
+  const _component_AppFormField = __vite_ssr_import_8__.resolveComponent("AppFormField")
 
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container mx-auto" }, _attrs))} data-v-18804380>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Loader, { isLoading: $setup.isActive }, null, _parent))
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_ErrorMsg, {
-    header: "Error",
-    errMessage: $setup.authStore.error
-  }, null, _parent))
-  _push(`<h5 data-v-18804380>Login</h5><div class="grid p-fluid" data-v-18804380><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380><span class="p-inputgroup-addon" data-v-18804380><i class="pi pi-user" data-v-18804380></i></span>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_InputText, {
-    modelValue: $setup.email,
-    "onUpdate:modelValue": $event => (($setup.email) = $event),
-    type: "text",
-    placeholder: "Email"
-  }, null, _parent))
-  _push(`</div></div><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380><span class="p-inputgroup-addon" data-v-18804380><i class="pi pi-key" data-v-18804380></i></span>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_InputText, {
-    modelValue: $setup.password,
-    "onUpdate:modelValue": $event => (($setup.password) = $event),
-    type: "password",
-    placeholder: "Password"
-  }, null, _parent))
-  _push(`</div></div><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, { label: "Submit" }, null, _parent))
-  _push(`</div></div></div><br data-v-18804380><h2 data-v-18804380>${__vite_ssr_import_7__.ssrInterpolate($setup.store.counter)}</h2>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, {
-    icon: "pi pi-plus-circle",
-    label: "Add"
-  }, null, _parent))
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, {
-    icon: "pi pi-minus-circle",
-    class: "p-button-help",
-    label: "Subtract"
-  }, null, _parent))
+  _push(`<div${__vite_ssr_import_9__.ssrRenderAttrs(__vite_ssr_import_8__.mergeProps({ class: "container mt-4" }, _attrs))}>`)
+  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_loader, { isLoading: $setup.isActive }, null, _parent))
+  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_Form, null, {
+    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Email",
+          name: "email",
+          type: "email",
+          modelValue: $setup.user.email,
+          "onUpdate:modelValue": $event => (($setup.user.email) = $event),
+          rules: "required|email"
+        }, null, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Password",
+          name: "password",
+          type: "password",
+          modelValue: $setup.user.password,
+          "onUpdate:modelValue": $event => (($setup.user.password) = $event),
+          rules: "required|min:6"
+        }, null, _parent, _scopeId))
+        _push(`<button type="submit" class="btn btn-primary" style="${
+          __vite_ssr_import_9__.ssrRenderStyle({"width":"100%"})
+        }"${
+          _scopeId
+        }>Login</button>`)
+      } else {
+        return [
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Email",
+            name: "email",
+            type: "email",
+            modelValue: $setup.user.email,
+            "onUpdate:modelValue": $event => (($setup.user.email) = $event),
+            rules: "required|email"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Password",
+            name: "password",
+            type: "password",
+            modelValue: $setup.user.password,
+            "onUpdate:modelValue": $event => (($setup.user.password) = $event),
+            rules: "required|min:6"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode("button", {
+            type: "submit",
+            class: "btn btn-primary",
+            style: {"width":"100%"}
+          }, "Login")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
   _push(`</div>`)
 }
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/login.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
+  const ssrContext = __vite_ssr_import_10__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Forms/LoginForm.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-18804380"],['__file',"/Users/zemunkh/Documents/GitHub/pages/login.vue"]])
-const meta = undefined
-Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Forms/LoginForm.vue"]]);
 }
 
 
 // --------------------
 // Request: /components/Tools/Loader.vue
 // Parents: 
-// - /pages/login.vue?macro=true ($id_213baa8a)
-// - /pages/login.vue ($id_b0922173)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -12259,7 +12354,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   if (_ctx.isLoading) {
-    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-50 flex flex-col items-center justify-center" }, _attrs))}><div class="rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"><div class="sk-chase"><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div></div></div></div>`)
+    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "loading" }, _attrs))}><div class="card"><div class="sk-chase"><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div><div class="sk-chase-dot"></div></div></div></div>`)
   } else {
     _push(`<!---->`)
   }
@@ -12278,7 +12373,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/components/Tools/Loader.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Tools/Loader.vue"]]);
 }
 
 
@@ -12290,15 +12385,15 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 
 // --------------------
 const $id_418e9d87 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.fade-enter-active, .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n.sk-chase {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  -webkit-animation: sk-chase 2.5s infinite linear both;\n          animation: sk-chase 2.5s infinite linear both;\n}\n.sk-chase-dot {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:before {\n  content: '';\n  display: block;\n  width: 25%;\n  height: 25%;\n  background-color: #3498db;\n  border-radius: 100%;\n  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:nth-child(1) { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2) { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3) { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4) { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5) { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6) { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n.sk-chase-dot:nth-child(1):before { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2):before { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3):before { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4):before { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5):before { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6):before { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n@-webkit-keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n@keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n";
+__vite_ssr_exports__.default = "\n.loading {\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tbottom: 0;\n\tleft: 0;\n\tbackground: rgba(#333, 0.4);\n\tz-index: 9999;\n}\n.card {\n  background: #fff;\n  width: 80px;\n  height: 80px;\n  text-align: center;\n  margin: 40vh auto 0;\n  border-radius: 3px;\n  box-shadow: 0 0 20px 0 rgba(#333, 0.5);\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n.sk-chase {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  -webkit-animation: sk-chase 2.5s infinite linear both;\n          animation: sk-chase 2.5s infinite linear both;\n}\n.sk-chase-dot {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:before {\n  content: '';\n  display: block;\n  width: 25%;\n  height: 25%;\n  background-color: rgba(#333, 0.4);\n  border-radius: 100%;\n  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:nth-child(1) { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2) { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3) { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4) { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5) { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6) { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n.sk-chase-dot:nth-child(1):before { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2):before { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3):before { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4):before { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5):before { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6):before { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n@-webkit-keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n@keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n";
 }
 
 
 // --------------------
 // Request: /components/Tools/ErrorMsg.vue
 // Parents: 
-// - /pages/login.vue?macro=true ($id_213baa8a)
-// - /pages/login.vue ($id_b0922173)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -12351,27 +12446,3654 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/components/Tools/ErrorMsg.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Tools/ErrorMsg.vue"]]);
 }
 
 
 // --------------------
-// Request: /pages/login.vue?vue&type=style&index=0&scoped=true&lang.css
+// Request: /components/reusable/AppFormField.vue
+// Parents: 
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_def58cce = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vee-validate/dist/vee-validate.esm.js");
+
+const _sfc_main = __vite_ssr_import_0__.defineComponent({
+  components: { Field: __vite_ssr_import_1__.Field, ErrorMessage: __vite_ssr_import_1__.ErrorMessage },
+  inheritAttrs: false,
+  props: {
+    name: { type: String, required: true },
+    label: { type: String, default: '' },
+    modelValue: { type: String, default: '' }
+  }
+})
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Field = __vite_ssr_import_2__.resolveComponent("Field")
+  const _component_ErrorMessage = __vite_ssr_import_2__.resolveComponent("ErrorMessage")
+
+  _push(`<div${
+    __vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "mb-3" }, _attrs))
+  }><label class="form-text"${
+    __vite_ssr_import_3__.ssrRenderAttr("for", _ctx.name)
+  }>${
+    __vite_ssr_import_3__.ssrInterpolate(_ctx.label)
+  }</label>`)
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Field, __vite_ssr_import_2__.mergeProps({
+    name: _ctx.name,
+    label: _ctx.label,
+    modelValue: _ctx.modelValue,
+    id: _ctx.name,
+    class: "form-control"
+  }, _ctx.$attrs), null, _parent))
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_ErrorMessage, {
+    name: _ctx.name,
+    class: "text-danger"
+  }, null, _parent))
+  _push(`</div>`)
+}
+
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/reusable/AppFormField.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/reusable/AppFormField.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/vee-validate/dist/vee-validate.esm.js
+// Parents: 
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// - /plugins/validate.js ($id_eb85e80e)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// --------------------
+const $id_2387c42e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+/**
+  * vee-validate v4.5.8
+  * (c) 2022 Abdelrahman Awad
+  * @license MIT
+  */
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/index.js");
+
+
+function isCallable(fn) {
+    return typeof fn === 'function';
+}
+function isNullOrUndefined(value) {
+    return value === null || value === undefined;
+}
+const isObject = (obj) => obj !== null && !!obj && typeof obj === 'object' && !Array.isArray(obj);
+function isIndex(value) {
+    return Number(value) >= 0;
+}
+function toNumber(value) {
+    const n = parseFloat(value);
+    return isNaN(n) ? value : n;
+}
+
+const RULES = {};
+/**
+ * Adds a custom validator to the list of validation rules.
+ */
+function defineRule(id, validator) {
+    // makes sure new rules are properly formatted.
+    guardExtend(id, validator);
+    RULES[id] = validator;
+}
+/**
+ * Gets an already defined rule
+ */
+function resolveRule(id) {
+    return RULES[id];
+}
+/**
+ * Guards from extension violations.
+ */
+function guardExtend(id, validator) {
+    if (isCallable(validator)) {
+        return;
+    }
+    throw new Error(`Extension Error: The validator '${id}' must be a function.`);
+}
+
+const FormContextKey = Symbol('vee-validate-form');
+const FieldContextKey = Symbol('vee-validate-field-instance');
+const IS_ABSENT = Symbol('Default empty value');
+
+function isLocator(value) {
+    return isCallable(value) && !!value.__locatorRef;
+}
+/**
+ * Checks if an tag name is a native HTML tag and not a Vue component
+ */
+function isHTMLTag(tag) {
+    return ['input', 'textarea', 'select'].includes(tag);
+}
+/**
+ * Checks if an input is of type file
+ */
+function isFileInputNode(tag, attrs) {
+    return isHTMLTag(tag) && attrs.type === 'file';
+}
+function isYupValidator(value) {
+    return !!value && isCallable(value.validate);
+}
+function hasCheckedAttr(type) {
+    return type === 'checkbox' || type === 'radio';
+}
+function isContainerValue(value) {
+    return isObject(value) || Array.isArray(value);
+}
+/**
+ * True if the value is an empty object or array
+ */
+function isEmptyContainer(value) {
+    if (Array.isArray(value)) {
+        return value.length === 0;
+    }
+    return isObject(value) && Object.keys(value).length === 0;
+}
+/**
+ * Checks if the path opted out of nested fields using `[fieldName]` syntax
+ */
+function isNotNestedPath(path) {
+    return /^\[.+\]$/i.test(path);
+}
+/**
+ * Checks if an element is a native HTML5 multi-select input element
+ */
+function isNativeMultiSelect(el) {
+    return isNativeSelect(el) && el.multiple;
+}
+/**
+ * Checks if an element is a native HTML5 select input element
+ */
+function isNativeSelect(el) {
+    return el.tagName === 'SELECT';
+}
+/**
+ * Checks if a tag name with attrs object will render a native multi-select element
+ */
+function isNativeMultiSelectNode(tag, attrs) {
+    // The falsy value array is the values that Vue won't add the `multiple` prop if it has one of these values
+    const hasTruthyBindingValue = ![false, null, undefined, 0].includes(attrs.multiple) && !Number.isNaN(attrs.multiple);
+    return tag === 'select' && 'multiple' in attrs && hasTruthyBindingValue;
+}
+/**
+ * Checks if a node should have a `:value` binding or not
+ *
+ * These nodes should not have a value binding
+ * For files, because they are not reactive
+ * For multi-selects because the value binding will reset the value
+ */
+function shouldHaveValueBinding(tag, attrs) {
+    return isNativeMultiSelectNode(tag, attrs) || isFileInputNode(tag, attrs);
+}
+function isFormSubmitEvent(evt) {
+    return isEvent(evt) && evt.target && 'submit' in evt.target;
+}
+function isEvent(evt) {
+    if (!evt) {
+        return false;
+    }
+    if (typeof Event !== 'undefined' && isCallable(Event) && evt instanceof Event) {
+        return true;
+    }
+    // this is for IE and Cypress #3161
+    /* istanbul ignore next */
+    if (evt && evt.srcElement) {
+        return true;
+    }
+    return false;
+}
+function isPropPresent(obj, prop) {
+    return prop in obj && obj[prop] !== IS_ABSENT;
+}
+
+function cleanupNonNestedPath(path) {
+    if (isNotNestedPath(path)) {
+        return path.replace(/\[|\]/gi, '');
+    }
+    return path;
+}
+function getFromPath(object, path, fallback) {
+    if (!object) {
+        return fallback;
+    }
+    if (isNotNestedPath(path)) {
+        return object[cleanupNonNestedPath(path)];
+    }
+    const resolvedValue = (path || '')
+        .split(/\.|\[(\d+)\]/)
+        .filter(Boolean)
+        .reduce((acc, propKey) => {
+        if (isContainerValue(acc) && propKey in acc) {
+            return acc[propKey];
+        }
+        return fallback;
+    }, object);
+    return resolvedValue;
+}
+/**
+ * Sets a nested property value in a path, creates the path properties if it doesn't exist
+ */
+function setInPath(object, path, value) {
+    if (isNotNestedPath(path)) {
+        object[cleanupNonNestedPath(path)] = value;
+        return;
+    }
+    const keys = path.split(/\.|\[(\d+)\]/).filter(Boolean);
+    let acc = object;
+    for (let i = 0; i < keys.length; i++) {
+        // Last key, set it
+        if (i === keys.length - 1) {
+            acc[keys[i]] = value;
+            return;
+        }
+        // Key does not exist, create a container for it
+        if (!(keys[i] in acc) || isNullOrUndefined(acc[keys[i]])) {
+            // container can be either an object or an array depending on the next key if it exists
+            acc[keys[i]] = isIndex(keys[i + 1]) ? [] : {};
+        }
+        acc = acc[keys[i]];
+    }
+}
+function unset(object, key) {
+    if (Array.isArray(object) && isIndex(key)) {
+        object.splice(Number(key), 1);
+        return;
+    }
+    if (isObject(object)) {
+        delete object[key];
+    }
+}
+/**
+ * Removes a nested property from object
+ */
+function unsetPath(object, path) {
+    if (isNotNestedPath(path)) {
+        delete object[cleanupNonNestedPath(path)];
+        return;
+    }
+    const keys = path.split(/\.|\[(\d+)\]/).filter(Boolean);
+    let acc = object;
+    for (let i = 0; i < keys.length; i++) {
+        // Last key, unset it
+        if (i === keys.length - 1) {
+            unset(acc, keys[i]);
+            break;
+        }
+        // Key does not exist, exit
+        if (!(keys[i] in acc) || isNullOrUndefined(acc[keys[i]])) {
+            break;
+        }
+        acc = acc[keys[i]];
+    }
+    const pathValues = keys.map((_, idx) => {
+        return getFromPath(object, keys.slice(0, idx).join('.'));
+    });
+    for (let i = pathValues.length - 1; i >= 0; i--) {
+        if (!isEmptyContainer(pathValues[i])) {
+            continue;
+        }
+        if (i === 0) {
+            unset(object, keys[0]);
+            continue;
+        }
+        unset(pathValues[i - 1], keys[i - 1]);
+    }
+}
+/**
+ * A typed version of Object.keys
+ */
+function keysOf(record) {
+    return Object.keys(record);
+}
+// Uses same component provide as its own injections
+// Due to changes in https://github.com/vuejs/vue-next/pull/2424
+function injectWithSelf(symbol, def = undefined) {
+    const vm = __vite_ssr_import_0__.getCurrentInstance();
+    return (vm === null || vm === void 0 ? void 0 : vm.provides[symbol]) || __vite_ssr_import_0__.inject(symbol, def);
+}
+function warn(message) {
+    __vite_ssr_import_0__.warn(`[vee-validate]: ${message}`);
+}
+/**
+ * Ensures we deal with a singular field value
+ */
+function normalizeField(field) {
+    if (Array.isArray(field)) {
+        return field[0];
+    }
+    return field;
+}
+function resolveNextCheckboxValue(currentValue, checkedValue, uncheckedValue) {
+    if (Array.isArray(currentValue)) {
+        const newVal = [...currentValue];
+        const idx = newVal.indexOf(checkedValue);
+        idx >= 0 ? newVal.splice(idx, 1) : newVal.push(checkedValue);
+        return newVal;
+    }
+    return currentValue === checkedValue ? uncheckedValue : checkedValue;
+}
+/**
+ * Creates a throttled function that only invokes the provided function (`func`) at most once per within a given number of milliseconds
+ * (`limit`)
+ */
+function throttle(func, limit) {
+    let inThrottle;
+    let lastResult;
+    return function (...args) {
+        // eslint-disable-next-line @typescript-eslint/no-this-alias
+        const context = this;
+        if (!inThrottle) {
+            inThrottle = true;
+            setTimeout(() => (inThrottle = false), limit);
+            lastResult = func.apply(context, args);
+        }
+        return lastResult;
+    };
+}
+function debounceAsync(inner, ms = 0) {
+    let timer = null;
+    let resolves = [];
+    return function (...args) {
+        // Run the function after a certain amount of time
+        if (timer) {
+            window.clearTimeout(timer);
+        }
+        timer = window.setTimeout(() => {
+            // Get the result of the inner function, then apply it to the resolve function of
+            // each promise that has been created since the last time the inner function was run
+            const result = inner(...args);
+            resolves.forEach(r => r(result));
+            resolves = [];
+        }, ms);
+        return new Promise(resolve => resolves.push(resolve));
+    };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const normalizeChildren = (tag, context, slotProps) => {
+    if (!context.slots.default) {
+        return context.slots.default;
+    }
+    if (typeof tag === 'string' || !tag) {
+        return context.slots.default(slotProps());
+    }
+    return {
+        default: () => { var _a, _b; return (_b = (_a = context.slots).default) === null || _b === void 0 ? void 0 : _b.call(_a, slotProps()); },
+    };
+};
+/**
+ * Vue adds a `_value` prop at the moment on the input elements to store the REAL value on them, real values are different than the `value` attribute
+ * as they do not get casted to strings unlike `el.value` which preserves user-code behavior
+ */
+function getBoundValue(el) {
+    if (hasValueBinding(el)) {
+        return el._value;
+    }
+    return undefined;
+}
+/**
+ * Vue adds a `_value` prop at the moment on the input elements to store the REAL value on them, real values are different than the `value` attribute
+ * as they do not get casted to strings unlike `el.value` which preserves user-code behavior
+ */
+function hasValueBinding(el) {
+    return '_value' in el;
+}
+
+function normalizeEventValue(value) {
+    if (!isEvent(value)) {
+        return value;
+    }
+    const input = value.target;
+    // Vue sets the current bound value on `_value` prop
+    // for checkboxes it it should fetch the value binding type as is (boolean instead of string)
+    if (hasCheckedAttr(input.type) && hasValueBinding(input)) {
+        return getBoundValue(input);
+    }
+    if (input.type === 'file' && input.files) {
+        return Array.from(input.files);
+    }
+    if (isNativeMultiSelect(input)) {
+        return Array.from(input.options)
+            .filter(opt => opt.selected && !opt.disabled)
+            .map(getBoundValue);
+    }
+    // makes sure we get the actual `option` bound value
+    // #3440
+    if (isNativeSelect(input)) {
+        const selectedOption = Array.from(input.options).find(opt => opt.selected);
+        return selectedOption ? getBoundValue(selectedOption) : input.value;
+    }
+    return input.value;
+}
+
+/**
+ * Normalizes the given rules expression.
+ */
+function normalizeRules(rules) {
+    const acc = {};
+    Object.defineProperty(acc, '_$$isNormalized', {
+        value: true,
+        writable: false,
+        enumerable: false,
+        configurable: false,
+    });
+    if (!rules) {
+        return acc;
+    }
+    // Object is already normalized, skip.
+    if (isObject(rules) && rules._$$isNormalized) {
+        return rules;
+    }
+    if (isObject(rules)) {
+        return Object.keys(rules).reduce((prev, curr) => {
+            const params = normalizeParams(rules[curr]);
+            if (rules[curr] !== false) {
+                prev[curr] = buildParams(params);
+            }
+            return prev;
+        }, acc);
+    }
+    /* istanbul ignore if */
+    if (typeof rules !== 'string') {
+        return acc;
+    }
+    return rules.split('|').reduce((prev, rule) => {
+        const parsedRule = parseRule(rule);
+        if (!parsedRule.name) {
+            return prev;
+        }
+        prev[parsedRule.name] = buildParams(parsedRule.params);
+        return prev;
+    }, acc);
+}
+/**
+ * Normalizes a rule param.
+ */
+function normalizeParams(params) {
+    if (params === true) {
+        return [];
+    }
+    if (Array.isArray(params)) {
+        return params;
+    }
+    if (isObject(params)) {
+        return params;
+    }
+    return [params];
+}
+function buildParams(provided) {
+    const mapValueToLocator = (value) => {
+        // A target param using interpolation
+        if (typeof value === 'string' && value[0] === '@') {
+            return createLocator(value.slice(1));
+        }
+        return value;
+    };
+    if (Array.isArray(provided)) {
+        return provided.map(mapValueToLocator);
+    }
+    // #3073
+    if (provided instanceof RegExp) {
+        return [provided];
+    }
+    return Object.keys(provided).reduce((prev, key) => {
+        prev[key] = mapValueToLocator(provided[key]);
+        return prev;
+    }, {});
+}
+/**
+ * Parses a rule string expression.
+ */
+const parseRule = (rule) => {
+    let params = [];
+    const name = rule.split(':')[0];
+    if (rule.includes(':')) {
+        params = rule.split(':').slice(1).join(':').split(',');
+    }
+    return { name, params };
+};
+function createLocator(value) {
+    const locator = (crossTable) => {
+        const val = getFromPath(crossTable, value) || crossTable[value];
+        return val;
+    };
+    locator.__locatorRef = value;
+    return locator;
+}
+function extractLocators(params) {
+    if (Array.isArray(params)) {
+        return params.filter(isLocator);
+    }
+    return keysOf(params)
+        .filter(key => isLocator(params[key]))
+        .map(key => params[key]);
+}
+
+const DEFAULT_CONFIG = {
+    generateMessage: ({ field }) => `${field} is not valid.`,
+    bails: true,
+    validateOnBlur: true,
+    validateOnChange: true,
+    validateOnInput: false,
+    validateOnModelUpdate: true,
+};
+let currentConfig = Object.assign({}, DEFAULT_CONFIG);
+const getConfig = () => currentConfig;
+const setConfig = (newConf) => {
+    currentConfig = Object.assign(Object.assign({}, currentConfig), newConf);
+};
+const configure = setConfig;
+
+/**
+ * Validates a value against the rules.
+ */
+async function validate(value, rules, options = {}) {
+    const shouldBail = options === null || options === void 0 ? void 0 : options.bails;
+    const field = {
+        name: (options === null || options === void 0 ? void 0 : options.name) || '{field}',
+        rules,
+        bails: shouldBail !== null && shouldBail !== void 0 ? shouldBail : true,
+        formData: (options === null || options === void 0 ? void 0 : options.values) || {},
+    };
+    const result = await _validate(field, value);
+    const errors = result.errors;
+    return {
+        errors,
+        valid: !errors.length,
+    };
+}
+/**
+ * Starts the validation process.
+ */
+async function _validate(field, value) {
+    if (isYupValidator(field.rules)) {
+        return validateFieldWithYup(value, field.rules, { bails: field.bails });
+    }
+    // if a generic function, use it as the pipeline.
+    if (isCallable(field.rules)) {
+        const ctx = {
+            field: field.name,
+            form: field.formData,
+            value: value,
+        };
+        const result = await field.rules(value, ctx);
+        const isValid = typeof result !== 'string' && result;
+        const message = typeof result === 'string' ? result : _generateFieldError(ctx);
+        return {
+            errors: !isValid ? [message] : [],
+        };
+    }
+    const normalizedContext = Object.assign(Object.assign({}, field), { rules: normalizeRules(field.rules) });
+    const errors = [];
+    const rulesKeys = Object.keys(normalizedContext.rules);
+    const length = rulesKeys.length;
+    for (let i = 0; i < length; i++) {
+        const rule = rulesKeys[i];
+        const result = await _test(normalizedContext, value, {
+            name: rule,
+            params: normalizedContext.rules[rule],
+        });
+        if (result.error) {
+            errors.push(result.error);
+            if (field.bails) {
+                return {
+                    errors,
+                };
+            }
+        }
+    }
+    return {
+        errors,
+    };
+}
+/**
+ * Handles yup validation
+ */
+async function validateFieldWithYup(value, validator, opts) {
+    var _a;
+    const errors = await validator
+        .validate(value, {
+        abortEarly: (_a = opts.bails) !== null && _a !== void 0 ? _a : true,
+    })
+        .then(() => [])
+        .catch((err) => {
+        // Yup errors have a name prop one them.
+        // https://github.com/jquense/yup#validationerrorerrors-string--arraystring-value-any-path-string
+        if (err.name === 'ValidationError') {
+            return err.errors;
+        }
+        // re-throw the error so we don't hide it
+        throw err;
+    });
+    return {
+        errors,
+    };
+}
+/**
+ * Tests a single input value against a rule.
+ */
+async function _test(field, value, rule) {
+    const validator = resolveRule(rule.name);
+    if (!validator) {
+        throw new Error(`No such validator '${rule.name}' exists.`);
+    }
+    const params = fillTargetValues(rule.params, field.formData);
+    const ctx = {
+        field: field.name,
+        value,
+        form: field.formData,
+        rule: Object.assign(Object.assign({}, rule), { params }),
+    };
+    const result = await validator(value, params, ctx);
+    if (typeof result === 'string') {
+        return {
+            error: result,
+        };
+    }
+    return {
+        error: result ? undefined : _generateFieldError(ctx),
+    };
+}
+/**
+ * Generates error messages.
+ */
+function _generateFieldError(fieldCtx) {
+    const message = getConfig().generateMessage;
+    if (!message) {
+        return 'Field is invalid';
+    }
+    return message(fieldCtx);
+}
+function fillTargetValues(params, crossTable) {
+    const normalize = (value) => {
+        if (isLocator(value)) {
+            return value(crossTable);
+        }
+        return value;
+    };
+    if (Array.isArray(params)) {
+        return params.map(normalize);
+    }
+    return Object.keys(params).reduce((acc, param) => {
+        acc[param] = normalize(params[param]);
+        return acc;
+    }, {});
+}
+async function validateYupSchema(schema, values) {
+    const errorObjects = await schema
+        .validate(values, { abortEarly: false })
+        .then(() => [])
+        .catch((err) => {
+        // Yup errors have a name prop one them.
+        // https://github.com/jquense/yup#validationerrorerrors-string--arraystring-value-any-path-string
+        if (err.name !== 'ValidationError') {
+            throw err;
+        }
+        // list of aggregated errors
+        return err.inner || [];
+    });
+    const results = {};
+    const errors = {};
+    for (const error of errorObjects) {
+        const messages = error.errors;
+        results[error.path] = { valid: !messages.length, errors: messages };
+        if (messages.length) {
+            errors[error.path] = messages[0];
+        }
+    }
+    return {
+        valid: !errorObjects.length,
+        results,
+        errors,
+    };
+}
+async function validateObjectSchema(schema, values, opts) {
+    const paths = keysOf(schema);
+    const validations = paths.map(async (path) => {
+        var _a, _b, _c;
+        const fieldResult = await validate(getFromPath(values, path), schema[path], {
+            name: ((_a = opts === null || opts === void 0 ? void 0 : opts.names) === null || _a === void 0 ? void 0 : _a[path]) || path,
+            values: values,
+            bails: (_c = (_b = opts === null || opts === void 0 ? void 0 : opts.bailsMap) === null || _b === void 0 ? void 0 : _b[path]) !== null && _c !== void 0 ? _c : true,
+        });
+        return Object.assign(Object.assign({}, fieldResult), { path });
+    });
+    let isAllValid = true;
+    const validationResults = await Promise.all(validations);
+    const results = {};
+    const errors = {};
+    for (const result of validationResults) {
+        results[result.path] = {
+            valid: result.valid,
+            errors: result.errors,
+        };
+        if (!result.valid) {
+            isAllValid = false;
+            errors[result.path] = result.errors[0];
+        }
+    }
+    return {
+        valid: isAllValid,
+        results,
+        errors,
+    };
+}
+
+function set(obj, key, val) {
+	if (typeof val.value === 'object') val.value = klona(val.value);
+	if (!val.enumerable || val.get || val.set || !val.configurable || !val.writable || key === '__proto__') {
+		Object.defineProperty(obj, key, val);
+	} else obj[key] = val.value;
+}
+
+function klona(x) {
+	if (typeof x !== 'object') return x;
+
+	var i=0, k, list, tmp, str=Object.prototype.toString.call(x);
+
+	if (str === '[object Object]') {
+		tmp = Object.create(x.__proto__ || null);
+	} else if (str === '[object Array]') {
+		tmp = Array(x.length);
+	} else if (str === '[object Set]') {
+		tmp = new Set;
+		x.forEach(function (val) {
+			tmp.add(klona(val));
+		});
+	} else if (str === '[object Map]') {
+		tmp = new Map;
+		x.forEach(function (val, key) {
+			tmp.set(klona(key), klona(val));
+		});
+	} else if (str === '[object Date]') {
+		tmp = new Date(+x);
+	} else if (str === '[object RegExp]') {
+		tmp = new RegExp(x.source, x.flags);
+	} else if (str === '[object DataView]') {
+		tmp = new x.constructor( klona(x.buffer) );
+	} else if (str === '[object ArrayBuffer]') {
+		tmp = x.slice(0);
+	} else if (str.slice(-6) === 'Array]') {
+		// ArrayBuffer.isView(x)
+		// ~> `new` bcuz `Buffer.slice` => ref
+		tmp = new x.constructor(x);
+	}
+
+	if (tmp) {
+		for (list=Object.getOwnPropertySymbols(x); i < list.length; i++) {
+			set(tmp, list[i], Object.getOwnPropertyDescriptor(x, list[i]));
+		}
+
+		for (i=0, list=Object.getOwnPropertyNames(x); i < list.length; i++) {
+			if (Object.hasOwnProperty.call(tmp, k=list[i]) && tmp[k] === x[k]) continue;
+			set(tmp, k, Object.getOwnPropertyDescriptor(x, k));
+		}
+	}
+
+	return tmp || x;
+}
+
+var es6 = function equal(a, b) {
+  if (a === b) return true;
+
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    if (a.constructor !== b.constructor) return false;
+
+    var length, i, keys;
+    if (Array.isArray(a)) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (!equal(a[i], b[i])) return false;
+      return true;
+    }
+
+
+    if ((a instanceof Map) && (b instanceof Map)) {
+      if (a.size !== b.size) return false;
+      for (i of a.entries())
+        if (!b.has(i[0])) return false;
+      for (i of a.entries())
+        if (!equal(i[1], b.get(i[0]))) return false;
+      return true;
+    }
+
+    if ((a instanceof Set) && (b instanceof Set)) {
+      if (a.size !== b.size) return false;
+      for (i of a.entries())
+        if (!b.has(i[0])) return false;
+      return true;
+    }
+
+    if (ArrayBuffer.isView(a) && ArrayBuffer.isView(b)) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (a[i] !== b[i]) return false;
+      return true;
+    }
+
+
+    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+    if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+    if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+
+    keys = Object.keys(a);
+    length = keys.length;
+    if (length !== Object.keys(b).length) return false;
+
+    for (i = length; i-- !== 0;)
+      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+
+    for (i = length; i-- !== 0;) {
+      var key = keys[i];
+
+      if (!equal(a[key], b[key])) return false;
+    }
+
+    return true;
+  }
+
+  // true if both NaN, false otherwise
+  return a!==a && b!==b;
+};
+
+let ID_COUNTER = 0;
+function useFieldState(path, init) {
+    const { value, initialValue, setInitialValue } = _useFieldValue(path, init.modelValue, !init.standalone);
+    const { errorMessage, errors, setErrors } = _useFieldErrors(path, !init.standalone);
+    const meta = _useFieldMeta(value, initialValue, errors);
+    const id = ID_COUNTER >= Number.MAX_SAFE_INTEGER ? 0 : ++ID_COUNTER;
+    function setState(state) {
+        var _a;
+        if ('value' in state) {
+            value.value = state.value;
+        }
+        if ('errors' in state) {
+            setErrors(state.errors);
+        }
+        if ('touched' in state) {
+            meta.touched = (_a = state.touched) !== null && _a !== void 0 ? _a : meta.touched;
+        }
+        if ('initialValue' in state) {
+            setInitialValue(state.initialValue);
+        }
+    }
+    return {
+        id,
+        path,
+        value,
+        initialValue,
+        meta,
+        errors,
+        errorMessage,
+        setState,
+    };
+}
+/**
+ * Creates the field value and resolves the initial value
+ */
+function _useFieldValue(path, modelValue, shouldInjectForm) {
+    const form = shouldInjectForm ? injectWithSelf(FormContextKey, undefined) : undefined;
+    const modelRef = __vite_ssr_import_0__.ref(__vite_ssr_import_0__.unref(modelValue));
+    function resolveInitialValue() {
+        if (!form) {
+            return __vite_ssr_import_0__.unref(modelRef);
+        }
+        return getFromPath(form.meta.value.initialValues, __vite_ssr_import_0__.unref(path), __vite_ssr_import_0__.unref(modelRef));
+    }
+    function setInitialValue(value) {
+        if (!form) {
+            modelRef.value = value;
+            return;
+        }
+        form.setFieldInitialValue(__vite_ssr_import_0__.unref(path), value);
+    }
+    const initialValue = __vite_ssr_import_0__.computed(resolveInitialValue);
+    // if no form is associated, use a regular ref.
+    if (!form) {
+        const value = __vite_ssr_import_0__.ref(resolveInitialValue());
+        return {
+            value,
+            initialValue,
+            setInitialValue,
+        };
+    }
+    // to set the initial value, first check if there is a current value, if there is then use it.
+    // otherwise use the configured initial value if it exists.
+    // prioritize model value over form values
+    // #3429
+    const currentValue = modelValue ? __vite_ssr_import_0__.unref(modelValue) : getFromPath(form.values, __vite_ssr_import_0__.unref(path), __vite_ssr_import_0__.unref(initialValue));
+    form.stageInitialValue(__vite_ssr_import_0__.unref(path), currentValue);
+    // otherwise use a computed setter that triggers the `setFieldValue`
+    const value = __vite_ssr_import_0__.computed({
+        get() {
+            return getFromPath(form.values, __vite_ssr_import_0__.unref(path));
+        },
+        set(newVal) {
+            form.setFieldValue(__vite_ssr_import_0__.unref(path), newVal);
+        },
+    });
+    return {
+        value,
+        initialValue,
+        setInitialValue,
+    };
+}
+/**
+ * Creates meta flags state and some associated effects with them
+ */
+function _useFieldMeta(currentValue, initialValue, errors) {
+    const meta = __vite_ssr_import_0__.reactive({
+        touched: false,
+        pending: false,
+        valid: true,
+        validated: !!__vite_ssr_import_0__.unref(errors).length,
+        initialValue: __vite_ssr_import_0__.computed(() => __vite_ssr_import_0__.unref(initialValue)),
+        dirty: __vite_ssr_import_0__.computed(() => {
+            return !es6(__vite_ssr_import_0__.unref(currentValue), __vite_ssr_import_0__.unref(initialValue));
+        }),
+    });
+    __vite_ssr_import_0__.watch(errors, value => {
+        meta.valid = !value.length;
+    }, {
+        immediate: true,
+        flush: 'sync',
+    });
+    return meta;
+}
+/**
+ * Creates the error message state for the field state
+ */
+function _useFieldErrors(path, shouldInjectForm) {
+    const form = shouldInjectForm ? injectWithSelf(FormContextKey, undefined) : undefined;
+    function normalizeErrors(messages) {
+        if (!messages) {
+            return [];
+        }
+        return Array.isArray(messages) ? messages : [messages];
+    }
+    if (!form) {
+        const errors = __vite_ssr_import_0__.ref([]);
+        return {
+            errors,
+            errorMessage: __vite_ssr_import_0__.computed(() => errors.value[0]),
+            setErrors: (messages) => {
+                errors.value = normalizeErrors(messages);
+            },
+        };
+    }
+    const errors = __vite_ssr_import_0__.computed(() => form.errorBag.value[__vite_ssr_import_0__.unref(path)] || []);
+    return {
+        errors,
+        errorMessage: __vite_ssr_import_0__.computed(() => errors.value[0]),
+        setErrors: (messages) => {
+            form.setFieldErrorBag(__vite_ssr_import_0__.unref(path), normalizeErrors(messages));
+        },
+    };
+}
+
+function installDevtoolsPlugin(app) {
+    if (("development" !== 'production')) {
+        __vite_ssr_import_1__.setupDevtoolsPlugin({
+            id: 'vee-validate-devtools-plugin',
+            label: 'VeeValidate Plugin',
+            packageName: 'vee-validate',
+            homepage: 'https://vee-validate.logaretm.com/v4',
+            app,
+            logo: 'https://vee-validate.logaretm.com/v4/logo.png',
+        }, setupApiHooks);
+    }
+}
+const DEVTOOLS_FORMS = {};
+const DEVTOOLS_FIELDS = {};
+let API;
+const refreshInspector = throttle(() => {
+    setTimeout(async () => {
+        await __vite_ssr_import_0__.nextTick();
+        API === null || API === void 0 ? void 0 : API.sendInspectorState(INSPECTOR_ID);
+        API === null || API === void 0 ? void 0 : API.sendInspectorTree(INSPECTOR_ID);
+    }, 100);
+}, 100);
+function registerFormWithDevTools(form) {
+    const vm = __vite_ssr_import_0__.getCurrentInstance();
+    if (!API) {
+        const app = vm === null || vm === void 0 ? void 0 : vm.appContext.app;
+        if (!app) {
+            return;
+        }
+        installDevtoolsPlugin(app);
+    }
+    DEVTOOLS_FORMS[form.formId] = Object.assign({}, form);
+    DEVTOOLS_FORMS[form.formId]._vm = vm;
+    __vite_ssr_import_0__.onUnmounted(() => {
+        delete DEVTOOLS_FORMS[form.formId];
+        refreshInspector();
+    });
+    refreshInspector();
+}
+function registerSingleFieldWithDevtools(field) {
+    const vm = __vite_ssr_import_0__.getCurrentInstance();
+    if (!API) {
+        const app = vm === null || vm === void 0 ? void 0 : vm.appContext.app;
+        if (!app) {
+            return;
+        }
+        installDevtoolsPlugin(app);
+    }
+    DEVTOOLS_FIELDS[field.id] = Object.assign({}, field);
+    DEVTOOLS_FIELDS[field.id]._vm = vm;
+    __vite_ssr_import_0__.onUnmounted(() => {
+        delete DEVTOOLS_FIELDS[field.id];
+        refreshInspector();
+    });
+    refreshInspector();
+}
+const INSPECTOR_ID = 'vee-validate-inspector';
+const COLORS = {
+    error: 0xbd4b4b,
+    success: 0x06d77b,
+    unknown: 0x54436b,
+    white: 0xffffff,
+    black: 0x000000,
+    blue: 0x035397,
+    purple: 0xb980f0,
+    orange: 0xf5a962,
+    gray: 0xbbbfca,
+};
+let SELECTED_NODE = null;
+function setupApiHooks(api) {
+    API = api;
+    api.addInspector({
+        id: INSPECTOR_ID,
+        icon: 'rule',
+        label: 'vee-validate',
+        noSelectionText: 'Select a vee-validate node to inspect',
+        actions: [
+            {
+                icon: 'done_outline',
+                tooltip: 'Validate selected item',
+                action: async () => {
+                    if (!SELECTED_NODE) {
+                        console.error('There is not a valid selected vee-validate node or component');
+                        return;
+                    }
+                    const result = await SELECTED_NODE.validate();
+                    console.log(result);
+                },
+            },
+            {
+                icon: 'delete_sweep',
+                tooltip: 'Clear validation state of the selected item',
+                action: () => {
+                    if (!SELECTED_NODE) {
+                        console.error('There is not a valid selected vee-validate node or component');
+                        return;
+                    }
+                    if ('id' in SELECTED_NODE) {
+                        SELECTED_NODE.resetField();
+                        return;
+                    }
+                    SELECTED_NODE.resetForm();
+                },
+            },
+        ],
+    });
+    api.on.getInspectorTree(payload => {
+        if (payload.inspectorId !== INSPECTOR_ID) {
+            return;
+        }
+        const forms = Object.values(DEVTOOLS_FORMS);
+        const fields = Object.values(DEVTOOLS_FIELDS);
+        payload.rootNodes = [
+            ...forms.map(mapFormForDevtoolsInspector),
+            ...fields.map(field => mapFieldForDevtoolsInspector(field)),
+        ];
+    });
+    api.on.getInspectorState((payload, ctx) => {
+        if (payload.inspectorId !== INSPECTOR_ID || ctx.currentTab !== `custom-inspector:${INSPECTOR_ID}`) {
+            return;
+        }
+        const { form, field, type } = decodeNodeId(payload.nodeId);
+        if (form && type === 'form') {
+            payload.state = buildFormState(form);
+            SELECTED_NODE = form;
+            return;
+        }
+        if (field && type === 'field') {
+            payload.state = buildFieldState(field);
+            SELECTED_NODE = field;
+            return;
+        }
+        SELECTED_NODE = null;
+    });
+}
+function mapFormForDevtoolsInspector(form) {
+    const { textColor, bgColor } = getTagTheme(form);
+    const formTreeNodes = {};
+    Object.values(form.fieldsByPath.value).forEach(field => {
+        const fieldInstance = Array.isArray(field) ? field[0] : field;
+        if (!fieldInstance) {
+            return;
+        }
+        setInPath(formTreeNodes, __vite_ssr_import_0__.unref(fieldInstance.name), mapFieldForDevtoolsInspector(fieldInstance, form));
+    });
+    function buildFormTree(tree, path = []) {
+        const key = [...path].pop();
+        if ('id' in tree) {
+            return Object.assign(Object.assign({}, tree), { label: key || tree.label });
+        }
+        if (isObject(tree)) {
+            return {
+                id: `${path.join('.')}`,
+                label: key || '',
+                children: Object.keys(tree).map(key => buildFormTree(tree[key], [...path, key])),
+            };
+        }
+        if (Array.isArray(tree)) {
+            return {
+                id: `${path.join('.')}`,
+                label: `${key}[]`,
+                children: tree.map((c, idx) => buildFormTree(c, [...path, String(idx)])),
+            };
+        }
+        return { id: '', label: '', children: [] };
+    }
+    const { children } = buildFormTree(formTreeNodes);
+    return {
+        id: encodeNodeId(form),
+        label: 'Form',
+        children,
+        tags: [
+            {
+                label: 'Form',
+                textColor,
+                backgroundColor: bgColor,
+            },
+            {
+                label: `${Object.keys(form.fieldsByPath.value).length} fields`,
+                textColor: COLORS.white,
+                backgroundColor: COLORS.unknown,
+            },
+        ],
+    };
+}
+function mapFieldForDevtoolsInspector(field, form) {
+    const fieldInstance = normalizeField(field);
+    const { textColor, bgColor } = getTagTheme(fieldInstance);
+    const isGroup = Array.isArray(field) && field.length > 1;
+    return {
+        id: encodeNodeId(form, fieldInstance, !isGroup),
+        label: __vite_ssr_import_0__.unref(fieldInstance.name),
+        children: Array.isArray(field) ? field.map(fieldItem => mapFieldForDevtoolsInspector(fieldItem, form)) : undefined,
+        tags: [
+            isGroup
+                ? undefined
+                : {
+                    label: 'Field',
+                    textColor,
+                    backgroundColor: bgColor,
+                },
+            !form
+                ? {
+                    label: 'Standalone',
+                    textColor: COLORS.black,
+                    backgroundColor: COLORS.gray,
+                }
+                : undefined,
+            !isGroup && fieldInstance.type === 'checkbox'
+                ? {
+                    label: 'Checkbox',
+                    textColor: COLORS.white,
+                    backgroundColor: COLORS.blue,
+                }
+                : undefined,
+            !isGroup && fieldInstance.type === 'radio'
+                ? {
+                    label: 'Radio',
+                    textColor: COLORS.white,
+                    backgroundColor: COLORS.purple,
+                }
+                : undefined,
+            isGroup
+                ? {
+                    label: 'Group',
+                    textColor: COLORS.black,
+                    backgroundColor: COLORS.orange,
+                }
+                : undefined,
+        ].filter(Boolean),
+    };
+}
+function encodeNodeId(form, field, encodeIndex = true) {
+    const fieldPath = form ? __vite_ssr_import_0__.unref(field === null || field === void 0 ? void 0 : field.name) : field === null || field === void 0 ? void 0 : field.id;
+    const fieldGroup = fieldPath ? form === null || form === void 0 ? void 0 : form.fieldsByPath.value[fieldPath] : undefined;
+    let idx;
+    if (encodeIndex && field && Array.isArray(fieldGroup)) {
+        idx = fieldGroup.indexOf(field);
+    }
+    const idObject = { f: form === null || form === void 0 ? void 0 : form.formId, ff: fieldPath, idx, type: field ? 'field' : 'form' };
+    return btoa(JSON.stringify(idObject));
+}
+function decodeNodeId(nodeId) {
+    try {
+        const idObject = JSON.parse(atob(nodeId));
+        const form = DEVTOOLS_FORMS[idObject.f];
+        if (!form && idObject.ff) {
+            const field = DEVTOOLS_FIELDS[idObject.ff];
+            if (!field) {
+                return {};
+            }
+            return {
+                type: idObject.type,
+                field,
+            };
+        }
+        if (!form) {
+            return {};
+        }
+        const fieldGroup = form.fieldsByPath.value[idObject.ff];
+        return {
+            type: idObject.type,
+            form,
+            field: Array.isArray(fieldGroup) ? fieldGroup[idObject.idx || 0] : fieldGroup,
+        };
+    }
+    catch (err) {
+        // console.error(`Devtools: [vee-validate] Failed to parse node id ${nodeId}`);
+    }
+    return {};
+}
+function buildFieldState(field) {
+    const { errors, meta, value } = field;
+    return {
+        'Field state': [
+            { key: 'errors', value: errors.value },
+            {
+                key: 'initialValue',
+                value: meta.initialValue,
+            },
+            {
+                key: 'currentValue',
+                value: value.value,
+            },
+            {
+                key: 'touched',
+                value: meta.touched,
+            },
+            {
+                key: 'dirty',
+                value: meta.dirty,
+            },
+            {
+                key: 'valid',
+                value: meta.valid,
+            },
+        ],
+    };
+}
+function buildFormState(form) {
+    const { errorBag, meta, values, isSubmitting, submitCount } = form;
+    return {
+        'Form state': [
+            {
+                key: 'submitCount',
+                value: submitCount.value,
+            },
+            {
+                key: 'isSubmitting',
+                value: isSubmitting.value,
+            },
+            {
+                key: 'touched',
+                value: meta.value.touched,
+            },
+            {
+                key: 'dirty',
+                value: meta.value.dirty,
+            },
+            {
+                key: 'valid',
+                value: meta.value.valid,
+            },
+            {
+                key: 'initialValues',
+                value: meta.value.initialValues,
+            },
+            {
+                key: 'currentValues',
+                value: values,
+            },
+            {
+                key: 'errors',
+                value: keysOf(errorBag.value).reduce((acc, key) => {
+                    var _a;
+                    const message = (_a = errorBag.value[key]) === null || _a === void 0 ? void 0 : _a[0];
+                    if (message) {
+                        acc[key] = message;
+                    }
+                    return acc;
+                }, {}),
+            },
+        ],
+    };
+}
+/**
+ * Resolves the tag color based on the form state
+ */
+function getTagTheme(fieldOrForm) {
+    // const fallbackColors = {
+    //   bgColor: COLORS.unknown,
+    //   textColor: COLORS.white,
+    // };
+    const isValid = 'id' in fieldOrForm ? fieldOrForm.meta.valid : fieldOrForm.meta.value.valid;
+    return {
+        bgColor: isValid ? COLORS.success : COLORS.error,
+        textColor: isValid ? COLORS.black : COLORS.white,
+    };
+}
+
+/**
+ * Creates a field composite.
+ */
+function useField(name, rules, opts) {
+    if (hasCheckedAttr(opts === null || opts === void 0 ? void 0 : opts.type)) {
+        return useCheckboxField(name, rules, opts);
+    }
+    return _useField(name, rules, opts);
+}
+function _useField(name, rules, opts) {
+    const { initialValue: modelValue, validateOnMount, bails, type, checkedValue, label, validateOnValueUpdate, uncheckedValue, standalone, } = normalizeOptions(__vite_ssr_import_0__.unref(name), opts);
+    const form = !standalone ? injectWithSelf(FormContextKey) : undefined;
+    const { id, value, initialValue, meta, setState, errors, errorMessage } = useFieldState(name, {
+        modelValue,
+        standalone,
+    });
+    /**
+     * Handles common onBlur meta update
+     */
+    const handleBlur = () => {
+        meta.touched = true;
+    };
+    const normalizedRules = __vite_ssr_import_0__.computed(() => {
+        let rulesValue = __vite_ssr_import_0__.unref(rules);
+        const schema = __vite_ssr_import_0__.unref(form === null || form === void 0 ? void 0 : form.schema);
+        if (schema && !isYupValidator(schema)) {
+            rulesValue = extractRuleFromSchema(schema, __vite_ssr_import_0__.unref(name)) || rulesValue;
+        }
+        if (isYupValidator(rulesValue) || isCallable(rulesValue)) {
+            return rulesValue;
+        }
+        return normalizeRules(rulesValue);
+    });
+    async function validateCurrentValue(mode) {
+        var _a, _b;
+        if (form === null || form === void 0 ? void 0 : form.validateSchema) {
+            return (_a = (await form.validateSchema(mode)).results[__vite_ssr_import_0__.unref(name)]) !== null && _a !== void 0 ? _a : { valid: true, errors: [] };
+        }
+        return validate(value.value, normalizedRules.value, {
+            name: __vite_ssr_import_0__.unref(label) || __vite_ssr_import_0__.unref(name),
+            values: (_b = form === null || form === void 0 ? void 0 : form.values) !== null && _b !== void 0 ? _b : {},
+            bails,
+        });
+    }
+    async function validateWithStateMutation() {
+        meta.pending = true;
+        meta.validated = true;
+        const result = await validateCurrentValue('validated-only');
+        setState({ errors: result.errors });
+        meta.pending = false;
+        return result;
+    }
+    async function validateValidStateOnly() {
+        const result = await validateCurrentValue('silent');
+        meta.valid = result.valid;
+        return result;
+    }
+    function validate$1(opts) {
+        if (!(opts === null || opts === void 0 ? void 0 : opts.mode) || (opts === null || opts === void 0 ? void 0 : opts.mode) === 'force') {
+            return validateWithStateMutation();
+        }
+        if ((opts === null || opts === void 0 ? void 0 : opts.mode) === 'validated-only') {
+            return validateWithStateMutation();
+        }
+        return validateValidStateOnly();
+    }
+    // Common input/change event handler
+    const handleChange = (e, shouldValidate = true) => {
+        const newValue = normalizeEventValue(e);
+        value.value = newValue;
+        if (!validateOnValueUpdate && shouldValidate) {
+            validateWithStateMutation();
+        }
+    };
+    // Runs the initial validation
+    __vite_ssr_import_0__.onMounted(() => {
+        if (validateOnMount) {
+            return validateWithStateMutation();
+        }
+        // validate self initially if no form was handling this
+        // forms should have their own initial silent validation run to make things more efficient
+        if (!form || !form.validateSchema) {
+            validateValidStateOnly();
+        }
+    });
+    function setTouched(isTouched) {
+        meta.touched = isTouched;
+    }
+    let unwatchValue;
+    function watchValue() {
+        unwatchValue = __vite_ssr_import_0__.watch(value, validateOnValueUpdate ? validateWithStateMutation : validateValidStateOnly, {
+            deep: true,
+        });
+    }
+    watchValue();
+    function resetField(state) {
+        var _a;
+        unwatchValue === null || unwatchValue === void 0 ? void 0 : unwatchValue();
+        const newValue = state && 'value' in state ? state.value : initialValue.value;
+        setState({
+            value: klona(newValue),
+            initialValue: klona(newValue),
+            touched: (_a = state === null || state === void 0 ? void 0 : state.touched) !== null && _a !== void 0 ? _a : false,
+            errors: (state === null || state === void 0 ? void 0 : state.errors) || [],
+        });
+        meta.pending = false;
+        meta.validated = false;
+        validateValidStateOnly();
+        // need to watch at next tick to avoid triggering the value watcher
+        __vite_ssr_import_0__.nextTick(() => {
+            watchValue();
+        });
+    }
+    function setValue(newValue) {
+        value.value = newValue;
+    }
+    function setErrors(errors) {
+        setState({ errors: Array.isArray(errors) ? errors : [errors] });
+    }
+    const field = {
+        id,
+        name,
+        label,
+        value,
+        meta,
+        errors,
+        errorMessage,
+        type,
+        checkedValue,
+        uncheckedValue,
+        bails,
+        resetField,
+        handleReset: () => resetField(),
+        validate: validate$1,
+        handleChange,
+        handleBlur,
+        setState,
+        setTouched,
+        setErrors,
+        setValue,
+    };
+    __vite_ssr_import_0__.provide(FieldContextKey, field);
+    if (__vite_ssr_import_0__.isRef(rules) && typeof __vite_ssr_import_0__.unref(rules) !== 'function') {
+        __vite_ssr_import_0__.watch(rules, (value, oldValue) => {
+            if (es6(value, oldValue)) {
+                return;
+            }
+            meta.validated ? validateWithStateMutation() : validateValidStateOnly();
+        }, {
+            deep: true,
+        });
+    }
+    if (("development" !== 'production')) {
+        field._vm = __vite_ssr_import_0__.getCurrentInstance();
+        __vite_ssr_import_0__.watch(() => (Object.assign(Object.assign({ errors: errors.value }, meta), { value: value.value })), refreshInspector, {
+            deep: true,
+        });
+        if (!form) {
+            registerSingleFieldWithDevtools(field);
+        }
+    }
+    // if no associated form return the field API immediately
+    if (!form) {
+        return field;
+    }
+    // associate the field with the given form
+    form.register(field);
+    __vite_ssr_import_0__.onBeforeUnmount(() => {
+        form.unregister(field);
+    });
+    // extract cross-field dependencies in a computed prop
+    const dependencies = __vite_ssr_import_0__.computed(() => {
+        const rulesVal = normalizedRules.value;
+        // is falsy, a function schema or a yup schema
+        if (!rulesVal || isCallable(rulesVal) || isYupValidator(rulesVal)) {
+            return {};
+        }
+        return Object.keys(rulesVal).reduce((acc, rule) => {
+            const deps = extractLocators(rulesVal[rule])
+                .map((dep) => dep.__locatorRef)
+                .reduce((depAcc, depName) => {
+                const depValue = getFromPath(form.values, depName) || form.values[depName];
+                if (depValue !== undefined) {
+                    depAcc[depName] = depValue;
+                }
+                return depAcc;
+            }, {});
+            Object.assign(acc, deps);
+            return acc;
+        }, {});
+    });
+    // Adds a watcher that runs the validation whenever field dependencies change
+    __vite_ssr_import_0__.watch(dependencies, (deps, oldDeps) => {
+        // Skip if no dependencies or if the field wasn't manipulated
+        if (!Object.keys(deps).length) {
+            return;
+        }
+        const shouldValidate = !es6(deps, oldDeps);
+        if (shouldValidate) {
+            meta.validated ? validateWithStateMutation() : validateValidStateOnly();
+        }
+    });
+    return field;
+}
+/**
+ * Normalizes partial field options to include the full options
+ */
+function normalizeOptions(name, opts) {
+    const defaults = () => ({
+        initialValue: undefined,
+        validateOnMount: false,
+        bails: true,
+        rules: '',
+        label: name,
+        validateOnValueUpdate: true,
+        standalone: false,
+    });
+    if (!opts) {
+        return defaults();
+    }
+    // TODO: Deprecate this in next major release
+    const checkedValue = 'valueProp' in opts ? opts.valueProp : opts.checkedValue;
+    return Object.assign(Object.assign(Object.assign({}, defaults()), (opts || {})), { checkedValue });
+}
+/**
+ * Extracts the validation rules from a schema
+ */
+function extractRuleFromSchema(schema, fieldName) {
+    // no schema at all
+    if (!schema) {
+        return undefined;
+    }
+    // there is a key on the schema object for this field
+    return schema[fieldName];
+}
+function useCheckboxField(name, rules, opts) {
+    const form = !(opts === null || opts === void 0 ? void 0 : opts.standalone) ? injectWithSelf(FormContextKey) : undefined;
+    const checkedValue = opts === null || opts === void 0 ? void 0 : opts.checkedValue;
+    const uncheckedValue = opts === null || opts === void 0 ? void 0 : opts.uncheckedValue;
+    function patchCheckboxApi(field) {
+        const handleChange = field.handleChange;
+        const checked = __vite_ssr_import_0__.computed(() => {
+            const currentValue = __vite_ssr_import_0__.unref(field.value);
+            const checkedVal = __vite_ssr_import_0__.unref(checkedValue);
+            return Array.isArray(currentValue) ? currentValue.includes(checkedVal) : checkedVal === currentValue;
+        });
+        function handleCheckboxChange(e, shouldValidate = true) {
+            var _a, _b;
+            if (checked.value === ((_b = (_a = e) === null || _a === void 0 ? void 0 : _a.target) === null || _b === void 0 ? void 0 : _b.checked)) {
+                return;
+            }
+            let newValue = normalizeEventValue(e);
+            // Single checkbox field without a form to toggle it's value
+            if (!form) {
+                newValue = resolveNextCheckboxValue(__vite_ssr_import_0__.unref(field.value), __vite_ssr_import_0__.unref(checkedValue), __vite_ssr_import_0__.unref(uncheckedValue));
+            }
+            handleChange(newValue, shouldValidate);
+        }
+        __vite_ssr_import_0__.onBeforeUnmount(() => {
+            // toggles the checkbox value if it was checked
+            if (checked.value) {
+                handleCheckboxChange(__vite_ssr_import_0__.unref(checkedValue), false);
+            }
+        });
+        return Object.assign(Object.assign({}, field), { checked,
+            checkedValue,
+            uncheckedValue, handleChange: handleCheckboxChange });
+    }
+    return patchCheckboxApi(_useField(name, rules, opts));
+}
+
+const FieldImpl = __vite_ssr_import_0__.defineComponent({
+    name: 'Field',
+    inheritAttrs: false,
+    props: {
+        as: {
+            type: [String, Object],
+            default: undefined,
+        },
+        name: {
+            type: String,
+            required: true,
+        },
+        rules: {
+            type: [Object, String, Function],
+            default: undefined,
+        },
+        validateOnMount: {
+            type: Boolean,
+            default: false,
+        },
+        validateOnBlur: {
+            type: Boolean,
+            default: undefined,
+        },
+        validateOnChange: {
+            type: Boolean,
+            default: undefined,
+        },
+        validateOnInput: {
+            type: Boolean,
+            default: undefined,
+        },
+        validateOnModelUpdate: {
+            type: Boolean,
+            default: undefined,
+        },
+        bails: {
+            type: Boolean,
+            default: () => getConfig().bails,
+        },
+        label: {
+            type: String,
+            default: undefined,
+        },
+        uncheckedValue: {
+            type: null,
+            default: undefined,
+        },
+        modelValue: {
+            type: null,
+            default: IS_ABSENT,
+        },
+        modelModifiers: {
+            type: null,
+            default: () => ({}),
+        },
+        'onUpdate:modelValue': {
+            type: null,
+            default: undefined,
+        },
+        standalone: {
+            type: Boolean,
+            default: false,
+        },
+    },
+    setup(props, ctx) {
+        const rules = __vite_ssr_import_0__.toRef(props, 'rules');
+        const name = __vite_ssr_import_0__.toRef(props, 'name');
+        const label = __vite_ssr_import_0__.toRef(props, 'label');
+        const uncheckedValue = __vite_ssr_import_0__.toRef(props, 'uncheckedValue');
+        const hasModelEvents = isPropPresent(props, 'onUpdate:modelValue');
+        const { errors, value, errorMessage, validate: validateField, handleChange, handleBlur, setTouched, resetField, handleReset, meta, checked, setErrors, } = useField(name, rules, {
+            validateOnMount: props.validateOnMount,
+            bails: props.bails,
+            standalone: props.standalone,
+            type: ctx.attrs.type,
+            initialValue: resolveInitialValue(props, ctx),
+            // Only for checkboxes and radio buttons
+            checkedValue: ctx.attrs.value,
+            uncheckedValue,
+            label,
+            validateOnValueUpdate: false,
+        });
+        // If there is a v-model applied on the component we need to emit the `update:modelValue` whenever the value binding changes
+        const onChangeHandler = hasModelEvents
+            ? function handleChangeWithModel(e, shouldValidate = true) {
+                handleChange(e, shouldValidate);
+                ctx.emit('update:modelValue', value.value);
+            }
+            : handleChange;
+        const handleInput = (e) => {
+            if (!hasCheckedAttr(ctx.attrs.type)) {
+                value.value = normalizeEventValue(e);
+            }
+        };
+        const onInputHandler = hasModelEvents
+            ? function handleInputWithModel(e) {
+                handleInput(e);
+                ctx.emit('update:modelValue', value.value);
+            }
+            : handleInput;
+        const fieldProps = __vite_ssr_import_0__.computed(() => {
+            const { validateOnInput, validateOnChange, validateOnBlur, validateOnModelUpdate } = resolveValidationTriggers(props);
+            const baseOnBlur = [handleBlur, ctx.attrs.onBlur, validateOnBlur ? validateField : undefined].filter(Boolean);
+            const baseOnInput = [(e) => onChangeHandler(e, validateOnInput), ctx.attrs.onInput].filter(Boolean);
+            const baseOnChange = [(e) => onChangeHandler(e, validateOnChange), ctx.attrs.onChange].filter(Boolean);
+            const attrs = {
+                name: props.name,
+                onBlur: baseOnBlur,
+                onInput: baseOnInput,
+                onChange: baseOnChange,
+            };
+            attrs['onUpdate:modelValue'] = e => onChangeHandler(e, validateOnModelUpdate);
+            if (hasCheckedAttr(ctx.attrs.type) && checked) {
+                attrs.checked = checked.value;
+            }
+            else {
+                attrs.value = value.value;
+            }
+            const tag = resolveTag(props, ctx);
+            if (shouldHaveValueBinding(tag, ctx.attrs)) {
+                delete attrs.value;
+            }
+            return attrs;
+        });
+        const modelValue = __vite_ssr_import_0__.toRef(props, 'modelValue');
+        __vite_ssr_import_0__.watch(modelValue, newModelValue => {
+            // Don't attempt to sync absent values
+            if (newModelValue === IS_ABSENT && value.value === undefined) {
+                return;
+            }
+            if (newModelValue !== applyModifiers(value.value, props.modelModifiers)) {
+                value.value = newModelValue === IS_ABSENT ? undefined : newModelValue;
+                validateField();
+            }
+        });
+        function slotProps() {
+            return {
+                field: fieldProps.value,
+                value: value.value,
+                meta,
+                errors: errors.value,
+                errorMessage: errorMessage.value,
+                validate: validateField,
+                resetField,
+                handleChange: onChangeHandler,
+                handleInput: onInputHandler,
+                handleReset,
+                handleBlur,
+                setTouched,
+                setErrors,
+            };
+        }
+        ctx.expose({
+            setErrors,
+            setTouched,
+            reset: resetField,
+            validate: validateField,
+            handleChange,
+        });
+        return () => {
+            const tag = __vite_ssr_import_0__.resolveDynamicComponent(resolveTag(props, ctx));
+            const children = normalizeChildren(tag, ctx, slotProps);
+            if (tag) {
+                return __vite_ssr_import_0__.h(tag, Object.assign(Object.assign({}, ctx.attrs), fieldProps.value), children);
+            }
+            return children;
+        };
+    },
+});
+function resolveTag(props, ctx) {
+    let tag = props.as || '';
+    if (!props.as && !ctx.slots.default) {
+        tag = 'input';
+    }
+    return tag;
+}
+function resolveValidationTriggers(props) {
+    var _a, _b, _c, _d;
+    const { validateOnInput, validateOnChange, validateOnBlur, validateOnModelUpdate } = getConfig();
+    return {
+        validateOnInput: (_a = props.validateOnInput) !== null && _a !== void 0 ? _a : validateOnInput,
+        validateOnChange: (_b = props.validateOnChange) !== null && _b !== void 0 ? _b : validateOnChange,
+        validateOnBlur: (_c = props.validateOnBlur) !== null && _c !== void 0 ? _c : validateOnBlur,
+        validateOnModelUpdate: (_d = props.validateOnModelUpdate) !== null && _d !== void 0 ? _d : validateOnModelUpdate,
+    };
+}
+function applyModifiers(value, modifiers) {
+    if (modifiers.number) {
+        return toNumber(value);
+    }
+    return value;
+}
+function resolveInitialValue(props, ctx) {
+    // Gets the initial value either from `value` prop/attr or `v-model` binding (modelValue)
+    // For checkboxes and radio buttons it will always be the model value not the `value` attribute
+    if (!hasCheckedAttr(ctx.attrs.type)) {
+        return isPropPresent(props, 'modelValue') ? props.modelValue : ctx.attrs.value;
+    }
+    return isPropPresent(props, 'modelValue') ? props.modelValue : undefined;
+}
+const Field = FieldImpl;
+
+let FORM_COUNTER = 0;
+function useForm(opts) {
+    const formId = FORM_COUNTER++;
+    // Prevents fields from double resetting their values, which causes checkboxes to toggle their initial value
+    // TODO: This won't be needed if we centralize all the state inside the `form` for form inputs
+    let RESET_LOCK = false;
+    // A lookup containing fields or field groups
+    const fieldsByPath = __vite_ssr_import_0__.ref({});
+    // If the form is currently submitting
+    const isSubmitting = __vite_ssr_import_0__.ref(false);
+    // The number of times the user tried to submit the form
+    const submitCount = __vite_ssr_import_0__.ref(0);
+    // dictionary for field arrays to receive various signals like reset
+    const fieldArraysLookup = {};
+    // a private ref for all form values
+    const formValues = __vite_ssr_import_0__.reactive(klona(__vite_ssr_import_0__.unref(opts === null || opts === void 0 ? void 0 : opts.initialValues) || {}));
+    // the source of errors for the form fields
+    const { errorBag, setErrorBag, setFieldErrorBag } = useErrorBag(opts === null || opts === void 0 ? void 0 : opts.initialErrors);
+    // Gets the first error of each field
+    const errors = __vite_ssr_import_0__.computed(() => {
+        return keysOf(errorBag.value).reduce((acc, key) => {
+            const bag = errorBag.value[key];
+            if (bag && bag.length) {
+                acc[key] = bag[0];
+            }
+            return acc;
+        }, {});
+    });
+    function getFirstFieldAtPath(path) {
+        const fieldOrGroup = fieldsByPath.value[path];
+        return Array.isArray(fieldOrGroup) ? fieldOrGroup[0] : fieldOrGroup;
+    }
+    function fieldExists(path) {
+        return !!fieldsByPath.value[path];
+    }
+    /**
+     * Holds a computed reference to all fields names and labels
+     */
+    const fieldNames = __vite_ssr_import_0__.computed(() => {
+        return keysOf(fieldsByPath.value).reduce((names, path) => {
+            const field = getFirstFieldAtPath(path);
+            if (field) {
+                names[path] = __vite_ssr_import_0__.unref(field.label || field.name) || '';
+            }
+            return names;
+        }, {});
+    });
+    const fieldBailsMap = __vite_ssr_import_0__.computed(() => {
+        return keysOf(fieldsByPath.value).reduce((map, path) => {
+            var _a;
+            const field = getFirstFieldAtPath(path);
+            if (field) {
+                map[path] = (_a = field.bails) !== null && _a !== void 0 ? _a : true;
+            }
+            return map;
+        }, {});
+    });
+    // mutable non-reactive reference to initial errors
+    // we need this to process initial errors then unset them
+    const initialErrors = Object.assign({}, ((opts === null || opts === void 0 ? void 0 : opts.initialErrors) || {}));
+    // initial form values
+    const { initialValues, originalInitialValues, setInitialValues } = useFormInitialValues(fieldsByPath, formValues, opts === null || opts === void 0 ? void 0 : opts.initialValues);
+    // form meta aggregations
+    const meta = useFormMeta(fieldsByPath, formValues, initialValues, errors);
+    const schema = opts === null || opts === void 0 ? void 0 : opts.validationSchema;
+    const formCtx = {
+        formId,
+        fieldsByPath,
+        values: formValues,
+        errorBag,
+        errors,
+        schema,
+        submitCount,
+        meta,
+        isSubmitting,
+        fieldArraysLookup,
+        validateSchema: __vite_ssr_import_0__.unref(schema) ? validateSchema : undefined,
+        validate,
+        register: registerField,
+        unregister: unregisterField,
+        setFieldErrorBag,
+        validateField,
+        setFieldValue,
+        setValues,
+        setErrors,
+        setFieldError,
+        setFieldTouched,
+        setTouched,
+        resetForm,
+        handleSubmit,
+        stageInitialValue,
+        unsetInitialValue,
+        setFieldInitialValue,
+    };
+    function isFieldGroup(fieldOrGroup) {
+        return Array.isArray(fieldOrGroup);
+    }
+    function applyFieldMutation(fieldOrGroup, mutation) {
+        if (Array.isArray(fieldOrGroup)) {
+            return fieldOrGroup.forEach(mutation);
+        }
+        return mutation(fieldOrGroup);
+    }
+    /**
+     * Manually sets an error message on a specific field
+     */
+    function setFieldError(field, message) {
+        setFieldErrorBag(field, message);
+    }
+    /**
+     * Sets errors for the fields specified in the object
+     */
+    function setErrors(fields) {
+        setErrorBag(fields);
+    }
+    /**
+     * Sets a single field value
+     */
+    function setFieldValue(field, value, { force } = { force: false }) {
+        var _a;
+        const fieldInstance = fieldsByPath.value[field];
+        const clonedValue = klona(value);
+        // field wasn't found, create a virtual field as a placeholder
+        if (!fieldInstance) {
+            setInPath(formValues, field, clonedValue);
+            return;
+        }
+        if (isFieldGroup(fieldInstance) && ((_a = fieldInstance[0]) === null || _a === void 0 ? void 0 : _a.type) === 'checkbox' && !Array.isArray(value)) {
+            // Multiple checkboxes, and only one of them got updated
+            const newValue = klona(resolveNextCheckboxValue(getFromPath(formValues, field) || [], value, undefined));
+            setInPath(formValues, field, newValue);
+            return;
+        }
+        let newValue = value;
+        // Single Checkbox: toggles the field value unless the field is being reset then force it
+        if (!isFieldGroup(fieldInstance) && fieldInstance.type === 'checkbox' && !force && !RESET_LOCK) {
+            newValue = klona(resolveNextCheckboxValue(getFromPath(formValues, field), value, __vite_ssr_import_0__.unref(fieldInstance.uncheckedValue)));
+        }
+        setInPath(formValues, field, newValue);
+    }
+    /**
+     * Sets multiple fields values
+     */
+    function setValues(fields) {
+        // clean up old values
+        keysOf(formValues).forEach(key => {
+            delete formValues[key];
+        });
+        // set up new values
+        keysOf(fields).forEach(path => {
+            setFieldValue(path, fields[path]);
+        });
+        // regenerate the arrays when the form values change
+        Object.values(fieldArraysLookup).forEach(f => f && f.reset());
+    }
+    /**
+     * Sets the touched meta state on a field
+     */
+    function setFieldTouched(field, isTouched) {
+        const fieldInstance = fieldsByPath.value[field];
+        if (fieldInstance) {
+            applyFieldMutation(fieldInstance, f => f.setTouched(isTouched));
+        }
+    }
+    /**
+     * Sets the touched meta state on multiple fields
+     */
+    function setTouched(fields) {
+        keysOf(fields).forEach(field => {
+            setFieldTouched(field, !!fields[field]);
+        });
+    }
+    /**
+     * Resets all fields
+     */
+    function resetForm(state) {
+        RESET_LOCK = true;
+        // set initial values if provided
+        if (state === null || state === void 0 ? void 0 : state.values) {
+            setInitialValues(state.values);
+            setValues(state === null || state === void 0 ? void 0 : state.values);
+        }
+        else {
+            // clean up the initial values back to the original
+            setInitialValues(originalInitialValues.value);
+            // otherwise clean the current values
+            setValues(originalInitialValues.value);
+        }
+        Object.values(fieldsByPath.value).forEach(field => {
+            if (!field) {
+                return;
+            }
+            // avoid resetting the field values, because they should've been reset already.
+            applyFieldMutation(field, f => f.resetField());
+        });
+        if (state === null || state === void 0 ? void 0 : state.touched) {
+            setTouched(state.touched);
+        }
+        setErrors((state === null || state === void 0 ? void 0 : state.errors) || {});
+        submitCount.value = (state === null || state === void 0 ? void 0 : state.submitCount) || 0;
+        __vite_ssr_import_0__.nextTick(() => {
+            RESET_LOCK = false;
+        });
+    }
+    function insertFieldAtPath(field, path) {
+        const rawField = __vite_ssr_import_0__.markRaw(field);
+        const fieldPath = path;
+        // first field at that path
+        if (!fieldsByPath.value[fieldPath]) {
+            fieldsByPath.value[fieldPath] = rawField;
+            return;
+        }
+        const fieldAtPath = fieldsByPath.value[fieldPath];
+        if (fieldAtPath && !Array.isArray(fieldAtPath)) {
+            fieldsByPath.value[fieldPath] = [fieldAtPath];
+        }
+        // add the new array to that path
+        fieldsByPath.value[fieldPath] = [...fieldsByPath.value[fieldPath], rawField];
+    }
+    function removeFieldFromPath(field, path) {
+        const fieldPath = path;
+        const fieldAtPath = fieldsByPath.value[fieldPath];
+        if (!fieldAtPath) {
+            return;
+        }
+        // same field at path
+        if (!isFieldGroup(fieldAtPath) && field.id === fieldAtPath.id) {
+            delete fieldsByPath.value[fieldPath];
+            return;
+        }
+        if (isFieldGroup(fieldAtPath)) {
+            const idx = fieldAtPath.findIndex(f => f.id === field.id);
+            if (idx === -1) {
+                return;
+            }
+            fieldAtPath.splice(idx, 1);
+            if (fieldAtPath.length === 1) {
+                fieldsByPath.value[fieldPath] = fieldAtPath[0];
+                return;
+            }
+            if (!fieldAtPath.length) {
+                delete fieldsByPath.value[fieldPath];
+            }
+        }
+    }
+    function registerField(field) {
+        const fieldPath = __vite_ssr_import_0__.unref(field.name);
+        insertFieldAtPath(field, fieldPath);
+        if (__vite_ssr_import_0__.isRef(field.name)) {
+            // ensures when a field's name was already taken that it preserves its same value
+            // necessary for fields generated by loops
+            __vite_ssr_import_0__.watch(field.name, async (newPath, oldPath) => {
+                // cache the value
+                await __vite_ssr_import_0__.nextTick();
+                removeFieldFromPath(field, oldPath);
+                insertFieldAtPath(field, newPath);
+                // re-validate if either path had errors before
+                if (errors.value[oldPath] || errors.value[newPath]) {
+                    // clear up both paths errors
+                    setFieldError(oldPath, undefined);
+                    validateField(newPath);
+                }
+                // clean up the old path if no other field is sharing that name
+                // #3325
+                await __vite_ssr_import_0__.nextTick();
+                if (!fieldExists(oldPath)) {
+                    unsetPath(formValues, oldPath);
+                }
+            });
+        }
+        // if field already had errors (initial errors) that's not user-set, validate it again to ensure state is correct
+        // the difference being that `initialErrors` will contain the error message while other errors (pre-validated schema) won't have them as initial errors
+        // #3342
+        const initialErrorMessage = __vite_ssr_import_0__.unref(field.errorMessage);
+        if (initialErrorMessage && (initialErrors === null || initialErrors === void 0 ? void 0 : initialErrors[fieldPath]) !== initialErrorMessage) {
+            validateField(fieldPath);
+        }
+        // marks the initial error as "consumed" so it won't be matched later with same non-initial error
+        delete initialErrors[fieldPath];
+    }
+    function unregisterField(field) {
+        const fieldName = __vite_ssr_import_0__.unref(field.name);
+        removeFieldFromPath(field, fieldName);
+        __vite_ssr_import_0__.nextTick(() => {
+            // clears a field error on unmounted
+            // we wait till next tick to make sure if the field is completely removed and doesn't have any siblings like checkboxes
+            // #3384
+            if (!fieldExists(fieldName)) {
+                setFieldError(fieldName, undefined);
+                unsetPath(formValues, fieldName);
+            }
+        });
+    }
+    async function validate(opts) {
+        if (formCtx.validateSchema) {
+            return formCtx.validateSchema((opts === null || opts === void 0 ? void 0 : opts.mode) || 'force');
+        }
+        // No schema, each field is responsible to validate itself
+        const validations = await Promise.all(Object.values(fieldsByPath.value).map(field => {
+            const fieldInstance = Array.isArray(field) ? field[0] : field;
+            if (!fieldInstance) {
+                return Promise.resolve({ key: '', valid: true, errors: [] });
+            }
+            return fieldInstance.validate(opts).then((result) => {
+                return {
+                    key: __vite_ssr_import_0__.unref(fieldInstance.name),
+                    valid: result.valid,
+                    errors: result.errors,
+                };
+            });
+        }));
+        const results = {};
+        const errors = {};
+        for (const validation of validations) {
+            results[validation.key] = {
+                valid: validation.valid,
+                errors: validation.errors,
+            };
+            if (validation.errors.length) {
+                errors[validation.key] = validation.errors[0];
+            }
+        }
+        return {
+            valid: validations.every(r => r.valid),
+            results,
+            errors,
+        };
+    }
+    async function validateField(field) {
+        const fieldInstance = fieldsByPath.value[field];
+        if (!fieldInstance) {
+            __vite_ssr_import_0__.warn(`field with name ${field} was not found`);
+            return Promise.resolve({ errors: [], valid: true });
+        }
+        if (Array.isArray(fieldInstance)) {
+            return fieldInstance.map(f => f.validate())[0];
+        }
+        return fieldInstance.validate();
+    }
+    function handleSubmit(fn, onValidationError) {
+        return function submissionHandler(e) {
+            if (e instanceof Event) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            // Touch all fields
+            setTouched(keysOf(fieldsByPath.value).reduce((acc, field) => {
+                acc[field] = true;
+                return acc;
+            }, {}));
+            isSubmitting.value = true;
+            submitCount.value++;
+            return validate()
+                .then(result => {
+                if (result.valid && typeof fn === 'function') {
+                    return fn(klona(formValues), {
+                        evt: e,
+                        setErrors,
+                        setFieldError,
+                        setTouched,
+                        setFieldTouched,
+                        setValues,
+                        setFieldValue,
+                        resetForm,
+                    });
+                }
+                if (!result.valid && typeof onValidationError === 'function') {
+                    onValidationError({
+                        values: klona(formValues),
+                        evt: e,
+                        errors: result.errors,
+                        results: result.results,
+                    });
+                }
+            })
+                .then(returnVal => {
+                isSubmitting.value = false;
+                return returnVal;
+            }, err => {
+                isSubmitting.value = false;
+                // re-throw the err so it doesn't go silent
+                throw err;
+            });
+        };
+    }
+    function setFieldInitialValue(path, value) {
+        setInPath(initialValues.value, path, klona(value));
+    }
+    function unsetInitialValue(path) {
+        unsetPath(initialValues.value, path);
+    }
+    /**
+     * Sneaky function to set initial field values
+     */
+    function stageInitialValue(path, value) {
+        setInPath(formValues, path, value);
+        setFieldInitialValue(path, value);
+    }
+    async function _validateSchema() {
+        const schemaValue = __vite_ssr_import_0__.unref(schema);
+        if (!schemaValue) {
+            return { valid: true, results: {}, errors: {} };
+        }
+        const formResult = isYupValidator(schemaValue)
+            ? await validateYupSchema(schemaValue, formValues)
+            : await validateObjectSchema(schemaValue, formValues, {
+                names: fieldNames.value,
+                bailsMap: fieldBailsMap.value,
+            });
+        return formResult;
+    }
+    /**
+     * Batches validation runs in 5ms batches
+     */
+    const debouncedSchemaValidation = debounceAsync(_validateSchema, 5);
+    async function validateSchema(mode) {
+        const formResult = await debouncedSchemaValidation();
+        // fields by id lookup
+        const fieldsById = formCtx.fieldsByPath.value || {};
+        // errors fields names, we need it to also check if custom errors are updated
+        const currentErrorsPaths = keysOf(formCtx.errorBag.value);
+        // collect all the keys from the schema and all fields
+        // this ensures we have a complete keymap of all the fields
+        const paths = [
+            ...new Set([...keysOf(formResult.results), ...keysOf(fieldsById), ...currentErrorsPaths]),
+        ];
+        // aggregates the paths into a single result object while applying the results on the fields
+        return paths.reduce((validation, path) => {
+            const field = fieldsById[path];
+            const messages = (formResult.results[path] || { errors: [] }).errors;
+            const fieldResult = {
+                errors: messages,
+                valid: !messages.length,
+            };
+            validation.results[path] = fieldResult;
+            if (!fieldResult.valid) {
+                validation.errors[path] = fieldResult.errors[0];
+            }
+            // field not rendered
+            if (!field) {
+                setFieldError(path, messages);
+                return validation;
+            }
+            // always update the valid flag regardless of the mode
+            applyFieldMutation(field, f => (f.meta.valid = fieldResult.valid));
+            if (mode === 'silent') {
+                return validation;
+            }
+            const wasValidated = Array.isArray(field) ? field.some(f => f.meta.validated) : field.meta.validated;
+            if (mode === 'validated-only' && !wasValidated) {
+                return validation;
+            }
+            applyFieldMutation(field, f => f.setState({ errors: fieldResult.errors }));
+            return validation;
+        }, { valid: formResult.valid, results: {}, errors: {} });
+    }
+    const submitForm = handleSubmit((_, { evt }) => {
+        if (isFormSubmitEvent(evt)) {
+            evt.target.submit();
+        }
+    });
+    // Trigger initial validation
+    __vite_ssr_import_0__.onMounted(() => {
+        if (opts === null || opts === void 0 ? void 0 : opts.initialErrors) {
+            setErrors(opts.initialErrors);
+        }
+        if (opts === null || opts === void 0 ? void 0 : opts.initialTouched) {
+            setTouched(opts.initialTouched);
+        }
+        // if validate on mount was enabled
+        if (opts === null || opts === void 0 ? void 0 : opts.validateOnMount) {
+            validate();
+            return;
+        }
+        // otherwise run initial silent validation through schema if available
+        // the useField should skip their own silent validation if a yup schema is present
+        if (formCtx.validateSchema) {
+            formCtx.validateSchema('silent');
+        }
+    });
+    if (__vite_ssr_import_0__.isRef(schema)) {
+        __vite_ssr_import_0__.watch(schema, () => {
+            var _a;
+            (_a = formCtx.validateSchema) === null || _a === void 0 ? void 0 : _a.call(formCtx, 'validated-only');
+        });
+    }
+    // Provide injections
+    __vite_ssr_import_0__.provide(FormContextKey, formCtx);
+    if (("development" !== 'production')) {
+        registerFormWithDevTools(formCtx);
+        __vite_ssr_import_0__.watch(() => (Object.assign(Object.assign({ errors: errorBag.value }, meta.value), { values: formValues, isSubmitting: isSubmitting.value, submitCount: submitCount.value })), refreshInspector, {
+            deep: true,
+        });
+    }
+    return {
+        errors,
+        meta,
+        values: formValues,
+        isSubmitting,
+        submitCount,
+        validate,
+        validateField,
+        handleReset: () => resetForm(),
+        resetForm,
+        handleSubmit,
+        submitForm,
+        setFieldError,
+        setErrors,
+        setFieldValue,
+        setValues,
+        setFieldTouched,
+        setTouched,
+    };
+}
+/**
+ * Manages form meta aggregation
+ */
+function useFormMeta(fieldsByPath, currentValues, initialValues, errors) {
+    const MERGE_STRATEGIES = {
+        touched: 'some',
+        pending: 'some',
+        valid: 'every',
+    };
+    const isDirty = __vite_ssr_import_0__.computed(() => {
+        return !es6(currentValues, __vite_ssr_import_0__.unref(initialValues));
+    });
+    function calculateFlags() {
+        const fields = Object.values(fieldsByPath.value).flat(1).filter(Boolean);
+        return keysOf(MERGE_STRATEGIES).reduce((acc, flag) => {
+            const mergeMethod = MERGE_STRATEGIES[flag];
+            acc[flag] = fields[mergeMethod](field => field.meta[flag]);
+            return acc;
+        }, {});
+    }
+    const flags = __vite_ssr_import_0__.reactive(calculateFlags());
+    __vite_ssr_import_0__.watchEffect(() => {
+        const value = calculateFlags();
+        flags.touched = value.touched;
+        flags.valid = value.valid;
+        flags.pending = value.pending;
+    });
+    return __vite_ssr_import_0__.computed(() => {
+        return Object.assign(Object.assign({ initialValues: __vite_ssr_import_0__.unref(initialValues) }, flags), { valid: flags.valid && !keysOf(errors.value).length, dirty: isDirty.value });
+    });
+}
+/**
+ * Manages the initial values prop
+ */
+function useFormInitialValues(fields, formValues, providedValues) {
+    // these are the mutable initial values as the fields are mounted/unmounted
+    const initialValues = __vite_ssr_import_0__.ref(klona(__vite_ssr_import_0__.unref(providedValues)) || {});
+    // these are the original initial value as provided by the user initially, they don't keep track of conditional fields
+    // this is important because some conditional fields will overwrite the initial values for other fields who had the same name
+    // like array fields, any push/insert operation will overwrite the initial values because they "create new fields"
+    // so these are the values that the reset function should use
+    // these only change when the user explicitly chanegs the initial values or when the user resets them with new values.
+    const originalInitialValues = __vite_ssr_import_0__.ref(klona(__vite_ssr_import_0__.unref(providedValues)) || {});
+    function setInitialValues(values, updateFields = false) {
+        initialValues.value = klona(values);
+        originalInitialValues.value = klona(values);
+        if (!updateFields) {
+            return;
+        }
+        // update the pristine non-touched fields
+        // those are excluded because it's unlikely you want to change the form values using initial values
+        // we mostly watch them for API population or newly inserted fields
+        // if the user API is taking too much time before user interaction they should consider disabling or hiding their inputs until the values are ready
+        keysOf(fields.value).forEach(fieldPath => {
+            const field = fields.value[fieldPath];
+            const wasTouched = Array.isArray(field) ? field.some(f => f.meta.touched) : field === null || field === void 0 ? void 0 : field.meta.touched;
+            if (!field || wasTouched) {
+                return;
+            }
+            const newValue = getFromPath(initialValues.value, fieldPath);
+            setInPath(formValues, fieldPath, klona(newValue));
+        });
+    }
+    if (__vite_ssr_import_0__.isRef(providedValues)) {
+        __vite_ssr_import_0__.watch(providedValues, value => {
+            setInitialValues(value, true);
+        }, {
+            deep: true,
+        });
+    }
+    return {
+        initialValues,
+        originalInitialValues,
+        setInitialValues,
+    };
+}
+function useErrorBag(initialErrors) {
+    const errorBag = __vite_ssr_import_0__.ref({});
+    function normalizeErrorItem(message) {
+        return Array.isArray(message) ? message : message ? [message] : [];
+    }
+    /**
+     * Manually sets an error message on a specific field
+     */
+    function setFieldErrorBag(field, message) {
+        if (!message) {
+            delete errorBag.value[field];
+            return;
+        }
+        errorBag.value[field] = normalizeErrorItem(message);
+    }
+    /**
+     * Sets errors for the fields specified in the object
+     */
+    function setErrorBag(fields) {
+        errorBag.value = keysOf(fields).reduce((acc, key) => {
+            const message = fields[key];
+            if (message) {
+                acc[key] = normalizeErrorItem(message);
+            }
+            return acc;
+        }, {});
+    }
+    if (initialErrors) {
+        setErrorBag(initialErrors);
+    }
+    return {
+        errorBag,
+        setErrorBag,
+        setFieldErrorBag,
+    };
+}
+
+const FormImpl = __vite_ssr_import_0__.defineComponent({
+    name: 'Form',
+    inheritAttrs: false,
+    props: {
+        as: {
+            type: String,
+            default: 'form',
+        },
+        validationSchema: {
+            type: Object,
+            default: undefined,
+        },
+        initialValues: {
+            type: Object,
+            default: undefined,
+        },
+        initialErrors: {
+            type: Object,
+            default: undefined,
+        },
+        initialTouched: {
+            type: Object,
+            default: undefined,
+        },
+        validateOnMount: {
+            type: Boolean,
+            default: false,
+        },
+        onSubmit: {
+            type: Function,
+            default: undefined,
+        },
+        onInvalidSubmit: {
+            type: Function,
+            default: undefined,
+        },
+    },
+    setup(props, ctx) {
+        const initialValues = __vite_ssr_import_0__.toRef(props, 'initialValues');
+        const validationSchema = __vite_ssr_import_0__.toRef(props, 'validationSchema');
+        const { errors, values, meta, isSubmitting, submitCount, validate, validateField, handleReset, resetForm, handleSubmit, submitForm, setErrors, setFieldError, setFieldValue, setValues, setFieldTouched, setTouched, } = useForm({
+            validationSchema: validationSchema.value ? validationSchema : undefined,
+            initialValues,
+            initialErrors: props.initialErrors,
+            initialTouched: props.initialTouched,
+            validateOnMount: props.validateOnMount,
+        });
+        const onSubmit = props.onSubmit ? handleSubmit(props.onSubmit, props.onInvalidSubmit) : submitForm;
+        function handleFormReset(e) {
+            if (isEvent(e)) {
+                // Prevent default form reset behavior
+                e.preventDefault();
+            }
+            handleReset();
+            if (typeof ctx.attrs.onReset === 'function') {
+                ctx.attrs.onReset();
+            }
+        }
+        function handleScopedSlotSubmit(evt, onSubmit) {
+            const onSuccess = typeof evt === 'function' && !onSubmit ? evt : onSubmit;
+            return handleSubmit(onSuccess, props.onInvalidSubmit)(evt);
+        }
+        function slotProps() {
+            return {
+                meta: meta.value,
+                errors: errors.value,
+                values: values,
+                isSubmitting: isSubmitting.value,
+                submitCount: submitCount.value,
+                validate,
+                validateField,
+                handleSubmit: handleScopedSlotSubmit,
+                handleReset,
+                submitForm,
+                setErrors,
+                setFieldError,
+                setFieldValue,
+                setValues,
+                setFieldTouched,
+                setTouched,
+                resetForm,
+            };
+        }
+        // expose these functions and methods as part of public API
+        ctx.expose({
+            setFieldError,
+            setErrors,
+            setFieldValue,
+            setValues,
+            setFieldTouched,
+            setTouched,
+            resetForm,
+            validate,
+            validateField,
+        });
+        return function renderForm() {
+            // avoid resolving the form component as itself
+            const tag = props.as === 'form' ? props.as : __vite_ssr_import_0__.resolveDynamicComponent(props.as);
+            const children = normalizeChildren(tag, ctx, slotProps);
+            if (!props.as) {
+                return children;
+            }
+            // Attributes to add on a native `form` tag
+            const formAttrs = props.as === 'form'
+                ? {
+                    // Disables native validation as vee-validate will handle it.
+                    novalidate: true,
+                }
+                : {};
+            return __vite_ssr_import_0__.h(tag, Object.assign(Object.assign(Object.assign({}, formAttrs), ctx.attrs), { onSubmit, onReset: handleFormReset }), children);
+        };
+    },
+});
+const Form = FormImpl;
+
+let FIELD_ARRAY_COUNTER = 0;
+function useFieldArray(arrayPath) {
+    const id = FIELD_ARRAY_COUNTER++;
+    const form = injectWithSelf(FormContextKey, undefined);
+    const fields = __vite_ssr_import_0__.ref([]);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    const noOp = () => { };
+    const noOpApi = {
+        fields: __vite_ssr_import_0__.readonly(fields),
+        remove: noOp,
+        push: noOp,
+        swap: noOp,
+        insert: noOp,
+        update: noOp,
+        replace: noOp,
+        prepend: noOp,
+    };
+    if (!form) {
+        warn('FieldArray requires being a child of `<Form/>` or `useForm` being called before it. Array fields may not work correctly');
+        return noOpApi;
+    }
+    if (!__vite_ssr_import_0__.unref(arrayPath)) {
+        warn('FieldArray requires a field path to be provided, did you forget to pass the `name` prop?');
+        return noOpApi;
+    }
+    let entryCounter = 0;
+    function initFields() {
+        const currentValues = getFromPath(form === null || form === void 0 ? void 0 : form.values, __vite_ssr_import_0__.unref(arrayPath), []);
+        fields.value = currentValues.map(createEntry);
+        updateEntryFlags();
+    }
+    initFields();
+    function updateEntryFlags() {
+        const fieldsLength = fields.value.length;
+        for (let i = 0; i < fieldsLength; i++) {
+            const entry = fields.value[i];
+            entry.isFirst = i === 0;
+            entry.isLast = i === fieldsLength - 1;
+        }
+    }
+    function createEntry(value) {
+        const key = entryCounter++;
+        const entry = {
+            key,
+            value: __vite_ssr_import_0__.computed(() => {
+                const currentValues = getFromPath(form === null || form === void 0 ? void 0 : form.values, __vite_ssr_import_0__.unref(arrayPath), []);
+                const idx = fields.value.findIndex(e => e.key === key);
+                return idx === -1 ? value : currentValues[idx];
+            }),
+            isFirst: false,
+            isLast: false,
+        };
+        return entry;
+    }
+    function remove(idx) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        if (!pathValue || !Array.isArray(pathValue)) {
+            return;
+        }
+        const newValue = [...pathValue];
+        newValue.splice(idx, 1);
+        form === null || form === void 0 ? void 0 : form.unsetInitialValue(pathName + `[${idx}]`);
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, newValue);
+        fields.value.splice(idx, 1);
+        updateEntryFlags();
+    }
+    function push(value) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        const normalizedPathValue = isNullOrUndefined(pathValue) ? [] : pathValue;
+        if (!Array.isArray(normalizedPathValue)) {
+            return;
+        }
+        const newValue = [...normalizedPathValue];
+        newValue.push(value);
+        form === null || form === void 0 ? void 0 : form.stageInitialValue(pathName + `[${newValue.length - 1}]`, value);
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, newValue);
+        fields.value.push(createEntry(value));
+        updateEntryFlags();
+    }
+    function swap(indexA, indexB) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        if (!Array.isArray(pathValue) || !(indexA in pathValue) || !(indexB in pathValue)) {
+            return;
+        }
+        const newValue = [...pathValue];
+        const newFields = [...fields.value];
+        // the old switcheroo
+        const temp = newValue[indexA];
+        newValue[indexA] = newValue[indexB];
+        newValue[indexB] = temp;
+        const tempEntry = newFields[indexA];
+        newFields[indexA] = newFields[indexB];
+        newFields[indexB] = tempEntry;
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, newValue);
+        fields.value = newFields;
+        updateEntryFlags();
+    }
+    function insert(idx, value) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        if (!Array.isArray(pathValue) || pathValue.length < idx) {
+            return;
+        }
+        const newValue = [...pathValue];
+        const newFields = [...fields.value];
+        newValue.splice(idx, 0, value);
+        newFields.splice(idx, 0, createEntry(value));
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, newValue);
+        fields.value = newFields;
+        updateEntryFlags();
+    }
+    function replace(arr) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, arr);
+        initFields();
+    }
+    function update(idx, value) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        if (!Array.isArray(pathValue) || pathValue.length - 1 < idx) {
+            return;
+        }
+        form === null || form === void 0 ? void 0 : form.setFieldValue(`${pathName}[${idx}]`, value);
+    }
+    function prepend(value) {
+        const pathName = __vite_ssr_import_0__.unref(arrayPath);
+        const pathValue = getFromPath(form === null || form === void 0 ? void 0 : form.values, pathName);
+        const normalizedPathValue = isNullOrUndefined(pathValue) ? [] : pathValue;
+        if (!Array.isArray(normalizedPathValue)) {
+            return;
+        }
+        const newValue = [value, ...normalizedPathValue];
+        form === null || form === void 0 ? void 0 : form.stageInitialValue(pathName + `[${newValue.length - 1}]`, value);
+        form === null || form === void 0 ? void 0 : form.setFieldValue(pathName, newValue);
+        fields.value.unshift(createEntry(value));
+        updateEntryFlags();
+    }
+    form.fieldArraysLookup[id] = {
+        reset: initFields,
+    };
+    __vite_ssr_import_0__.onBeforeUnmount(() => {
+        delete form.fieldArraysLookup[id];
+    });
+    return {
+        fields: __vite_ssr_import_0__.readonly(fields),
+        remove,
+        push,
+        swap,
+        insert,
+        update,
+        replace,
+        prepend,
+    };
+}
+
+const FieldArrayImpl = __vite_ssr_import_0__.defineComponent({
+    name: 'FieldArray',
+    inheritAttrs: false,
+    props: {
+        name: {
+            type: String,
+            required: true,
+        },
+    },
+    setup(props, ctx) {
+        const { push, remove, swap, insert, replace, update, prepend, fields } = useFieldArray(__vite_ssr_import_0__.toRef(props, 'name'));
+        function slotProps() {
+            return {
+                fields: fields.value,
+                push,
+                remove,
+                swap,
+                insert,
+                update,
+                replace,
+                prepend,
+            };
+        }
+        ctx.expose({
+            push,
+            remove,
+            swap,
+            insert,
+            update,
+            replace,
+            prepend,
+        });
+        return () => {
+            const children = normalizeChildren(undefined, ctx, slotProps);
+            return children;
+        };
+    },
+});
+const FieldArray = FieldArrayImpl;
+
+const ErrorMessageImpl = __vite_ssr_import_0__.defineComponent({
+    name: 'ErrorMessage',
+    props: {
+        as: {
+            type: String,
+            default: undefined,
+        },
+        name: {
+            type: String,
+            required: true,
+        },
+    },
+    setup(props, ctx) {
+        const form = __vite_ssr_import_0__.inject(FormContextKey, undefined);
+        const message = __vite_ssr_import_0__.computed(() => {
+            return form === null || form === void 0 ? void 0 : form.errors.value[props.name];
+        });
+        function slotProps() {
+            return {
+                message: message.value,
+            };
+        }
+        return () => {
+            // Renders nothing if there are no messages
+            if (!message.value) {
+                return undefined;
+            }
+            const tag = (props.as ? __vite_ssr_import_0__.resolveDynamicComponent(props.as) : props.as);
+            const children = normalizeChildren(tag, ctx, slotProps);
+            const attrs = Object.assign({ role: 'alert' }, ctx.attrs);
+            // If no tag was specified and there are children
+            // render the slot as is without wrapping it
+            if (!tag && (Array.isArray(children) || !children) && (children === null || children === void 0 ? void 0 : children.length)) {
+                return children;
+            }
+            // If no children in slot
+            // render whatever specified and fallback to a <span> with the message in it's contents
+            if ((Array.isArray(children) || !children) && !(children === null || children === void 0 ? void 0 : children.length)) {
+                return __vite_ssr_import_0__.h(tag || 'span', attrs, message.value);
+            }
+            return __vite_ssr_import_0__.h(tag, attrs, children);
+        };
+    },
+});
+const ErrorMessage = ErrorMessageImpl;
+
+function useResetForm() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return function resetForm(state) {
+        if (!form) {
+            return;
+        }
+        return form.resetForm(state);
+    };
+}
+
+/**
+ * If a field is dirty or not
+ */
+function useIsFieldDirty(path) {
+    const form = injectWithSelf(FormContextKey);
+    let field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return __vite_ssr_import_0__.computed(() => {
+        if (path) {
+            field = normalizeField(form === null || form === void 0 ? void 0 : form.fieldsByPath.value[__vite_ssr_import_0__.unref(path)]);
+        }
+        if (!field) {
+            warn(`field with name ${__vite_ssr_import_0__.unref(path)} was not found`);
+            return false;
+        }
+        return field.meta.dirty;
+    });
+}
+
+/**
+ * If a field is touched or not
+ */
+function useIsFieldTouched(path) {
+    const form = injectWithSelf(FormContextKey);
+    let field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return __vite_ssr_import_0__.computed(() => {
+        if (path) {
+            field = normalizeField(form === null || form === void 0 ? void 0 : form.fieldsByPath.value[__vite_ssr_import_0__.unref(path)]);
+        }
+        if (!field) {
+            warn(`field with name ${__vite_ssr_import_0__.unref(path)} was not found`);
+            return false;
+        }
+        return field.meta.touched;
+    });
+}
+
+/**
+ * If a field is validated and is valid
+ */
+function useIsFieldValid(path) {
+    const form = injectWithSelf(FormContextKey);
+    let field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return __vite_ssr_import_0__.computed(() => {
+        if (path) {
+            field = normalizeField(form === null || form === void 0 ? void 0 : form.fieldsByPath.value[__vite_ssr_import_0__.unref(path)]);
+        }
+        if (!field) {
+            warn(`field with name ${__vite_ssr_import_0__.unref(path)} was not found`);
+            return false;
+        }
+        return field.meta.valid;
+    });
+}
+
+/**
+ * If the form is submitting or not
+ */
+function useIsSubmitting() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        var _a;
+        return (_a = form === null || form === void 0 ? void 0 : form.isSubmitting.value) !== null && _a !== void 0 ? _a : false;
+    });
+}
+
+/**
+ * Validates a single field
+ */
+function useValidateField(path) {
+    const form = injectWithSelf(FormContextKey);
+    let field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return function validateField() {
+        if (path) {
+            field = normalizeField(form === null || form === void 0 ? void 0 : form.fieldsByPath.value[__vite_ssr_import_0__.unref(path)]);
+        }
+        if (!field) {
+            warn(`field with name ${__vite_ssr_import_0__.unref(path)} was not found`);
+            return Promise.resolve({
+                errors: [],
+                valid: true,
+            });
+        }
+        return field.validate();
+    };
+}
+
+/**
+ * If the form is dirty or not
+ */
+function useIsFormDirty() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        var _a;
+        return (_a = form === null || form === void 0 ? void 0 : form.meta.value.dirty) !== null && _a !== void 0 ? _a : false;
+    });
+}
+
+/**
+ * If the form is touched or not
+ */
+function useIsFormTouched() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        var _a;
+        return (_a = form === null || form === void 0 ? void 0 : form.meta.value.touched) !== null && _a !== void 0 ? _a : false;
+    });
+}
+
+/**
+ * If the form has been validated and is valid
+ */
+function useIsFormValid() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        var _a;
+        return (_a = form === null || form === void 0 ? void 0 : form.meta.value.valid) !== null && _a !== void 0 ? _a : false;
+    });
+}
+
+/**
+ * Validate multiple fields
+ */
+function useValidateForm() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return function validateField() {
+        if (!form) {
+            return Promise.resolve({ results: {}, errors: {}, valid: true });
+        }
+        return form.validate();
+    };
+}
+
+/**
+ * The number of form's submission count
+ */
+function useSubmitCount() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        var _a;
+        return (_a = form === null || form === void 0 ? void 0 : form.submitCount.value) !== null && _a !== void 0 ? _a : 0;
+    });
+}
+
+/**
+ * Gives access to a field's current value
+ */
+function useFieldValue(path) {
+    const form = injectWithSelf(FormContextKey);
+    // We don't want to use self injected context as it doesn't make sense
+    const field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return __vite_ssr_import_0__.computed(() => {
+        if (path) {
+            return getFromPath(form === null || form === void 0 ? void 0 : form.values, __vite_ssr_import_0__.unref(path));
+        }
+        return __vite_ssr_import_0__.unref(field === null || field === void 0 ? void 0 : field.value);
+    });
+}
+
+/**
+ * Gives access to a form's values
+ */
+function useFormValues() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        return (form === null || form === void 0 ? void 0 : form.values) || {};
+    });
+}
+
+/**
+ * Gives access to all form errors
+ */
+function useFormErrors() {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    return __vite_ssr_import_0__.computed(() => {
+        return ((form === null || form === void 0 ? void 0 : form.errors.value) || {});
+    });
+}
+
+/**
+ * Gives access to a single field error
+ */
+function useFieldError(path) {
+    const form = injectWithSelf(FormContextKey);
+    // We don't want to use self injected context as it doesn't make sense
+    const field = path ? undefined : __vite_ssr_import_0__.inject(FieldContextKey);
+    return __vite_ssr_import_0__.computed(() => {
+        if (path) {
+            return form === null || form === void 0 ? void 0 : form.errors.value[__vite_ssr_import_0__.unref(path)];
+        }
+        return field === null || field === void 0 ? void 0 : field.errorMessage.value;
+    });
+}
+
+function useSubmitForm(cb) {
+    const form = injectWithSelf(FormContextKey);
+    if (!form) {
+        warn('No vee-validate <Form /> or `useForm` was detected in the component tree');
+    }
+    const onSubmit = form ? form.handleSubmit(cb) : undefined;
+    return function submitForm(e) {
+        if (!onSubmit) {
+            return;
+        }
+        return onSubmit(e);
+    };
+}
+
+
+Object.defineProperty(__vite_ssr_exports__, "ErrorMessage", { enumerable: true, configurable: true, get(){ return ErrorMessage }});
+Object.defineProperty(__vite_ssr_exports__, "Field", { enumerable: true, configurable: true, get(){ return Field }});
+Object.defineProperty(__vite_ssr_exports__, "FieldArray", { enumerable: true, configurable: true, get(){ return FieldArray }});
+Object.defineProperty(__vite_ssr_exports__, "FieldContextKey", { enumerable: true, configurable: true, get(){ return FieldContextKey }});
+Object.defineProperty(__vite_ssr_exports__, "Form", { enumerable: true, configurable: true, get(){ return Form }});
+Object.defineProperty(__vite_ssr_exports__, "FormContextKey", { enumerable: true, configurable: true, get(){ return FormContextKey }});
+Object.defineProperty(__vite_ssr_exports__, "configure", { enumerable: true, configurable: true, get(){ return configure }});
+Object.defineProperty(__vite_ssr_exports__, "defineRule", { enumerable: true, configurable: true, get(){ return defineRule }});
+Object.defineProperty(__vite_ssr_exports__, "useField", { enumerable: true, configurable: true, get(){ return useField }});
+Object.defineProperty(__vite_ssr_exports__, "useFieldArray", { enumerable: true, configurable: true, get(){ return useFieldArray }});
+Object.defineProperty(__vite_ssr_exports__, "useFieldError", { enumerable: true, configurable: true, get(){ return useFieldError }});
+Object.defineProperty(__vite_ssr_exports__, "useFieldValue", { enumerable: true, configurable: true, get(){ return useFieldValue }});
+Object.defineProperty(__vite_ssr_exports__, "useForm", { enumerable: true, configurable: true, get(){ return useForm }});
+Object.defineProperty(__vite_ssr_exports__, "useFormErrors", { enumerable: true, configurable: true, get(){ return useFormErrors }});
+Object.defineProperty(__vite_ssr_exports__, "useFormValues", { enumerable: true, configurable: true, get(){ return useFormValues }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFieldDirty", { enumerable: true, configurable: true, get(){ return useIsFieldDirty }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFieldTouched", { enumerable: true, configurable: true, get(){ return useIsFieldTouched }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFieldValid", { enumerable: true, configurable: true, get(){ return useIsFieldValid }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFormDirty", { enumerable: true, configurable: true, get(){ return useIsFormDirty }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFormTouched", { enumerable: true, configurable: true, get(){ return useIsFormTouched }});
+Object.defineProperty(__vite_ssr_exports__, "useIsFormValid", { enumerable: true, configurable: true, get(){ return useIsFormValid }});
+Object.defineProperty(__vite_ssr_exports__, "useIsSubmitting", { enumerable: true, configurable: true, get(){ return useIsSubmitting }});
+Object.defineProperty(__vite_ssr_exports__, "useResetForm", { enumerable: true, configurable: true, get(){ return useResetForm }});
+Object.defineProperty(__vite_ssr_exports__, "useSubmitCount", { enumerable: true, configurable: true, get(){ return useSubmitCount }});
+Object.defineProperty(__vite_ssr_exports__, "useSubmitForm", { enumerable: true, configurable: true, get(){ return useSubmitForm }});
+Object.defineProperty(__vite_ssr_exports__, "useValidateField", { enumerable: true, configurable: true, get(){ return useValidateField }});
+Object.defineProperty(__vite_ssr_exports__, "useValidateForm", { enumerable: true, configurable: true, get(){ return useValidateForm }});
+Object.defineProperty(__vite_ssr_exports__, "validate", { enumerable: true, configurable: true, get(){ return validate }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/index.js
+// Parents: 
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
+// Dependencies: 
+// - /node_modules/@vue/devtools-api/lib/esm/env.js ($id_304a908e)
+// - /node_modules/@vue/devtools-api/lib/esm/const.js ($id_8e00d2d1)
+// - /node_modules/@vue/devtools-api/lib/esm/proxy.js ($id_c00b31f5)
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// - /node_modules/@vue/devtools-api/lib/esm/plugin.js ($id_674cbbbf)
+// --------------------
+const $id_24b1ff15 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/env.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/const.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/proxy.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/index.js");
+__vite_ssr_exportAll__(__vite_ssr_import_3__);
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/plugin.js");
+__vite_ssr_exportAll__(__vite_ssr_import_4__);
+function setupDevtoolsPlugin(pluginDescriptor, setupFn) {
+    const descriptor = pluginDescriptor;
+    const target = __vite_ssr_import_0__.getTarget();
+    const hook = __vite_ssr_import_0__.getDevtoolsGlobalHook();
+    const enableProxy = __vite_ssr_import_0__.isProxyAvailable && descriptor.enableEarlyProxy;
+    if (hook && (target.__VUE_DEVTOOLS_PLUGIN_API_AVAILABLE__ || !enableProxy)) {
+        hook.emit(__vite_ssr_import_1__.HOOK_SETUP, pluginDescriptor, setupFn);
+    }
+    else {
+        const proxy = enableProxy ? new __vite_ssr_import_2__.ApiProxy(descriptor, hook) : null;
+        const list = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
+        list.push({
+            pluginDescriptor: descriptor,
+            setupFn,
+            proxy,
+        });
+        if (proxy)
+            setupFn(proxy.proxiedTarget);
+    }
+}
+Object.defineProperty(__vite_ssr_exports__, "setupDevtoolsPlugin", { enumerable: true, configurable: true, get(){ return setupDevtoolsPlugin }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/env.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// Dependencies: 
+
+// --------------------
+const $id_304a908e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+function getDevtoolsGlobalHook() {
+    return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
+}
+Object.defineProperty(__vite_ssr_exports__, "getDevtoolsGlobalHook", { enumerable: true, configurable: true, get(){ return getDevtoolsGlobalHook }});
+function getTarget() {
+    // @ts-ignore
+    return ("undefined" !== 'undefined' && "undefined" !== 'undefined')
+        ? window
+        : typeof global !== 'undefined'
+            ? global
+            : {};
+}
+Object.defineProperty(__vite_ssr_exports__, "getTarget", { enumerable: true, configurable: true, get(){ return getTarget }});
+const isProxyAvailable = typeof Proxy === 'function';
+Object.defineProperty(__vite_ssr_exports__, "isProxyAvailable", { enumerable: true, configurable: true, get(){ return isProxyAvailable }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/const.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// - /node_modules/@vue/devtools-api/lib/esm/proxy.js ($id_c00b31f5)
+// Dependencies: 
+
+// --------------------
+const $id_8e00d2d1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const HOOK_SETUP = 'devtools-plugin:setup';
+Object.defineProperty(__vite_ssr_exports__, "HOOK_SETUP", { enumerable: true, configurable: true, get(){ return HOOK_SETUP }});
+const HOOK_PLUGIN_SETTINGS_SET = 'plugin:settings:set';
+Object.defineProperty(__vite_ssr_exports__, "HOOK_PLUGIN_SETTINGS_SET", { enumerable: true, configurable: true, get(){ return HOOK_PLUGIN_SETTINGS_SET }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/proxy.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// Dependencies: 
+// - /node_modules/@vue/devtools-api/lib/esm/const.js ($id_8e00d2d1)
+// --------------------
+const $id_c00b31f5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/const.js");
+
+class ApiProxy {
+    constructor(plugin, hook) {
+        this.target = null;
+        this.targetQueue = [];
+        this.onQueue = [];
+        this.plugin = plugin;
+        this.hook = hook;
+        const defaultSettings = {};
+        if (plugin.settings) {
+            for (const id in plugin.settings) {
+                const item = plugin.settings[id];
+                defaultSettings[id] = item.defaultValue;
+            }
+        }
+        const localSettingsSaveId = `__vue-devtools-plugin-settings__${plugin.id}`;
+        let currentSettings = Object.assign({}, defaultSettings);
+        try {
+            const raw = localStorage.getItem(localSettingsSaveId);
+            const data = JSON.parse(raw);
+            Object.assign(currentSettings, data);
+        }
+        catch (e) {
+            // noop
+        }
+        this.fallbacks = {
+            getSettings() {
+                return currentSettings;
+            },
+            setSettings(value) {
+                try {
+                    localStorage.setItem(localSettingsSaveId, JSON.stringify(value));
+                }
+                catch (e) {
+                    // noop
+                }
+                currentSettings = value;
+            },
+        };
+        if (hook) {
+            hook.on(__vite_ssr_import_0__.HOOK_PLUGIN_SETTINGS_SET, (pluginId, value) => {
+                if (pluginId === this.plugin.id) {
+                    this.fallbacks.setSettings(value);
+                }
+            });
+        }
+        this.proxiedOn = new Proxy({}, {
+            get: (_target, prop) => {
+                if (this.target) {
+                    return this.target.on[prop];
+                }
+                else {
+                    return (...args) => {
+                        this.onQueue.push({
+                            method: prop,
+                            args,
+                        });
+                    };
+                }
+            },
+        });
+        this.proxiedTarget = new Proxy({}, {
+            get: (_target, prop) => {
+                if (this.target) {
+                    return this.target[prop];
+                }
+                else if (prop === 'on') {
+                    return this.proxiedOn;
+                }
+                else if (Object.keys(this.fallbacks).includes(prop)) {
+                    return (...args) => {
+                        this.targetQueue.push({
+                            method: prop,
+                            args,
+                            resolve: () => { },
+                        });
+                        return this.fallbacks[prop](...args);
+                    };
+                }
+                else {
+                    return (...args) => {
+                        return new Promise(resolve => {
+                            this.targetQueue.push({
+                                method: prop,
+                                args,
+                                resolve,
+                            });
+                        });
+                    };
+                }
+            },
+        });
+    }
+    async setRealTarget(target) {
+        this.target = target;
+        for (const item of this.onQueue) {
+            this.target.on[item.method](...item.args);
+        }
+        for (const item of this.targetQueue) {
+            item.resolve(await this.target[item.method](...item.args));
+        }
+    }
+}
+Object.defineProperty(__vite_ssr_exports__, "ApiProxy", { enumerable: true, configurable: true, get(){ return ApiProxy }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/index.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// Dependencies: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/api.js ($id_92fae9b0)
+// - /node_modules/@vue/devtools-api/lib/esm/api/app.js ($id_b65c5853)
+// - /node_modules/@vue/devtools-api/lib/esm/api/component.js ($id_614015ea)
+// - /node_modules/@vue/devtools-api/lib/esm/api/context.js ($id_2baadcfd)
+// - /node_modules/@vue/devtools-api/lib/esm/api/hooks.js ($id_3aa5d48c)
+// - /node_modules/@vue/devtools-api/lib/esm/api/util.js ($id_03011152)
+// --------------------
+const $id_550ae022 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/api.js");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/app.js");
+__vite_ssr_exportAll__(__vite_ssr_import_1__);
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/component.js");
+__vite_ssr_exportAll__(__vite_ssr_import_2__);
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/context.js");
+__vite_ssr_exportAll__(__vite_ssr_import_3__);
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/hooks.js");
+__vite_ssr_exportAll__(__vite_ssr_import_4__);
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/@vue/devtools-api/lib/esm/api/util.js");
+__vite_ssr_exportAll__(__vite_ssr_import_5__);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/api.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_92fae9b0 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/app.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_b65c5853 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/component.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_614015ea = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/context.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_2baadcfd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/hooks.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_3aa5d48c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/api/util.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/api/index.js ($id_550ae022)
+// Dependencies: 
+
+// --------------------
+const $id_03011152 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vue/devtools-api/lib/esm/plugin.js
+// Parents: 
+// - /node_modules/@vue/devtools-api/lib/esm/index.js ($id_24b1ff15)
+// Dependencies: 
+
+// --------------------
+const $id_674cbbbf = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+;
+}
+
+
+// --------------------
+// Request: /components/Forms/Register.vue
 // Parents: 
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/login.vue ($id_b0922173)
 // Dependencies: 
-
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /store/store.js ($id_fa1a709a)
+// - /store/user.js ($id_6c3c060a)
+// - /components/Tools/Loader.vue ($id_c71ecea5)
+// - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/reusable/AppFormField.vue ($id_def58cce)
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_e110bf24 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.container[data-v-18804380] {\n  margin: auto;\n  width: 50%;\n  height: 200px;\n  text-align: center;\n}\n";
+const $id_7dc4ae3d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+
+  const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
+
+  const __vite_ssr_import_3__ = await __vite_ssr_import__("/store/user.js");
+
+  const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/Tools/Loader.vue");
+
+  const __vite_ssr_import_5__ = await __vite_ssr_import__("/components/Tools/ErrorMsg.vue");
+
+  const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/reusable/AppFormField.vue");
+
+  const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vee-validate/dist/vee-validate.esm.js");
+
+  const _sfc_main = ({
+    components: { Loader: __vite_ssr_import_4__.default, ErrorMsg: __vite_ssr_import_5__.default, Form: __vite_ssr_import_7__.Form, AppFormField: __vite_ssr_import_6__.default },
+    setup() {
+      const authStore = __vite_ssr_import_3__.useAuthStore();
+      const { createAccount } = authStore;
+      const isValid = __vite_ssr_import_7__.useIsFormValid();
+      const store = __vite_ssr_import_2__.useStore();
+
+      const isActive = __vite_ssr_import_0__.ref(false)
+
+      const userForm = __vite_ssr_import_0__.reactive({
+        email: '',
+        password: '',
+        firstname: '',
+        lastname: '',
+        phone: '',
+      });
+
+      const signUpWithEmail = async () => {
+        isActive.value = true
+        await createAccount(userForm.email, userForm.password, userForm.firstname, userForm.lastname, userForm.phone);
+        __vite_ssr_import_1__.navigateTo('/')
+        isActive.value = false
+      };
+      return {
+        userForm,
+        isValid,
+        signUpWithEmail,
+        store,
+        isActive
+      };
+    }
+  })
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_loader = __vite_ssr_import_8__.resolveComponent("loader")
+  const _component_Form = __vite_ssr_import_8__.resolveComponent("Form")
+  const _component_AppFormField = __vite_ssr_import_8__.resolveComponent("AppFormField")
+
+  _push(`<div${__vite_ssr_import_9__.ssrRenderAttrs(__vite_ssr_import_8__.mergeProps({ class: "container mt-4" }, _attrs))}>`)
+  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_loader, { isLoading: $setup.isActive }, null, _parent))
+  _push(__vite_ssr_import_9__.ssrRenderComponent(_component_Form, null, {
+    default: __vite_ssr_import_8__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Firstname",
+          name: "firstname",
+          type: "text",
+          modelValue: $setup.userForm.firstname,
+          "onUpdate:modelValue": $event => (($setup.userForm.firstname) = $event),
+          rules: "required"
+        }, null, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Lastname",
+          name: "lastname",
+          type: "text",
+          modelValue: $setup.userForm.lastname,
+          "onUpdate:modelValue": $event => (($setup.userForm.lastname) = $event),
+          rules: "required"
+        }, null, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Phone",
+          name: "phone",
+          type: "text",
+          modelValue: $setup.userForm.phone,
+          "onUpdate:modelValue": $event => (($setup.userForm.phone) = $event),
+          rules: "required|min:8"
+        }, null, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Email",
+          name: "email",
+          type: "email",
+          modelValue: $setup.userForm.email,
+          "onUpdate:modelValue": $event => (($setup.userForm.email) = $event),
+          rules: "required|email"
+        }, null, _parent, _scopeId))
+        _push(__vite_ssr_import_9__.ssrRenderComponent(_component_AppFormField, {
+          label: "Password",
+          name: "password",
+          type: "password",
+          modelValue: $setup.userForm.password,
+          "onUpdate:modelValue": $event => (($setup.userForm.password) = $event),
+          rules: "required|min:6"
+        }, null, _parent, _scopeId))
+        _push(`<button type="submit"${
+          (__vite_ssr_import_9__.ssrIncludeBooleanAttr(false)) ? " disabled" : ""
+        } class="btn btn-primary" style="${
+          __vite_ssr_import_9__.ssrRenderStyle({"width":"100%"})
+        }"${
+          _scopeId
+        }>Register</button>`)
+      } else {
+        return [
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Firstname",
+            name: "firstname",
+            type: "text",
+            modelValue: $setup.userForm.firstname,
+            "onUpdate:modelValue": $event => (($setup.userForm.firstname) = $event),
+            rules: "required"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Lastname",
+            name: "lastname",
+            type: "text",
+            modelValue: $setup.userForm.lastname,
+            "onUpdate:modelValue": $event => (($setup.userForm.lastname) = $event),
+            rules: "required"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Phone",
+            name: "phone",
+            type: "text",
+            modelValue: $setup.userForm.phone,
+            "onUpdate:modelValue": $event => (($setup.userForm.phone) = $event),
+            rules: "required|min:8"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Email",
+            name: "email",
+            type: "email",
+            modelValue: $setup.userForm.email,
+            "onUpdate:modelValue": $event => (($setup.userForm.email) = $event),
+            rules: "required|email"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode(_component_AppFormField, {
+            label: "Password",
+            name: "password",
+            type: "password",
+            modelValue: $setup.userForm.password,
+            "onUpdate:modelValue": $event => (($setup.userForm.password) = $event),
+            rules: "required|min:6"
+          }, null, 8 /* PROPS */, ["modelValue", "onUpdate:modelValue"]),
+          __vite_ssr_import_8__.createVNode("button", {
+            type: "submit",
+            disabled: false,
+            class: "btn btn-primary",
+            style: {"width":"100%"}
+          }, "Register")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</div>`)
+}
+
+
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_10__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Forms/Register.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Forms/Register.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/index.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs ($id_421f6e7d)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/user.js ($id_6c3c060a)
@@ -12432,147 +16154,79 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/login.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs ($id_421f6e7d)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/store.js ($id_fa1a709a)
-// - /store/user.js ($id_6c3c060a)
-// - /components/Tools/Loader.vue ($id_c71ecea5)
-// - /components/Tools/ErrorMsg.vue ($id_faa89f61)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /pages/login.vue?vue&type=style&index=0&scoped=true&lang.css ($id_e110bf24)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_b0922173 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+  const __vite_ssr_import_0__ = await __vite_ssr_import__("/store/store.js");
 
-  const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
+  const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
 
-  const __vite_ssr_import_3__ = await __vite_ssr_import__("/store/user.js");
-
-  const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/Tools/Loader.vue");
-
-  const __vite_ssr_import_5__ = await __vite_ssr_import__("/components/Tools/ErrorMsg.vue");
+  const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/Forms/Register.vue");
 
   const _sfc_main = ({
-    components: { Loader: __vite_ssr_import_4__.default, ErrorMsg: __vite_ssr_import_5__.default },
+    components: { LoginForm: __vite_ssr_import_1__.default, Register: __vite_ssr_import_2__.default },
     setup() {
-      const authStore = __vite_ssr_import_3__.useAuthStore();
-      const { logInUser } = authStore;
-      
-      const store = __vite_ssr_import_2__.useStore();
-
-      const isActive = __vite_ssr_import_0__.ref(false)
-      const email = __vite_ssr_import_0__.ref('');
-      const password = __vite_ssr_import_0__.ref('');
-
-      const loginWithEmail = async () => {
-        isActive.value = true
-        await logInUser(email.value, password.value)
-        __vite_ssr_import_1__.navigateTo('/')
-        isActive.value = false
-      }
-
+      const store = __vite_ssr_import_0__.useStore();
       return {
-        isActive,
         store,
-        email,
-        password,
-        authStore,
-        loginWithEmail
       }
     }
   })
 
-  // import { useStore } from '~/store/store'
-  // const { $firebaseApp, $firebaseAuth  } = useNuxtApp();
-  // // alternatively, you can also use it here
-  // const store = useStore()
-  // onMounted(async () => {
-  //   $firebaseApp
-  // })
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Loader = __vite_ssr_import_6__.resolveComponent("Loader")
-  const _component_ErrorMsg = __vite_ssr_import_6__.resolveComponent("ErrorMsg")
-  const _component_InputText = __vite_ssr_import_6__.resolveComponent("InputText")
-  const _component_Button = __vite_ssr_import_6__.resolveComponent("Button")
+  const _component_login_form = __vite_ssr_import_3__.resolveComponent("login-form")
+  const _component_register = __vite_ssr_import_3__.resolveComponent("register")
 
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container mx-auto" }, _attrs))} data-v-18804380>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Loader, { isLoading: $setup.isActive }, null, _parent))
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_ErrorMsg, {
-    header: "Error",
-    errMessage: $setup.authStore.error
-  }, null, _parent))
-  _push(`<h5 data-v-18804380>Login</h5><div class="grid p-fluid" data-v-18804380><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380><span class="p-inputgroup-addon" data-v-18804380><i class="pi pi-user" data-v-18804380></i></span>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_InputText, {
-    modelValue: $setup.email,
-    "onUpdate:modelValue": $event => (($setup.email) = $event),
-    type: "text",
-    placeholder: "Email"
-  }, null, _parent))
-  _push(`</div></div><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380><span class="p-inputgroup-addon" data-v-18804380><i class="pi pi-key" data-v-18804380></i></span>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_InputText, {
-    modelValue: $setup.password,
-    "onUpdate:modelValue": $event => (($setup.password) = $event),
-    type: "password",
-    placeholder: "Password"
-  }, null, _parent))
-  _push(`</div></div><div class="col-12 md:col-12" data-v-18804380><div class="p-inputgroup" data-v-18804380>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, { label: "Submit" }, null, _parent))
-  _push(`</div></div></div><br data-v-18804380><h2 data-v-18804380>${__vite_ssr_import_7__.ssrInterpolate($setup.store.counter)}</h2>`)
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, {
-    icon: "pi pi-plus-circle",
-    label: "Add"
-  }, null, _parent))
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_Button, {
-    icon: "pi pi-minus-circle",
-    class: "p-button-help",
-    label: "Subtract"
-  }, null, _parent))
-  _push(`</div>`)
+  _push(`<!--[--><div class="container" style="${__vite_ssr_import_4__.ssrRenderStyle({"width":"540px"})}"><div class="container mt-5"><ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Register</button></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_login_form, null, null, _parent))
+  _push(`</div><div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_register, null, null, _parent))
+  _push(`</div></div></div></div><h2 class="d-flex justify-content-center">${__vite_ssr_import_4__.ssrInterpolate($setup.store.counter)}</h2><div class="d-flex justify-content-center"><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div><!--]-->`)
 }
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/login.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext()
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-18804380"],['__file',"/Users/zemunkh/Documents/GitHub/pages/login.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/middleware.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /middleware/auth.js ($id_3fdca93e)
 // --------------------
-const $id_48d54ff7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_81eff317 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {
@@ -12585,7 +16239,7 @@ Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: tru
 // --------------------
 // Request: /middleware/auth.js
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/middleware.mjs ($id_48d54ff7)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs ($id_81eff317)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/user.js ($id_6c3c060a)
@@ -12604,15 +16258,15 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtRouteMiddleware((
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/app/compat/vue-demi.mjs ($id_132eda61)
 // - /node_modules/pinia/dist/pinia.mjs ($id_b1920624)
 // --------------------
-const $id_1db78f37 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_980cc1bf = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/compat/vue-demi.mjs");
 
@@ -12659,7 +16313,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/compat/vue-demi.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs ($id_1db78f37)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/compat/capi.mjs ($id_7674cc72)
 // --------------------
@@ -12714,7 +16368,7 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 // --------------------
 // Request: /plugins/persistedstate.js
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs ($id_1975012f)
 // - /node_modules/js-cookie/dist/js.cookie.mjs ($id_23bde2bf)
@@ -12779,7 +16433,7 @@ const getNick = req => {
 // Dependencies: 
 
 // --------------------
-const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs\".") })
+const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs\".") })
 
 
 // --------------------
@@ -12789,7 +16443,7 @@ const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/js-cookie/dist/js.cookie.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/js-cookie/dist/js.cookie.mjs\".") })
+const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs\".") })
 
 
 // --------------------
@@ -12799,13 +16453,13 @@ const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_01580015 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/cookie/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/cookie/index.js\".") })
+const $id_01580015 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/cookie/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/cookie/index.js\".") })
 
 
 // --------------------
 // Request: /plugins/primevue.ts
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
@@ -15181,9 +18835,773 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 
 
 // --------------------
+// Request: /plugins/validate.js
+// Parents: 
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// Dependencies: 
+// - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
+// - /node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js ($id_c1357939)
+// - /node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js ($id_0d8ddd77)
+// --------------------
+const $id_eb85e80e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vee-validate/dist/vee-validate.esm.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js");
+
+// import firebase from '@/helpers/firebase'
+__vite_ssr_exports__.default = () => {
+  __vite_ssr_import_0__.defineRule('required', __vite_ssr_import_1__.required)
+  __vite_ssr_import_0__.defineRule('email', __vite_ssr_import_1__.email)
+  __vite_ssr_import_0__.defineRule('min', __vite_ssr_import_1__.min)
+  __vite_ssr_import_0__.defineRule('url', __vite_ssr_import_1__.url)
+  // defineRule('unique', async (value, args) => {
+  //   let collection, field, excluding
+  //   if (Array.isArray(args)) {
+  //     [collection, field, excluding] = args
+  //   } else {
+  //     ({ collection, field, excluding } = args)
+  //   }
+  //   if (value === excluding) return true
+  //   const querySnapshot = await firebase.firestore().collection(collection).where(field, '==', value).get()
+  //   return querySnapshot.empty
+  // })
+
+  __vite_ssr_import_0__.configure({
+    generateMessage: __vite_ssr_import_2__.localize('en', {
+      messages: {
+        required: '{field} is required',
+        email: '{field} must be a valid email',
+        min: '{field} must be a minimum of 0:{min} characters',
+        unique: '{field} is already taken',
+        url: '{field} must be a valid URL'
+      }
+    })
+  })
+};
+}
+
+
+// --------------------
+// Request: /node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js
+// Parents: 
+// - /plugins/validate.js ($id_eb85e80e)
+// Dependencies: 
+
+// --------------------
+const $id_c1357939 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+/**
+  * vee-validate v4.5.7
+  * (c) 2021 Abdelrahman Awad
+  * @license MIT
+  */
+/* eslint-disable no-misleading-character-class */
+/**
+ * Some Alpha Regex helpers.
+ * https://github.com/chriso/validator.js/blob/master/src/lib/alpha.js
+ */
+const alpha = {
+    en: /^[A-Z]*$/i,
+    cs: /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]*$/i,
+    da: /^[A-ZÆØÅ]*$/i,
+    de: /^[A-ZÄÖÜß]*$/i,
+    es: /^[A-ZÁÉÍÑÓÚÜ]*$/i,
+    fr: /^[A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ]*$/i,
+    it: /^[A-Z\xC0-\xFF]*$/i,
+    lt: /^[A-ZĄČĘĖĮŠŲŪŽ]*$/i,
+    nl: /^[A-ZÉËÏÓÖÜ]*$/i,
+    hu: /^[A-ZÁÉÍÓÖŐÚÜŰ]*$/i,
+    pl: /^[A-ZĄĆĘŚŁŃÓŻŹ]*$/i,
+    pt: /^[A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ]*$/i,
+    ru: /^[А-ЯЁ]*$/i,
+    sk: /^[A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ]*$/i,
+    sr: /^[A-ZČĆŽŠĐ]*$/i,
+    sv: /^[A-ZÅÄÖ]*$/i,
+    tr: /^[A-ZÇĞİıÖŞÜ]*$/i,
+    uk: /^[А-ЩЬЮЯЄІЇҐ]*$/i,
+    ar: /^[ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ]*$/,
+    az: /^[A-ZÇƏĞİıÖŞÜ]*$/i,
+    ug: /^[A-Zچۋېرتيۇڭوپھسداەىقكلزشغۈبنمژفگخجۆئ]*$/i,
+};
+const alphaSpaces = {
+    en: /^[A-Z\s]*$/i,
+    cs: /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ\s]*$/i,
+    da: /^[A-ZÆØÅ\s]*$/i,
+    de: /^[A-ZÄÖÜß\s]*$/i,
+    es: /^[A-ZÁÉÍÑÓÚÜ\s]*$/i,
+    fr: /^[A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ\s]*$/i,
+    it: /^[A-Z\xC0-\xFF\s]*$/i,
+    lt: /^[A-ZĄČĘĖĮŠŲŪŽ\s]*$/i,
+    nl: /^[A-ZÉËÏÓÖÜ\s]*$/i,
+    hu: /^[A-ZÁÉÍÓÖŐÚÜŰ\s]*$/i,
+    pl: /^[A-ZĄĆĘŚŁŃÓŻŹ\s]*$/i,
+    pt: /^[A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ\s]*$/i,
+    ru: /^[А-ЯЁ\s]*$/i,
+    sk: /^[A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ\s]*$/i,
+    sr: /^[A-ZČĆŽŠĐ\s]*$/i,
+    sv: /^[A-ZÅÄÖ\s]*$/i,
+    tr: /^[A-ZÇĞİıÖŞÜ\s]*$/i,
+    uk: /^[А-ЩЬЮЯЄІЇҐ\s]*$/i,
+    ar: /^[ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ\s]*$/,
+    az: /^[A-ZÇƏĞİıÖŞÜ\s]*$/i,
+    ug: /^[A-Zچۋېرتيۇڭوپھسداەىقكلزشغۈبنمژفگخجۆئ\s]*$/i,
+};
+const alphanumeric = {
+    en: /^[0-9A-Z]*$/i,
+    cs: /^[0-9A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]*$/i,
+    da: /^[0-9A-ZÆØÅ]$/i,
+    de: /^[0-9A-ZÄÖÜß]*$/i,
+    es: /^[0-9A-ZÁÉÍÑÓÚÜ]*$/i,
+    fr: /^[0-9A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ]*$/i,
+    it: /^[0-9A-Z\xC0-\xFF]*$/i,
+    lt: /^[0-9A-ZĄČĘĖĮŠŲŪŽ]*$/i,
+    hu: /^[0-9A-ZÁÉÍÓÖŐÚÜŰ]*$/i,
+    nl: /^[0-9A-ZÉËÏÓÖÜ]*$/i,
+    pl: /^[0-9A-ZĄĆĘŚŁŃÓŻŹ]*$/i,
+    pt: /^[0-9A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ]*$/i,
+    ru: /^[0-9А-ЯЁ]*$/i,
+    sk: /^[0-9A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ]*$/i,
+    sr: /^[0-9A-ZČĆŽŠĐ]*$/i,
+    sv: /^[0-9A-ZÅÄÖ]*$/i,
+    tr: /^[0-9A-ZÇĞİıÖŞÜ]*$/i,
+    uk: /^[0-9А-ЩЬЮЯЄІЇҐ]*$/i,
+    ar: /^[٠١٢٣٤٥٦٧٨٩0-9ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ]*$/,
+    az: /^[0-9A-ZÇƏĞİıÖŞÜ]*$/i,
+    ug: /^[0-9A-Zچۋېرتيۇڭوپھسداەىقكلزشغۈبنمژفگخجۆئ]*$/i,
+};
+const alphaDash = {
+    en: /^[0-9A-Z_-]*$/i,
+    cs: /^[0-9A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ_-]*$/i,
+    da: /^[0-9A-ZÆØÅ_-]*$/i,
+    de: /^[0-9A-ZÄÖÜß_-]*$/i,
+    es: /^[0-9A-ZÁÉÍÑÓÚÜ_-]*$/i,
+    fr: /^[0-9A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ_-]*$/i,
+    it: /^[0-9A-Z\xC0-\xFF_-]*$/i,
+    lt: /^[0-9A-ZĄČĘĖĮŠŲŪŽ_-]*$/i,
+    nl: /^[0-9A-ZÉËÏÓÖÜ_-]*$/i,
+    hu: /^[0-9A-ZÁÉÍÓÖŐÚÜŰ_-]*$/i,
+    pl: /^[0-9A-ZĄĆĘŚŁŃÓŻŹ_-]*$/i,
+    pt: /^[0-9A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ_-]*$/i,
+    ru: /^[0-9А-ЯЁ_-]*$/i,
+    sk: /^[0-9A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ_-]*$/i,
+    sr: /^[0-9A-ZČĆŽŠĐ_-]*$/i,
+    sv: /^[0-9A-ZÅÄÖ_-]*$/i,
+    tr: /^[0-9A-ZÇĞİıÖŞÜ_-]*$/i,
+    uk: /^[0-9А-ЩЬЮЯЄІЇҐ_-]*$/i,
+    ar: /^[٠١٢٣٤٥٦٧٨٩0-9ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ_-]*$/,
+    az: /^[0-9A-ZÇƏĞİıÖŞÜ_-]*$/i,
+    ug: /^[0-9A-Zچۋېرتيۇڭوپھسداەىقكلزشغۈبنمژفگخجۆئ_-]*$/i,
+};
+const getLocale = (params) => {
+    if (!params) {
+        return undefined;
+    }
+    return Array.isArray(params) ? params[0] : params.locale;
+};
+
+function getSingleParam(params, paramName) {
+    return Array.isArray(params) ? params[0] : params[paramName];
+}
+function isEmpty(value) {
+    if (value === null || value === undefined || value === '') {
+        return true;
+    }
+    if (Array.isArray(value) && value.length === 0) {
+        return true;
+    }
+    return false;
+}
+
+const alphaValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const locale = getLocale(params);
+    if (Array.isArray(value)) {
+        return value.every(val => alphaValidator(val, { locale }));
+    }
+    const valueAsString = String(value);
+    // Match at least one locale.
+    if (!locale) {
+        return Object.keys(alpha).some(loc => alpha[loc].test(valueAsString));
+    }
+    return (alpha[locale] || alpha.en).test(valueAsString);
+};
+
+const alphaDashValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const locale = getLocale(params);
+    if (Array.isArray(value)) {
+        return value.every(val => alphaDashValidator(val, { locale }));
+    }
+    const valueAsString = String(value);
+    // Match at least one locale.
+    if (!locale) {
+        return Object.keys(alphaDash).some(loc => alphaDash[loc].test(valueAsString));
+    }
+    return (alphaDash[locale] || alphaDash.en).test(valueAsString);
+};
+
+const alphaNumValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const locale = getLocale(params);
+    if (Array.isArray(value)) {
+        return value.every(val => alphaNumValidator(val, { locale }));
+    }
+    const valueAsString = String(value);
+    // Match at least one locale.
+    if (!locale) {
+        return Object.keys(alphanumeric).some(loc => alphanumeric[loc].test(valueAsString));
+    }
+    return (alphanumeric[locale] || alphanumeric.en).test(valueAsString);
+};
+
+const alphaSpacesValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const locale = getLocale(params);
+    if (Array.isArray(value)) {
+        return value.every(val => alphaSpacesValidator(val, { locale }));
+    }
+    const valueAsString = String(value);
+    // Match at least one locale.
+    if (!locale) {
+        return Object.keys(alphaSpaces).some(loc => alphaSpaces[loc].test(valueAsString));
+    }
+    return (alphaSpaces[locale] || alphaSpaces.en).test(valueAsString);
+};
+
+function getParams$1(params) {
+    if (!params) {
+        return {
+            min: 0,
+            max: 0,
+        };
+    }
+    if (Array.isArray(params)) {
+        return { min: params[0], max: params[1] };
+    }
+    return params;
+}
+const betweenValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const { min, max } = getParams$1(params);
+    if (Array.isArray(value)) {
+        return value.every(val => !!betweenValidator(val, { min, max }));
+    }
+    const valueAsNumber = Number(value);
+    return Number(min) <= valueAsNumber && Number(max) >= valueAsNumber;
+};
+
+const confirmedValidator = (value, params) => {
+    const target = getSingleParam(params, 'target');
+    return String(value) === String(target);
+};
+
+const digitsValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const length = getSingleParam(params, 'length');
+    if (Array.isArray(value)) {
+        return value.every(val => digitsValidator(val, { length }));
+    }
+    const strVal = String(value);
+    return /^[0-9]*$/.test(strVal) && strVal.length === Number(length);
+};
+
+const validateImage = (file, width, height) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const URL = window.URL || window.webkitURL;
+    return new Promise(resolve => {
+        const image = new Image();
+        image.onerror = () => resolve(false);
+        image.onload = () => resolve(image.width === width && image.height === height);
+        image.src = URL.createObjectURL(file);
+    });
+};
+function getParams(params) {
+    if (!params) {
+        return { width: 0, height: 0 };
+    }
+    if (Array.isArray(params)) {
+        return { width: Number(params[0]), height: Number(params[1]) };
+    }
+    return {
+        width: Number(params.width),
+        height: Number(params.height),
+    };
+}
+const dimensionsValidator = (files, params) => {
+    if (isEmpty(files)) {
+        return true;
+    }
+    const { width, height } = getParams(params);
+    const list = [];
+    const fileList = Array.isArray(files) ? files : [files];
+    for (let i = 0; i < fileList.length; i++) {
+        // if file is not an image, reject.
+        if (!/\.(jpg|svg|jpeg|png|bmp|gif)$/i.test(fileList[i].name)) {
+            return Promise.resolve(false);
+        }
+        list.push(fileList[i]);
+    }
+    return Promise.all(list.map(file => validateImage(file, width, height))).then(values => {
+        return values.every(v => v);
+    });
+};
+
+/* eslint-disable no-useless-escape */
+const emailValidator = (value) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (Array.isArray(value)) {
+        return value.every(val => re.test(String(val)));
+    }
+    return re.test(String(value));
+};
+
+const extValidator = (files, extensions) => {
+    if (isEmpty(files)) {
+        return true;
+    }
+    if (!extensions) {
+        extensions = [];
+    }
+    const regex = new RegExp(`.(${extensions.join('|')})$`, 'i');
+    if (Array.isArray(files)) {
+        return files.every(file => regex.test(file.name));
+    }
+    return regex.test(files.name);
+};
+
+const imageValidator = (files) => {
+    if (isEmpty(files)) {
+        return true;
+    }
+    const regex = /\.(jpg|svg|jpeg|png|bmp|gif|webp)$/i;
+    if (Array.isArray(files)) {
+        return files.every(file => regex.test(file.name));
+    }
+    return regex.test(files.name);
+};
+
+const integerValidator = (value) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    if (Array.isArray(value)) {
+        return value.every(val => /^-?[0-9]+$/.test(String(val)));
+    }
+    return /^-?[0-9]+$/.test(String(value));
+};
+
+const isValidator = (value, params) => {
+    const other = getSingleParam(params, 'other');
+    return value === other;
+};
+
+const isNotValidator = (value, params) => {
+    const other = getSingleParam(params, 'other');
+    return value !== other;
+};
+
+function isNullOrUndefined(value) {
+    return value === null || value === undefined;
+}
+function isEmptyArray(arr) {
+    return Array.isArray(arr) && arr.length === 0;
+}
+
+const lengthValidator = (value, params) => {
+    // Normalize the length value
+    const length = getSingleParam(params, 'length');
+    if (isNullOrUndefined(value)) {
+        return false;
+    }
+    if (typeof value === 'number') {
+        value = String(value);
+    }
+    if (!value.length) {
+        value = Array.from(value);
+    }
+    return value.length === Number(length);
+};
+
+const maxLengthValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const length = getSingleParam(params, 'length');
+    if (Array.isArray(value)) {
+        return value.every(val => maxLengthValidator(val, { length }));
+    }
+    return String(value).length <= Number(length);
+};
+
+const maxValueValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const max = getSingleParam(params, 'max');
+    if (Array.isArray(value)) {
+        return value.length > 0 && value.every(val => maxValueValidator(val, { max }));
+    }
+    return Number(value) <= Number(max);
+};
+
+const mimesValidator = (files, mimes) => {
+    if (isEmpty(files)) {
+        return true;
+    }
+    if (!mimes) {
+        mimes = [];
+    }
+    const regex = new RegExp(`${mimes.join('|').replace('*', '.+')}$`, 'i');
+    if (Array.isArray(files)) {
+        return files.every(file => regex.test(file.type));
+    }
+    return regex.test(files.type);
+};
+
+const minValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const length = getSingleParam(params, 'length');
+    if (Array.isArray(value)) {
+        return value.every(val => minValidator(val, { length }));
+    }
+    return String(value).length >= Number(length);
+};
+
+const minValueValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const min = getSingleParam(params, 'min');
+    if (Array.isArray(value)) {
+        return value.length > 0 && value.every(val => minValueValidator(val, { min }));
+    }
+    return Number(value) >= Number(min);
+};
+
+const oneOfValidator = (value, list) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    if (Array.isArray(value)) {
+        return value.every(val => oneOfValidator(val, list));
+    }
+    return Array.from(list).some(item => {
+        // eslint-disable-next-line
+        return item == value;
+    });
+};
+
+const excludedValidator = (value, list) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    return !oneOfValidator(value, list);
+};
+
+const ar = /^[٠١٢٣٤٥٦٧٨٩]+$/;
+const en = /^[0-9]+$/;
+const numericValidator = (value) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    const testValue = (val) => {
+        const strValue = String(val);
+        return en.test(strValue) || ar.test(strValue);
+    };
+    if (Array.isArray(value)) {
+        return value.every(testValue);
+    }
+    return testValue(value);
+};
+
+const regexValidator = (value, params) => {
+    if (isEmpty(value)) {
+        return true;
+    }
+    let regex = getSingleParam(params, 'regex');
+    if (typeof regex === 'string') {
+        regex = new RegExp(regex);
+    }
+    if (Array.isArray(value)) {
+        return value.every(val => regexValidator(val, { regex }));
+    }
+    return regex.test(String(value));
+};
+
+const requiredValidator = (value) => {
+    if (isNullOrUndefined(value) || isEmptyArray(value) || value === false) {
+        return false;
+    }
+    return !!String(value).trim().length;
+};
+
+const sizeValidator = (files, params) => {
+    if (isEmpty(files)) {
+        return true;
+    }
+    let size = getSingleParam(params, 'size');
+    size = Number(size);
+    if (isNaN(size)) {
+        return false;
+    }
+    const nSize = size * 1024;
+    if (!Array.isArray(files)) {
+        return files.size <= nSize;
+    }
+    for (let i = 0; i < files.length; i++) {
+        if (files[i].size > nSize) {
+            return false;
+        }
+    }
+    return true;
+};
+
+const urlValidator = (value, params) => {
+    var _a;
+    if (isEmpty(value)) {
+        return true;
+    }
+    let pattern = getSingleParam(params, 'pattern');
+    if (typeof pattern === 'string') {
+        pattern = new RegExp(pattern);
+    }
+    try {
+        // eslint-disable-next-line no-new
+        new URL(value);
+    }
+    catch (_b) {
+        return false;
+    }
+    return (_a = pattern === null || pattern === void 0 ? void 0 : pattern.test(value)) !== null && _a !== void 0 ? _a : true;
+};
+
+/* eslint-disable camelcase */
+const all = {
+    alpha_dash: alphaDashValidator,
+    alpha_num: alphaNumValidator,
+    alpha_spaces: alphaSpacesValidator,
+    alpha: alphaValidator,
+    between: betweenValidator,
+    confirmed: confirmedValidator,
+    digits: digitsValidator,
+    dimensions: dimensionsValidator,
+    email: emailValidator,
+    ext: extValidator,
+    image: imageValidator,
+    integer: integerValidator,
+    is_not: isNotValidator,
+    is: isValidator,
+    length: lengthValidator,
+    max_value: maxValueValidator,
+    max: maxLengthValidator,
+    mimes: mimesValidator,
+    min_value: minValueValidator,
+    min: minValidator,
+    not_one_of: excludedValidator,
+    numeric: numericValidator,
+    one_of: oneOfValidator,
+    regex: regexValidator,
+    required: requiredValidator,
+    size: sizeValidator,
+    url: urlValidator,
+};
+
+
+Object.defineProperty(__vite_ssr_exports__, "alpha", { enumerable: true, configurable: true, get(){ return alphaValidator }});
+Object.defineProperty(__vite_ssr_exports__, "alpha_dash", { enumerable: true, configurable: true, get(){ return alphaDashValidator }});
+Object.defineProperty(__vite_ssr_exports__, "alpha_num", { enumerable: true, configurable: true, get(){ return alphaNumValidator }});
+Object.defineProperty(__vite_ssr_exports__, "alpha_spaces", { enumerable: true, configurable: true, get(){ return alphaSpacesValidator }});
+Object.defineProperty(__vite_ssr_exports__, "between", { enumerable: true, configurable: true, get(){ return betweenValidator }});
+Object.defineProperty(__vite_ssr_exports__, "confirmed", { enumerable: true, configurable: true, get(){ return confirmedValidator }});
+Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return all }});
+Object.defineProperty(__vite_ssr_exports__, "digits", { enumerable: true, configurable: true, get(){ return digitsValidator }});
+Object.defineProperty(__vite_ssr_exports__, "dimensions", { enumerable: true, configurable: true, get(){ return dimensionsValidator }});
+Object.defineProperty(__vite_ssr_exports__, "email", { enumerable: true, configurable: true, get(){ return emailValidator }});
+Object.defineProperty(__vite_ssr_exports__, "ext", { enumerable: true, configurable: true, get(){ return extValidator }});
+Object.defineProperty(__vite_ssr_exports__, "image", { enumerable: true, configurable: true, get(){ return imageValidator }});
+Object.defineProperty(__vite_ssr_exports__, "integer", { enumerable: true, configurable: true, get(){ return integerValidator }});
+Object.defineProperty(__vite_ssr_exports__, "is", { enumerable: true, configurable: true, get(){ return isValidator }});
+Object.defineProperty(__vite_ssr_exports__, "is_not", { enumerable: true, configurable: true, get(){ return isNotValidator }});
+Object.defineProperty(__vite_ssr_exports__, "length", { enumerable: true, configurable: true, get(){ return lengthValidator }});
+Object.defineProperty(__vite_ssr_exports__, "max", { enumerable: true, configurable: true, get(){ return maxLengthValidator }});
+Object.defineProperty(__vite_ssr_exports__, "max_value", { enumerable: true, configurable: true, get(){ return maxValueValidator }});
+Object.defineProperty(__vite_ssr_exports__, "mimes", { enumerable: true, configurable: true, get(){ return mimesValidator }});
+Object.defineProperty(__vite_ssr_exports__, "min", { enumerable: true, configurable: true, get(){ return minValidator }});
+Object.defineProperty(__vite_ssr_exports__, "min_value", { enumerable: true, configurable: true, get(){ return minValueValidator }});
+Object.defineProperty(__vite_ssr_exports__, "not_one_of", { enumerable: true, configurable: true, get(){ return excludedValidator }});
+Object.defineProperty(__vite_ssr_exports__, "numeric", { enumerable: true, configurable: true, get(){ return numericValidator }});
+Object.defineProperty(__vite_ssr_exports__, "one_of", { enumerable: true, configurable: true, get(){ return oneOfValidator }});
+Object.defineProperty(__vite_ssr_exports__, "regex", { enumerable: true, configurable: true, get(){ return regexValidator }});
+Object.defineProperty(__vite_ssr_exports__, "required", { enumerable: true, configurable: true, get(){ return requiredValidator }});
+Object.defineProperty(__vite_ssr_exports__, "size", { enumerable: true, configurable: true, get(){ return sizeValidator }});
+Object.defineProperty(__vite_ssr_exports__, "url", { enumerable: true, configurable: true, get(){ return urlValidator }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js
+// Parents: 
+// - /plugins/validate.js ($id_eb85e80e)
+// Dependencies: 
+
+// --------------------
+const $id_0d8ddd77 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+/**
+  * vee-validate v4.5.7
+  * (c) 2021 Abdelrahman Awad
+  * @license MIT
+  */
+function isCallable(fn) {
+    return typeof fn === 'function';
+}
+const isObject = (obj) => obj !== null && !!obj && typeof obj === 'object' && !Array.isArray(obj);
+
+/**
+ * Replaces placeholder values in a string with their actual values
+ */
+function interpolate(template, values) {
+    return template.replace(/(\d:)?{([^}]+)}/g, function (_, param, placeholder) {
+        if (!param || !values.params) {
+            return placeholder in values
+                ? values[placeholder]
+                : values.params && placeholder in values.params
+                    ? values.params[placeholder]
+                    : `{${placeholder}}`;
+        }
+        // Handles extended object params format
+        if (!Array.isArray(values.params)) {
+            return placeholder in values.params ? values.params[placeholder] : `{${placeholder}}`;
+        }
+        // Extended Params exit in the format of `paramIndex:{paramName}` where the index is optional
+        const paramIndex = Number(param.replace(':', ''));
+        return paramIndex in values.params ? values.params[paramIndex] : `${param}{${placeholder}}`;
+    });
+}
+function merge(target, source) {
+    Object.keys(source).forEach(key => {
+        if (isObject(source[key])) {
+            if (!target[key]) {
+                target[key] = {};
+            }
+            merge(target[key], source[key]);
+            return;
+        }
+        target[key] = source[key];
+    });
+    return target;
+}
+
+class Dictionary {
+    constructor(locale, dictionary) {
+        this.container = {};
+        this.locale = locale;
+        this.merge(dictionary);
+    }
+    resolve(ctx) {
+        return this.format(this.locale, ctx);
+    }
+    getLocaleDefault(locale, field) {
+        var _a, _b, _c, _d, _e;
+        return ((_c = (_b = (_a = this.container[locale]) === null || _a === void 0 ? void 0 : _a.fields) === null || _b === void 0 ? void 0 : _b[field]) === null || _c === void 0 ? void 0 : _c._default) || ((_e = (_d = this.container[locale]) === null || _d === void 0 ? void 0 : _d.messages) === null || _e === void 0 ? void 0 : _e._default);
+    }
+    format(locale, ctx) {
+        var _a, _b, _c, _d, _e, _f, _g, _h;
+        let message;
+        const { field, rule, form } = ctx;
+        const fieldName = (_c = (_b = (_a = this.container[locale]) === null || _a === void 0 ? void 0 : _a.names) === null || _b === void 0 ? void 0 : _b[field]) !== null && _c !== void 0 ? _c : field;
+        if (!rule) {
+            message = this.getLocaleDefault(locale, field) || `${fieldName} is not valid`;
+            return isCallable(message) ? message(ctx) : interpolate(message, Object.assign(Object.assign({}, form), { field: fieldName }));
+        }
+        // find if specific message for that field was specified.
+        message = ((_f = (_e = (_d = this.container[locale]) === null || _d === void 0 ? void 0 : _d.fields) === null || _e === void 0 ? void 0 : _e[field]) === null || _f === void 0 ? void 0 : _f[rule.name]) || ((_h = (_g = this.container[locale]) === null || _g === void 0 ? void 0 : _g.messages) === null || _h === void 0 ? void 0 : _h[rule.name]);
+        if (!message) {
+            message = this.getLocaleDefault(locale, field) || `${fieldName} is not valid`;
+        }
+        return isCallable(message)
+            ? message(ctx)
+            : interpolate(message, Object.assign(Object.assign({}, form), { field: fieldName, params: rule.params }));
+    }
+    merge(dictionary) {
+        merge(this.container, dictionary);
+    }
+}
+let DICTIONARY;
+function localize(locale, dictionary) {
+    if (!DICTIONARY) {
+        DICTIONARY = new Dictionary('en', {});
+    }
+    const generateMessage = ctx => {
+        return DICTIONARY.resolve(ctx);
+    };
+    if (typeof locale === 'string') {
+        DICTIONARY.locale = locale;
+        if (dictionary) {
+            DICTIONARY.merge({ [locale]: dictionary });
+        }
+        return generateMessage;
+    }
+    DICTIONARY.merge(locale);
+    return generateMessage;
+}
+/**
+ * Sets the locale
+ */
+function setLocale(locale) {
+    DICTIONARY.locale = locale;
+}
+/**
+ * Loads a locale file from URL and merges it with the current dictionary
+ */
+async function loadLocaleFromURL(url) {
+    try {
+        const locale = await fetch(url, {
+            headers: {
+                'content-type': 'application/json',
+            },
+        }).then(res => res.json());
+        if (!locale.code) {
+            console.error('Could not identify locale, ensure the locale file contains `code` field');
+            return;
+        }
+        localize({ [locale.code]: locale });
+    }
+    catch (err) {
+        console.error(`Failed to load locale `);
+    }
+}
+
+
+Object.defineProperty(__vite_ssr_exports__, "loadLocaleFromURL", { enumerable: true, configurable: true, get(){ return loadLocaleFromURL }});
+Object.defineProperty(__vite_ssr_exports__, "localize", { enumerable: true, configurable: true, get(){ return localize }});
+Object.defineProperty(__vite_ssr_exports__, "setLocale", { enumerable: true, configurable: true, get(){ return setLocale }});
+;
+}
+
+
+// --------------------
 // Request: /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
 // --------------------
@@ -15207,17 +19625,17 @@ __vite_ssr_exports__.default = () => {}
 // Dependencies: 
 
 // --------------------
-const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/GitHub/node_modules/ohmyfetch/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/GitHub/node_modules/ohmyfetch/dist/index.mjs\".") })
+const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs\".") })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/components.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs ($id_3de84f15)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // --------------------
-const $id_98b03e47 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_637b83c5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -15234,13 +19652,13 @@ __vite_ssr_exports__.default = function (nuxtApp) {
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/root-component.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // --------------------
-const $id_0f4509d4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_2cd6dcc5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/components/nuxt-root.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -15250,7 +19668,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/components/nuxt-root.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/root-component.mjs ($id_0f4509d4)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs ($id_2cd6dcc5)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -15303,18 +19721,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/app-component.mjs
+// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /app.vue ($id_2b46e842)
 // --------------------
-const $id_c14d9387 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_935a2b05 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/app.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -15324,7 +19742,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /app.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/app-component.mjs ($id_c14d9387)
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs ($id_935a2b05)
 // Dependencies: 
 // - /components/Header/Header.vue ($id_73b23c04)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -15361,7 +19779,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/app.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/app.vue"]]);
 }
 
 
@@ -15370,91 +19788,56 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_m
 // Parents: 
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /assets/images/yes_logo.png ($id_66f3e6b7)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_73b23c04 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-const _sfc_main = {
-  setup(__props, { expose }) {
-  expose();
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
-const items = __vite_ssr_import_0__.ref([
-  {
-    label:'Quit',
-    icon:'pi pi-fw pi-power-off'
-  }
-]);
-
-const __returned__ = { items }
-Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
-return __returned__
-}
-
-}
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/assets/images/yes_logo.png");
 
 
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Menubar = __vite_ssr_import_1__.resolveComponent("Menubar")
-  const _component_InputText = __vite_ssr_import_1__.resolveComponent("InputText")
 
-  _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(_attrs)}>`)
-  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Menubar, { model: $setup.items }, {
-    start: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(`<img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" height="40" class="mr-2"${_scopeId}>`)
-      } else {
-        return [
-          __vite_ssr_import_1__.createVNode("img", {
-            alt: "logo",
-            src: "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png",
-            height: "40",
-            class: "mr-2"
-          })
-        ]
-      }
-    }),
-    end: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(__vite_ssr_import_2__.ssrRenderComponent(_component_InputText, {
-          placeholder: "Search",
-          type: "text"
-        }, null, _parent, _scopeId))
-      } else {
-        return [
-          __vite_ssr_import_1__.createVNode(_component_InputText, {
-            placeholder: "Search",
-            type: "text"
-          })
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`</div>`)
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<div${
+    __vite_ssr_import_0__.ssrRenderAttrs(_attrs)
+  }><nav class="navbar navbar-light bg-light"><div class="container-fluid"><a class="navbar-brand" href="#"><img${
+    __vite_ssr_import_0__.ssrRenderAttr("src", __vite_ssr_import_1__.default)
+  } alt="" width="72" height="36" class="d-inline-block align-text-top"> Yes4Mkt </a></div></nav></div>`)
 }
 
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Header/Header.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/GitHub/components/Header/Header.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Header/Header.vue"]]);
+}
+
+
+// --------------------
+// Request: /assets/images/yes_logo.png
+// Parents: 
+// - /components/Header/Header.vue ($id_73b23c04)
+// Dependencies: 
+
+// --------------------
+const $id_66f3e6b7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/yes_logo.png";
 }
 
 
 const __modules__ = {
-  "/Users/zemunkh/Documents/GitHub/node_modules/nuxt3/dist/app/entry": $id_02c377a4,
+  "/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry": $id_947c0482,
   "/node_modules/nuxt3/dist/app/bootstrap.mjs": $id_fef466a9,
   "/node_modules/vue/dist/vue.cjs.js": $id_60f0615f,
   "/node_modules/nuxt3/dist/app/index.mjs": $id_d8c2af0f,
@@ -15478,23 +19861,23 @@ const __modules__ = {
   "/node_modules/nuxt3/dist/meta/runtime/index.mjs": $id_ea12a3fb,
   "/node_modules/nuxt3/dist/meta/runtime/composables.mjs": $id_ca9295be,
   "/node_modules/@vue/shared/dist/shared.cjs.js": $id_852b06a2,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/css.mjs": $id_9b57c59a,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs": $id_f4c7371f,
   "/node_modules/primevue/resources/themes/saga-blue/theme.css": $id_4e9f8bcd,
   "/node_modules/primevue/resources/primevue.css": $id_736dcf3c,
   "/node_modules/primeicons/primeicons.css": $id_f890f676,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/plugins/server.mjs": $id_3de84f15,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs": $id_b63089b7,
   "/node_modules/nuxt3/dist/app/plugins/preload.server.mjs": $id_b9f3c557,
   "/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs": $id_cbe5172d,
   "/node_modules/@vueuse/head/dist/index.mjs": $id_c032264e,
   "/node_modules/nuxt3/dist/meta/runtime/plugin.mjs": $id_9fd5f35e,
   "/node_modules/nuxt3/dist/meta/runtime/components.mjs": $id_94744df3,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/meta.config.mjs": $id_bacdebfd,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs": $id_cca9cda5,
   "/node_modules/nuxt3/dist/pages/runtime/router.mjs": $id_a4d6cb5b,
   "/node_modules/nuxt3/dist/pages/runtime/page.mjs": $id_485c89bf,
   "/node_modules/nuxt3/dist/pages/runtime/utils.mjs": $id_e1b210cc,
   "/node_modules/nuxt3/dist/pages/runtime/layout.mjs": $id_9b68c93f,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/layouts.mjs": $id_4e4982d8,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/routes.mjs": $id_421f6e7d,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs": $id_1cf59b84,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs": $id_238f4431,
   "/pages/index.vue?macro=true": $id_5dd70240,
   "/node_modules/nuxt3/dist/pages/runtime/composables.mjs": $id_f55c9203,
   "/store/user.js": $id_6c3c060a,
@@ -15513,15 +19896,30 @@ const __modules__ = {
   "/node_modules/vue/server-renderer/index.js": $id_b215fa1c,
   "/@id/plugin-vue:export-helper": $id_bbb863c1,
   "/pages/login.vue?macro=true": $id_213baa8a,
+  "/components/Forms/LoginForm.vue": $id_600babf2,
   "/components/Tools/Loader.vue": $id_c71ecea5,
   "/components/Tools/Loader.vue?vue&type=style&index=0&lang.css": $id_418e9d87,
   "/components/Tools/ErrorMsg.vue": $id_faa89f61,
-  "/pages/login.vue?vue&type=style&index=0&scoped=true&lang.css": $id_e110bf24,
+  "/components/reusable/AppFormField.vue": $id_def58cce,
+  "/node_modules/vee-validate/dist/vee-validate.esm.js": $id_2387c42e,
+  "/node_modules/@vue/devtools-api/lib/esm/index.js": $id_24b1ff15,
+  "/node_modules/@vue/devtools-api/lib/esm/env.js": $id_304a908e,
+  "/node_modules/@vue/devtools-api/lib/esm/const.js": $id_8e00d2d1,
+  "/node_modules/@vue/devtools-api/lib/esm/proxy.js": $id_c00b31f5,
+  "/node_modules/@vue/devtools-api/lib/esm/api/index.js": $id_550ae022,
+  "/node_modules/@vue/devtools-api/lib/esm/api/api.js": $id_92fae9b0,
+  "/node_modules/@vue/devtools-api/lib/esm/api/app.js": $id_b65c5853,
+  "/node_modules/@vue/devtools-api/lib/esm/api/component.js": $id_614015ea,
+  "/node_modules/@vue/devtools-api/lib/esm/api/context.js": $id_2baadcfd,
+  "/node_modules/@vue/devtools-api/lib/esm/api/hooks.js": $id_3aa5d48c,
+  "/node_modules/@vue/devtools-api/lib/esm/api/util.js": $id_03011152,
+  "/node_modules/@vue/devtools-api/lib/esm/plugin.js": $id_674cbbbf,
+  "/components/Forms/Register.vue": $id_7dc4ae3d,
   "/pages/index.vue": $id_cca58e97,
   "/pages/login.vue": $id_b0922173,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/middleware.mjs": $id_48d54ff7,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs": $id_81eff317,
   "/middleware/auth.js": $id_3fdca93e,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/dist.plugin.1608af53.mjs": $id_1db78f37,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs": $id_980cc1bf,
   "/node_modules/nuxt3/dist/app/compat/vue-demi.mjs": $id_132eda61,
   "/node_modules/nuxt3/dist/app/compat/capi.mjs": $id_7674cc72,
   "/plugins/persistedstate.js": $id_88d211c2,
@@ -15536,14 +19934,18 @@ const __modules__ = {
   "/node_modules/primevue/ripple/ripple.esm.js": $id_eca4a5be,
   "/node_modules/primevue/menubar/menubar.esm.js": $id_1db5deaf,
   "/node_modules/primevue/inputtext/inputtext.esm.js": $id_743d0bd5,
+  "/plugins/validate.js": $id_eb85e80e,
+  "/node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js": $id_c1357939,
+  "/node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js": $id_0d8ddd77,
   "/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs": $id_7b587af2,
   "/node_modules/ohmyfetch/dist/index.mjs": $id_780217c4,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/components.mjs": $id_98b03e47,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/root-component.mjs": $id_0f4509d4,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs": $id_637b83c5,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs": $id_2cd6dcc5,
   "/node_modules/nuxt3/dist/app/components/nuxt-root.vue": $id_f8564e04,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/GitHub/.nuxt/app-component.mjs": $id_c14d9387,
+  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs": $id_935a2b05,
   "/app.vue": $id_2b46e842,
-  "/components/Header/Header.vue": $id_73b23c04
+  "/components/Header/Header.vue": $id_73b23c04,
+  "/assets/images/yes_logo.png": $id_66f3e6b7
 }
 
 
@@ -15620,4 +20022,4 @@ async function __instantiateModule__(url, urlStack) {
 }
 
 
-export default await __ssrLoadModule__("/Users/zemunkh/Documents/GitHub/node_modules/nuxt3/dist/app/entry")
+export default await __ssrLoadModule__("/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry")

@@ -1,21 +1,16 @@
 <template>
   <div>
-    <Menubar :model="items">
-      <template #start>
-        <img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" height="40" class="mr-2">
-      </template>
-      <template #end>
-        <InputText placeholder="Search" type="text" />
-      </template>
-    </Menubar>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="~/assets/images/yes_logo.png" alt="" width="72" height="36" class="d-inline-block align-text-top">
+          Yes4Mkt
+        </a>
+      </div>
+    </nav>
   </div>
 </template>
 
 <script setup>
-const items = ref([
-  {
-    label:'Quit',
-    icon:'pi pi-fw pi-power-off'
-  }
-]);
+
 </script>

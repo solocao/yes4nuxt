@@ -1,0 +1,52 @@
+<template>
+  <div class="container mt-4">
+    <loader :isLoading="isActive"/> 
+    <Form @submit="loginWithEmail">
+
+      <AppFormField label="Email" name="email" type="email" v-model="user.email" rules="required|email" />
+      <AppFormField label="Password" name="password" type="password" v-model="user.password" rules="required|min:6" />
+
+      <button type="submit" class="btn btn-primary" style="width: 100%">Login</button>
+    </Form>
+  </div>
+</template>
+
+
+<script>
+  import { useStore } from '~/store/store'
+  import { useAuthStore } from '~/store/user'
+  import Loader from '~/components/Tools/Loader'
+  import ErrorMsg from "~/components/Tools/ErrorMsg";
+  import AppFormField from "~/components/reusable/AppFormField";
+  import { Form } from 'vee-validate';
+  export default ({
+    components: { Loader, ErrorMsg, Form, AppFormField },
+    setup() {
+      const authStore = useAuthStore();
+      const { logInUser } = authStore;
+      
+      const store = useStore();
+
+      const isActive = ref(false)
+      const user = reactive({
+        email: '',
+        password: ''
+      })
+
+      const loginWithEmail = async () => {
+        isActive.value = true
+        await logInUser(user.email, user.password)
+        navigateTo('/')
+        isActive.value = false
+      }
+
+      return {
+        isActive,
+        store,
+        user,
+        authStore,
+        loginWithEmail
+      }
+    }
+  })
+</script>

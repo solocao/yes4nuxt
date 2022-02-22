@@ -42,6 +42,9 @@
       "assets": [
         "assets"
       ],
+      "assets/*": [
+        "assets/*"
+      ],
       "public": [
         "."
       ],

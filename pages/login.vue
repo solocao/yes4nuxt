@@ -1,88 +1,42 @@
 <template>
-  <div class="container mx-auto">
-    <Loader :isLoading="isActive"/>
-    <ErrorMsg header="Error" :errMessage="authStore.error" />
-    <h5>Login</h5>
-    <div class="grid p-fluid">
-        <div class="col-12 md:col-12">
-            <div class="p-inputgroup">
-                <span class="p-inputgroup-addon">
-                    <i class="pi pi-user"></i>
-                </span>
-                <InputText v-model="email" type="text" placeholder="Email" />
-            </div>
+  <div class="container" style="width: 540px;">
+    <div class="container mt-5">
+      <ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Register</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+          <login-form/>
         </div>
-        <div class="col-12 md:col-12">
-            <div class="p-inputgroup">
-                <span class="p-inputgroup-addon">
-                    <i class="pi pi-key"></i>
-                </span>
-                <InputText v-model="password" type="password" placeholder="Password" />
-            </div>
+        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+          <register/>
         </div>
-        <div class="col-12 md:col-12">
-            <div class="p-inputgroup">
-              <Button @click="loginWithEmail()" label="Submit"/>
-            </div>
-        </div>
+      </div>
     </div>
-
-    <br>
-    <h2>{{ store.counter }}</h2>
-    <Button @click="store.increment()" icon="pi pi-plus-circle" label="Add" />
-    <Button @click="store.decrement()" icon="pi pi-minus-circle" class="p-button-help" label="Subtract" />
+  </div>
+  <h2 class="d-flex justify-content-center">{{ store.counter }}</h2>
+  <div class="d-flex justify-content-center">
+    <button @click="store.increment()" type="button" class="btn btn-outline-primary">Add</button>
+    <button @click="store.decrement()"  type="button" class="btn btn-outline-success">Subtract</button>
   </div>
 </template>
 
 <script >
   import { useStore } from '~/store/store'
-  import { useAuthStore } from '~/store/user'
-  import Loader from '~/components/Tools/Loader'
-  import ErrorMsg from "~/components/Tools/ErrorMsg";
+  import LoginForm from "~/components/Forms/LoginForm";
+  import Register from "~/components/Forms/Register";
   export default ({
-    components: { Loader, ErrorMsg },
+    components: { LoginForm, Register },
     setup() {
-      const authStore = useAuthStore();
-      const { logInUser } = authStore;
-      
       const store = useStore();
-
-      const isActive = ref(false)
-      const email = ref('');
-      const password = ref('');
-
-      const loginWithEmail = async () => {
-        isActive.value = true
-        await logInUser(email.value, password.value)
-        navigateTo('/')
-        isActive.value = false
-      }
-
       return {
-        isActive,
         store,
-        email,
-        password,
-        authStore,
-        loginWithEmail
       }
     }
   })
-
-  // import { useStore } from '~/store/store'
-  // const { $firebaseApp, $firebaseAuth  } = useNuxtApp();
-  // // alternatively, you can also use it here
-  // const store = useStore()
-  // onMounted(async () => {
-  //   $firebaseApp
-  // })
 </script>
-
-<style scoped>
-.container {
-  margin: auto;
-  width: 50%;
-  height: 200px;
-  text-align: center;
-}
-</style>
