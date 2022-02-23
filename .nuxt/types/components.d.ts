@@ -4,9 +4,9 @@ declare module 'vue' {
     'FormsLoginForm': typeof import("../../components/Forms/LoginForm.vue")['default'],
     'FormsRegister': typeof import("../../components/Forms/Register.vue")['default'],
     'Header': typeof import("../../components/Header/Header.vue")['default'],
+    'ReusableAppFormField': typeof import("../../components/reusable/AppFormField.vue")['default'],
     'ToolsErrorMsg': typeof import("../../components/Tools/ErrorMsg.vue")['default'],
     'ToolsLoader': typeof import("../../components/Tools/Loader.vue")['default'],
-    'ReusableAppFormField': typeof import("../../components/reusable/AppFormField.vue")['default'],
     'NuxtWelcome': typeof import("../../node_modules/nuxt3/dist/app/components/nuxt-welcome.vue")['default'],
     'ClientOnly': typeof import("../../node_modules/nuxt3/dist/app/components/client-only")['default']
   }

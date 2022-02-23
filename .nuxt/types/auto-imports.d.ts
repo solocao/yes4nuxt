@@ -11,6 +11,12 @@ declare global {
   const useLazyFetch: typeof import("../../node_modules/nuxt3/dist/app")['useLazyFetch']
   const useCookie: typeof import("../../node_modules/nuxt3/dist/app")['useCookie']
   const useRequestHeaders: typeof import("../../node_modules/nuxt3/dist/app")['useRequestHeaders']
+  const useRouter: typeof import("../../node_modules/nuxt3/dist/app")['useRouter']
+  const useRoute: typeof import("../../node_modules/nuxt3/dist/app")['useRoute']
+  const defineNuxtRouteMiddleware: typeof import("../../node_modules/nuxt3/dist/app")['defineNuxtRouteMiddleware']
+  const navigateTo: typeof import("../../node_modules/nuxt3/dist/app")['navigateTo']
+  const abortNavigation: typeof import("../../node_modules/nuxt3/dist/app")['abortNavigation']
+  const addRouteMiddleware: typeof import("../../node_modules/nuxt3/dist/app")['addRouteMiddleware']
   const useMeta: typeof import("../../node_modules/nuxt3/dist/meta/runtime")['useMeta']
   const isVue2: typeof import("../../node_modules/nuxt3/dist/app/compat/vue-demi")['isVue2']
   const isVue3: typeof import("../../node_modules/nuxt3/dist/app/compat/vue-demi")['isVue3']
@@ -70,13 +76,7 @@ declare global {
   const useCssVars: typeof import("vue")['useCssVars']
   const useSlots: typeof import("vue")['useSlots']
   const useTransitionState: typeof import("vue")['useTransitionState']
-  const useRouter: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['useRouter']
-  const useRoute: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['useRoute']
-  const defineNuxtRouteMiddleware: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['defineNuxtRouteMiddleware']
   const definePageMeta: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['definePageMeta']
-  const navigateTo: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['navigateTo']
-  const abortNavigation: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['abortNavigation']
-  const addRouteMiddleware: typeof import("../../node_modules/nuxt3/dist/pages/runtime/composables")['addRouteMiddleware']
 }
 
 export {}

@@ -1,5 +1,5 @@
 
-import { defineStore } from "pinia";
+import { defineStore, acceptHMRUpdate } from "pinia";
 import {
   fbAuthStateListener,
   fbCreateAccount,
@@ -92,3 +92,7 @@ export const useAuthStore = defineStore('authStore', {
     }
   },
 });
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useAuthStore, import.meta.hot))
+}

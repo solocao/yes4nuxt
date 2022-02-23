@@ -1,11 +1,12 @@
-import { defineStore } from 'pinia'
+import { defineStore, acceptHMRUpdate } from 'pinia'
 import { add, list, get } from '~~/utils/firestore'
 // NOTE ZEE: I refactored this to use a generic store ... do you think is any drawback in this approach?
 export const useStore = defineStore('global', {
   state: () => ({
     counter: 0,
     items: [],
-    posts: []
+    posts: [],
+    nick: ''
   }),
   actions: {
     increment() {
@@ -55,3 +56,7 @@ export const useStore = defineStore('global', {
     counterValue: (state) => state.counter
   }
 })
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useStore, import.meta.hot))
+}

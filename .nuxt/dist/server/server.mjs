@@ -1,12 +1,12 @@
 
 // --------------------
-// Request: /Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry
+// Request: C:/DEV/VUE/yes4nuxt/node_modules/nuxt3/dist/app/entry
 // Parents: 
 // - <entry> ($id_c757eb9e)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // --------------------
-const $id_947c0482 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_96d255e5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const entry = true ? (ctx) => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default(ctx)) : () => __vite_ssr_dynamic_import__('/node_modules/nuxt3/dist/app/bootstrap.mjs').then((m) => m.default);
 if (false) {
   entry();
@@ -19,27 +19,27 @@ __vite_ssr_exports__.default = entry;
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/bootstrap.mjs
 // Parents: 
-// - /Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry ($id_947c0482)
+// - C:/DEV/VUE/yes4nuxt/node_modules/nuxt3/dist/app/entry ($id_96d255e5)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs ($id_2cd6dcc5)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs ($id_935a2b05)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs ($id_a565eb3a)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/root-component.mjs ($id_74e163d3)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/app-component.mjs ($id_f69acb79)
 // --------------------
 const $id_fef466a9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/root-component.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/app-component.mjs");
 
 let entry;
 const plugins = __vite_ssr_import_1__.normalizePlugins(__vite_ssr_import_3__.default);
@@ -99,7 +99,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt3/dist/pages/runtime/page.mjs ($id_485c89bf)
 // - /node_modules/nuxt3/dist/pages/runtime/utils.mjs ($id_e1b210cc)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs ($id_1cf59b84)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/layouts.mjs ($id_fe6968b4)
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /components/Forms/LoginForm.vue ($id_600babf2)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
@@ -110,20 +110,20 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs ($id_052b8ccd)
 // - /node_modules/nuxt3/dist/app/compat/capi.mjs ($id_7674cc72)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
 // - /node_modules/primevue/button/button.esm.js ($id_9578581f)
 // - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
 // - /node_modules/primevue/inputtext/inputtext.esm.js ($id_743d0bd5)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs ($id_637b83c5)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/components.mjs ($id_5fe6b26c)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /components/Header/Header.vue ($id_73b23c04)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
 
 // --------------------
-const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue/dist/vue.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue/dist/vue.cjs.js\".") })
+const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/vue/dist/vue.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/vue/dist/vue.cjs.js\".") })
 
 
 // --------------------
@@ -135,13 +135,18 @@ const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/nuxt3/dist/app/composables/state.mjs ($id_d232db97)
 // - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
 // - /node_modules/nuxt3/dist/app/composables/ssr.mjs ($id_4d0dc923)
+// - /node_modules/nuxt3/dist/app/composables/router.mjs ($id_541bda03)
 // - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
 // - /node_modules/nuxt3/dist/app/plugins/preload.server.mjs ($id_b9f3c557)
 // - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // - /node_modules/nuxt3/dist/pages/runtime/page.mjs ($id_485c89bf)
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /components/Forms/LoginForm.vue ($id_600babf2)
+// - /components/Forms/Register.vue ($id_7dc4ae3d)
+// - /pages/index.vue ($id_cca58e97)
+// - /middleware/auth.js ($id_3fdca93e)
 // - /plugins/primevue.ts ($id_934480b9)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // Dependencies: 
@@ -314,7 +319,7 @@ function defineGetter(obj, key, val) {
 // Dependencies: 
 
 // --------------------
-const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/hookable/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/hookable/dist/index.mjs\".") })
+const $id_a2c811c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/hookable/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/hookable/dist/index.mjs\".") })
 
 
 // --------------------
@@ -444,7 +449,7 @@ Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, 
 // Dependencies: 
 
 // --------------------
-const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs\".") })
+const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/unenv/runtime/mock/proxy.mjs\".") })
 
 
 // --------------------
@@ -459,6 +464,7 @@ const $id_39e12da7 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/nuxt3/dist/app/composables/fetch.mjs ($id_765a0ed7)
 // - /node_modules/nuxt3/dist/app/composables/cookie.mjs ($id_792d64c4)
 // - /node_modules/nuxt3/dist/app/composables/ssr.mjs ($id_4d0dc923)
+// - /node_modules/nuxt3/dist/app/composables/router.mjs ($id_541bda03)
 // --------------------
 const $id_42ae3d5d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/component.mjs");
@@ -484,6 +490,14 @@ Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, con
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/ssr.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRequestHeaders }});
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/composables/router.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.abortNavigation }});
+Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.addRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineNuxtRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.navigateTo }});
+Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRoute }});
+Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRouter }});
 ;
 }
 
@@ -562,7 +576,7 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable:
 // Dependencies: 
 
 // --------------------
-const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js\".") })
+const $id_f9a4a698 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/vue-router/dist/vue-router.cjs.js\".") })
 
 
 // --------------------
@@ -775,7 +789,7 @@ function generateKey(keys) {
 // Dependencies: 
 
 // --------------------
-const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs\".") })
+const $id_fbf6dac3 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/murmurhash-es/dist/index.mjs\".") })
 
 
 // --------------------
@@ -864,7 +878,7 @@ function writeServerCookie(res, name, value, opts = {}) {
 // Dependencies: 
 
 // --------------------
-const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/cookie-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/cookie-es/dist/index.mjs\".") })
+const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/cookie-es/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/cookie-es/dist/index.mjs\".") })
 
 
 // --------------------
@@ -875,7 +889,7 @@ const $id_f4975261 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/h3/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/h3/dist/index.mjs\".") })
+const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/h3/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/h3/dist/index.mjs\".") })
 
 
 // --------------------
@@ -885,7 +899,7 @@ const $id_57d7ded6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/destr/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/destr/dist/index.mjs\".") })
+const $id_03d15ecd = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/destr/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/destr/dist/index.mjs\".") })
 
 
 // --------------------
@@ -909,6 +923,67 @@ function useRequestHeaders(include) {
   return Object.fromEntries(include.filter((key) => headers[key]).map((key) => [key, headers[key]]));
 }
 Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return useRequestHeaders }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt3/dist/app/composables/router.mjs
+// Parents: 
+// - /node_modules/nuxt3/dist/app/composables/index.mjs ($id_42ae3d5d)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
+// --------------------
+const $id_541bda03 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
+
+const useRouter = () => {
+  return __vite_ssr_import_0__.useNuxtApp()?.$router;
+};
+Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return useRouter }});
+const useRoute = () => {
+  return __vite_ssr_import_0__.useNuxtApp()._route;
+};
+Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return useRoute }});
+const defineNuxtRouteMiddleware = (middleware) => middleware;
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return defineNuxtRouteMiddleware }});
+const addRouteMiddleware = (name, middleware, options = {}) => {
+  const nuxtApp = __vite_ssr_import_0__.useNuxtApp();
+  if (options.global || typeof name === "function") {
+    nuxtApp._middleware.global.push(typeof name === "function" ? name : middleware);
+  } else {
+    nuxtApp._middleware.named[name] = middleware;
+  }
+};
+Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return addRouteMiddleware }});
+const isProcessingMiddleware = () => {
+  try {
+    if (__vite_ssr_import_0__.useNuxtApp()._processingMiddleware) {
+      return true;
+    }
+  } catch {
+    return true;
+  }
+  return false;
+};
+const navigateTo = (to) => {
+  if (isProcessingMiddleware()) {
+    return to;
+  }
+  const router = true ? useRouter() : window.$nuxt.$router;
+  return router.push(to);
+};
+Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return navigateTo }});
+const abortNavigation = (err) => {
+  if (true && !isProcessingMiddleware()) {
+    throw new Error("abortNavigation() is only usable inside a route middleware handler.");
+  }
+  if (err) {
+    throw err instanceof Error ? err : new Error(err);
+  }
+  return false;
+};
+Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return abortNavigation }});
 ;
 }
 
@@ -961,11 +1036,11 @@ Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, confi
 // Dependencies: 
 
 // --------------------
-const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js\".") })
+const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/@vue/shared/dist/shared.cjs.js\".") })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
@@ -973,7 +1048,7 @@ const $id_852b06a2 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/primevue/resources/primevue.css ($id_736dcf3c)
 // - /node_modules/primeicons/primeicons.css ($id_f890f676)
 // --------------------
-const $id_f4c7371f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_a565eb3a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/primevue/resources/themes/saga-blue/theme.css");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/primevue/resources/primevue.css");
@@ -986,7 +1061,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/primeicon
 // --------------------
 // Request: /node_modules/primevue/resources/themes/saga-blue/theme.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs ($id_a565eb3a)
 // Dependencies: 
 
 // --------------------
@@ -998,7 +1073,7 @@ __vite_ssr_exports__.default = ":root {\n  --surface-a:#ffffff;\n  --surface-b:#
 // --------------------
 // Request: /node_modules/primevue/resources/primevue.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs ($id_a565eb3a)
 // Dependencies: 
 
 // --------------------
@@ -1010,7 +1085,7 @@ __vite_ssr_exports__.default = ".p-component, .p-component * {\n    box-sizing: 
 // --------------------
 // Request: /node_modules/primeicons/primeicons.css
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs ($id_f4c7371f)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs ($id_a565eb3a)
 // Dependencies: 
 
 // --------------------
@@ -1020,7 +1095,7 @@ __vite_ssr_exports__.default = "@font-face {\n    font-family: 'primeicons';\n  
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
@@ -1028,14 +1103,14 @@ __vite_ssr_exports__.default = "@font-face {\n    font-family: 'primeicons';\n  
 // - /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs ($id_cbe5172d)
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs ($id_052b8ccd)
 // - /plugins/persistedstate.js ($id_88d211c2)
 // - /plugins/primevue.ts ($id_934480b9)
 // - /plugins/validate.js ($id_eb85e80e)
 // - /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs ($id_7b587af2)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs ($id_637b83c5)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/components.mjs ($id_5fe6b26c)
 // --------------------
-const $id_b63089b7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_f92b9082 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/plugins/preload.server.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs");
@@ -1044,7 +1119,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/router.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/plugins/persistedstate.js");
 
@@ -1054,7 +1129,7 @@ const __vite_ssr_import_7__ = await __vite_ssr_import__("/plugins/validate.js");
 
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/components.mjs");
 
 __vite_ssr_exports__.default = [
   __vite_ssr_import_0__.default,
@@ -1074,7 +1149,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/plugins/preload.server.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // --------------------
@@ -1097,7 +1172,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -1551,13 +1626,13 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/meta/runtime/plugin.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/meta/runtime/components.mjs ($id_94744df3)
 // - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs ($id_cca9cda5)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/meta.config.mjs ($id_ca2a413a)
 // --------------------
 const $id_9fd5f35e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1568,7 +1643,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/meta.config.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_3__.defineNuxtPlugin((nuxtApp) => {
   __vite_ssr_import_2__.useMeta(__vite_ssr_import_4__.default.globalMeta);
@@ -1803,13 +1878,13 @@ Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configur
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/meta.config.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // Dependencies: 
 
 // --------------------
-const $id_cca9cda5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_ca2a413a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"}],"script":[{"src":"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"}],"style":[]},"mixinKey":"created"};
 }
 
@@ -1817,7 +1892,7 @@ __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name
 // --------------------
 // Request: /node_modules/nuxt3/dist/pages/runtime/router.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
@@ -1825,8 +1900,8 @@ __vite_ssr_exports__.default = {"globalMeta":{"meta":[{"charset":"utf-8"},{"name
 // - /node_modules/nuxt3/dist/pages/runtime/page.mjs ($id_485c89bf)
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs ($id_81eff317)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs ($id_a67a8a7c)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/middleware.mjs ($id_163a7712)
 // --------------------
 const $id_a4d6cb5b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -1841,9 +1916,9 @@ const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt3/dis
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/middleware.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_5__.defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("NuxtPage", __vite_ssr_import_3__.default);
@@ -1920,6 +1995,8 @@ __vite_ssr_exports__.default = __vite_ssr_import_5__.defineNuxtPlugin((nuxtApp) 
       router.afterEach((to) => {
         if (to.fullPath !== nuxtApp.ssrContext.url) {
           nuxtApp.ssrContext.res.setHeader("Location", to.fullPath);
+          nuxtApp.ssrContext.res.statusCode = 301;
+          nuxtApp.ssrContext.res.end();
         }
       });
     }
@@ -2031,7 +2108,7 @@ Object.defineProperty(__vite_ssr_exports__, "wrapInKeepAlive", { enumerable: tru
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
 // - /node_modules/nuxt3/dist/pages/runtime/utils.mjs ($id_e1b210cc)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs ($id_1cf59b84)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/layouts.mjs ($id_fe6968b4)
 // --------------------
 const $id_9b68c93f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -2040,7 +2117,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-route
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/utils.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/layouts.mjs");
 
 const defaultLayoutTransition = { name: "layout", mode: "out-in" };
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
@@ -2067,13 +2144,13 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/layouts.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/layout.mjs ($id_9b68c93f)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // --------------------
-const $id_1cf59b84 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_fe6968b4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 __vite_ssr_exports__.default = {};
@@ -2081,7 +2158,7 @@ __vite_ssr_exports__.default = {};
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
@@ -2090,7 +2167,7 @@ __vite_ssr_exports__.default = {};
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
 // --------------------
-const $id_238f4431 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_a67a8a7c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/index.vue?macro=true");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/pages/login.vue?macro=true");
@@ -2099,7 +2176,7 @@ __vite_ssr_exports__.default = [
   {
     name: "index",
     path: "/",
-    file: "/Users/zemunkh/Documents/yes4nuxt/pages/index.vue",
+    file: "C:/DEV/VUE/yes4nuxt/pages/index.vue",
     children: [],
     meta: __vite_ssr_import_0__.meta,
     component: () => __vite_ssr_dynamic_import__('/pages/index.vue')
@@ -2107,7 +2184,7 @@ __vite_ssr_exports__.default = [
   {
     name: "login",
     path: "/login",
-    file: "/Users/zemunkh/Documents/yes4nuxt/pages/login.vue",
+    file: "C:/DEV/VUE/yes4nuxt/pages/login.vue",
     children: [],
     meta: __vite_ssr_import_1__.meta,
     component: () => __vite_ssr_dynamic_import__('/pages/login.vue')
@@ -2119,16 +2196,16 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /pages/index.vue?macro=true
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs ($id_a67a8a7c)
 // Dependencies: 
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /store/user.js ($id_6c3c060a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_5dd70240 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/user.js");
 
 
@@ -2180,81 +2257,9 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/pages/runtime/composables.mjs
-// Parents: 
-// - /pages/index.vue?macro=true ($id_5dd70240)
-// - /components/Forms/LoginForm.vue ($id_600babf2)
-// - /components/Forms/Register.vue ($id_7dc4ae3d)
-// - /pages/index.vue ($id_cca58e97)
-// - /middleware/auth.js ($id_3fdca93e)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
-// --------------------
-const $id_f55c9203 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
-
-const useRouter = () => {
-  return __vite_ssr_import_0__.useNuxtApp().$router;
-};
-Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return useRouter }});
-const useRoute = () => {
-  return __vite_ssr_import_0__.useNuxtApp()._route;
-};
-Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return useRoute }});
-const warnRuntimeUsage = (method) => console.warn(`${method}() is a compiler-hint helper that is only usable inside the script block of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`);
-const definePageMeta = (meta) => {
-  if (true) {
-    warnRuntimeUsage("definePageMeta");
-  }
-};
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return definePageMeta }});
-const defineNuxtRouteMiddleware = (middleware) => middleware;
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return defineNuxtRouteMiddleware }});
-const addRouteMiddleware = (name, middleware, options = {}) => {
-  const nuxtApp = __vite_ssr_import_0__.useNuxtApp();
-  if (options.global) {
-    nuxtApp._middleware.global.push(middleware);
-  } else {
-    nuxtApp._middleware.named[name] = middleware;
-  }
-};
-Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return addRouteMiddleware }});
-const isProcessingMiddleware = () => {
-  try {
-    if (__vite_ssr_import_0__.useNuxtApp()._processingMiddleware) {
-      return true;
-    }
-  } catch {
-    return true;
-  }
-  return false;
-};
-const navigateTo = (to) => {
-  if (isProcessingMiddleware()) {
-    return to;
-  }
-  const router = true ? useRouter() : window.$nuxt.$router;
-  return router.push(to);
-};
-Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return navigateTo }});
-const abortNavigation = (err) => {
-  if (true && !isProcessingMiddleware()) {
-    throw new Error("abortNavigation() is only usable inside a route middleware handler.");
-  }
-  if (err) {
-    throw err instanceof Error ? err : new Error(err);
-  }
-  return false;
-};
-Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return abortNavigation }});
-;
 }
 
 
@@ -2363,7 +2368,10 @@ const useAuthStore = __vite_ssr_import_0__.defineStore('authStore', {
   },
 });
 Object.defineProperty(__vite_ssr_exports__, "useAuthStore", { enumerable: true, configurable: true, get(){ return useAuthStore }});
-;
+
+if (__vite_ssr_import_meta__.hot) {
+  __vite_ssr_import_meta__.hot.accept(__vite_ssr_import_0__.acceptHMRUpdate(useAuthStore, __vite_ssr_import_meta__.hot))
+};
 }
 
 
@@ -2372,11 +2380,11 @@ Object.defineProperty(__vite_ssr_exports__, "useAuthStore", { enumerable: true, 
 // Parents: 
 // - /store/user.js ($id_6c3c060a)
 // - /store/store.js ($id_fa1a709a)
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs ($id_052b8ccd)
 // Dependencies: 
 
 // --------------------
-const $id_b1920624 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/pinia/dist/pinia.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/pinia/dist/pinia.mjs\".") })
+const $id_b1920624 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/pinia/dist/pinia.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/pinia/dist/pinia.mjs\".") })
 
 
 // --------------------
@@ -11864,7 +11872,7 @@ __vite_ssr_exportAll__(__vite_ssr_import_0__);
 // Dependencies: 
 
 // --------------------
-const $id_ad4b4642 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js\".") })
+const $id_ad4b4642 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/@firebase/auth/dist/node-esm/index.js\".") })
 
 
 // --------------------
@@ -12005,7 +12013,8 @@ const useStore = __vite_ssr_import_0__.defineStore('global', {
   state: () => ({
     counter: 0,
     items: [],
-    posts: []
+    posts: [],
+    nick: ''
   }),
   actions: {
     increment() {
@@ -12056,7 +12065,10 @@ const useStore = __vite_ssr_import_0__.defineStore('global', {
   }
 })
 Object.defineProperty(__vite_ssr_exports__, "useStore", { enumerable: true, configurable: true, get(){ return useStore }});
-;
+
+if (__vite_ssr_import_meta__.hot) {
+  __vite_ssr_import_meta__.hot.accept(__vite_ssr_import_0__.acceptHMRUpdate(useStore, __vite_ssr_import_meta__.hot))
+};
 }
 
 
@@ -12078,7 +12090,7 @@ Object.defineProperty(__vite_ssr_exports__, "useStore", { enumerable: true, conf
 // Dependencies: 
 
 // --------------------
-const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/vue/server-renderer/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/vue/server-renderer/index.js\".") })
+const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/vue/server-renderer/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/vue/server-renderer/index.js\".") })
 
 
 // --------------------
@@ -12115,7 +12127,7 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // --------------------
 // Request: /pages/login.vue?macro=true
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs ($id_a67a8a7c)
 // Dependencies: 
 // - /store/store.js ($id_fa1a709a)
 // - /components/Forms/LoginForm.vue ($id_600babf2)
@@ -12169,7 +12181,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/pages/login.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -12182,7 +12194,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /pages/login.vue ($id_b0922173)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /store/store.js ($id_fa1a709a)
 // - /store/user.js ($id_6c3c060a)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
@@ -12195,7 +12207,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 const $id_600babf2 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
   const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
 
@@ -12318,7 +12330,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Forms/LoginForm.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/Forms/LoginForm.vue"]]);
 }
 
 
@@ -12373,7 +12385,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Tools/Loader.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/Tools/Loader.vue"]]);
 }
 
 
@@ -12385,7 +12397,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 
 // --------------------
 const $id_418e9d87 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.loading {\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tbottom: 0;\n\tleft: 0;\n\tbackground: rgba(#333, 0.4);\n\tz-index: 9999;\n}\n.card {\n  background: #fff;\n  width: 80px;\n  height: 80px;\n  text-align: center;\n  margin: 40vh auto 0;\n  border-radius: 3px;\n  box-shadow: 0 0 20px 0 rgba(#333, 0.5);\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n.sk-chase {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  -webkit-animation: sk-chase 2.5s infinite linear both;\n          animation: sk-chase 2.5s infinite linear both;\n}\n.sk-chase-dot {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:before {\n  content: '';\n  display: block;\n  width: 25%;\n  height: 25%;\n  background-color: rgba(#333, 0.4);\n  border-radius: 100%;\n  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n          animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:nth-child(1) { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2) { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3) { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4) { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5) { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6) { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n.sk-chase-dot:nth-child(1):before { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2):before { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3):before { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4):before { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5):before { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6):before { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n@-webkit-keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n@keyframes sk-chase-dot-before {\n50% {\n    transform: scale(0.4);\n}\n100%, 0% {\n    transform: scale(1.0);\n}\n}\n";
+__vite_ssr_exports__.default = "\n.loading {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tbackground: rgba(#333, 0.4);\r\n\tz-index: 9999;\n}\n.card {\r\n  background: #fff;\r\n  width: 80px;\r\n  height: 80px;\r\n  text-align: center;\r\n  margin: 40vh auto 0;\r\n  border-radius: 3px;\r\n  box-shadow: 0 0 20px 0 rgba(#333, 0.5);\n}\n.fade-enter-active, .fade-leave-active {\r\n  transition: opacity .5s;\n}\n.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {\r\n  opacity: 0;\n}\n.sk-chase {\r\n  width: 40px;\r\n  height: 40px;\r\n  position: relative;\r\n  -webkit-animation: sk-chase 2.5s infinite linear both;\r\n          animation: sk-chase 2.5s infinite linear both;\n}\n.sk-chase-dot {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both;\r\n          animation: sk-chase-dot 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:before {\r\n  content: '';\r\n  display: block;\r\n  width: 25%;\r\n  height: 25%;\r\n  background-color: rgba(#333, 0.4);\r\n  border-radius: 100%;\r\n  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\r\n          animation: sk-chase-dot-before 2.0s infinite ease-in-out both;\n}\n.sk-chase-dot:nth-child(1) { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2) { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3) { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4) { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5) { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6) { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n.sk-chase-dot:nth-child(1):before { -webkit-animation-delay: -1.1s; animation-delay: -1.1s;\n}\n.sk-chase-dot:nth-child(2):before { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;\n}\n.sk-chase-dot:nth-child(3):before { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;\n}\n.sk-chase-dot:nth-child(4):before { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;\n}\n.sk-chase-dot:nth-child(5):before { -webkit-animation-delay: -0.7s; animation-delay: -0.7s;\n}\n.sk-chase-dot:nth-child(6):before { -webkit-animation-delay: -0.6s; animation-delay: -0.6s;\n}\n@-webkit-keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase {\n100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@keyframes sk-chase-dot {\n80%, 100% { transform: rotate(360deg);\n}\n}\n@-webkit-keyframes sk-chase-dot-before {\n50% {\r\n    transform: scale(0.4);\n}\n100%, 0% {\r\n    transform: scale(1.0);\n}\n}\n@keyframes sk-chase-dot-before {\n50% {\r\n    transform: scale(0.4);\n}\n100%, 0% {\r\n    transform: scale(1.0);\n}\n}\r\n";
 }
 
 
@@ -12446,7 +12458,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Tools/ErrorMsg.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/Tools/ErrorMsg.vue"]]);
 }
 
 
@@ -12517,7 +12529,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/reusable/AppFormField.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/reusable/AppFormField.vue"]]);
 }
 
 
@@ -12534,7 +12546,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // --------------------
 const $id_2387c42e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 /**
-  * vee-validate v4.5.8
+  * vee-validate v4.5.9
   * (c) 2022 Abdelrahman Awad
   * @license MIT
   */
@@ -14401,6 +14413,15 @@ function useForm(opts) {
         }
         return mutation(fieldOrGroup);
     }
+    function mutateAllFields(mutation) {
+        Object.values(fieldsByPath.value).forEach(field => {
+            if (!field) {
+                return;
+            }
+            // avoid resetting the field values, because they should've been reset already.
+            applyFieldMutation(field, mutation);
+        });
+    }
     /**
      * Manually sets an error message on a specific field
      */
@@ -14486,13 +14507,8 @@ function useForm(opts) {
             // otherwise clean the current values
             setValues(originalInitialValues.value);
         }
-        Object.values(fieldsByPath.value).forEach(field => {
-            if (!field) {
-                return;
-            }
-            // avoid resetting the field values, because they should've been reset already.
-            applyFieldMutation(field, f => f.resetField());
-        });
+        // avoid resetting the field values, because they should've been reset already.
+        mutateAllFields(f => f.resetField());
         if (state === null || state === void 0 ? void 0 : state.touched) {
             setTouched(state.touched);
         }
@@ -14592,6 +14608,7 @@ function useForm(opts) {
         });
     }
     async function validate(opts) {
+        mutateAllFields(f => (f.meta.validated = true));
         if (formCtx.validateSchema) {
             return formCtx.validateSchema((opts === null || opts === void 0 ? void 0 : opts.mode) || 'force');
         }
@@ -15896,7 +15913,7 @@ const $id_674cbbbf = async function (global, __vite_ssr_exports__, __vite_ssr_im
 // - /pages/login.vue ($id_b0922173)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /store/store.js ($id_fa1a709a)
 // - /store/user.js ($id_6c3c060a)
 // - /components/Tools/Loader.vue ($id_c71ecea5)
@@ -15909,7 +15926,7 @@ const $id_674cbbbf = async function (global, __vite_ssr_exports__, __vite_ssr_im
 const $id_7dc4ae3d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 
   const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
 
@@ -16086,23 +16103,23 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Forms/Register.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/Forms/Register.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/index.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs ($id_a67a8a7c)
 // Dependencies: 
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /store/user.js ($id_6c3c060a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_cca58e97 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/user.js");
 
 
@@ -16154,14 +16171,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/pages/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/login.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs ($id_a67a8a7c)
 // Dependencies: 
 // - /store/store.js ($id_fa1a709a)
 // - /components/Forms/LoginForm.vue ($id_600babf2)
@@ -16215,18 +16232,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/pages/login.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/middleware.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /middleware/auth.js ($id_3fdca93e)
 // --------------------
-const $id_81eff317 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_163a7712 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {
@@ -16239,13 +16256,13 @@ Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: tru
 // --------------------
 // Request: /middleware/auth.js
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs ($id_81eff317)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/middleware.mjs ($id_163a7712)
 // Dependencies: 
-// - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /store/user.js ($id_6c3c060a)
 // --------------------
 const $id_3fdca93e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/user.js");
 
 
@@ -16258,15 +16275,15 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtRouteMiddleware((
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt3/dist/app/compat/vue-demi.mjs ($id_132eda61)
 // - /node_modules/pinia/dist/pinia.mjs ($id_b1920624)
 // --------------------
-const $id_980cc1bf = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_052b8ccd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/compat/vue-demi.mjs");
 
@@ -16313,7 +16330,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/compat/vue-demi.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs ($id_980cc1bf)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs ($id_052b8ccd)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/compat/capi.mjs ($id_7674cc72)
 // --------------------
@@ -16368,7 +16385,7 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 // --------------------
 // Request: /plugins/persistedstate.js
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs ($id_1975012f)
 // - /node_modules/js-cookie/dist/js.cookie.mjs ($id_23bde2bf)
@@ -16384,15 +16401,17 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/cookie/in
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/store/store.js");
 
-
+console.log('persistedsatate')
 __vite_ssr_exports__.default = function ({ $pinia, ssrContext }) {
 
   if(true) {
     const theNick = getNick(ssrContext.req);
     const store = __vite_ssr_import_3__.useStore($pinia)
+    console.log(true, theNick)
     store.$patch((state) => {
       state.nick = theNick.nick
     })
+    // console.log(store)
   }
 
   $pinia.use(
@@ -16433,7 +16452,7 @@ const getNick = req => {
 // Dependencies: 
 
 // --------------------
-const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs\".") })
+const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/pinia-plugin-persistedstate-2/dist/index.es.prod.mjs\".") })
 
 
 // --------------------
@@ -16443,7 +16462,7 @@ const $id_1975012f = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs\".") })
+const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/js-cookie/dist/js.cookie.mjs\".") })
 
 
 // --------------------
@@ -16453,13 +16472,13 @@ const $id_23bde2bf = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // Dependencies: 
 
 // --------------------
-const $id_01580015 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/cookie/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/cookie/index.js\".") })
+const $id_01580015 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/cookie/index.js").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/cookie/index.js\".") })
 
 
 // --------------------
 // Request: /plugins/primevue.ts
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
@@ -18837,7 +18856,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /plugins/validate.js
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/vee-validate/dist/vee-validate.esm.js ($id_2387c42e)
 // - /node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js ($id_c1357939)
@@ -18892,8 +18911,8 @@ __vite_ssr_exports__.default = () => {
 // --------------------
 const $id_c1357939 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 /**
-  * vee-validate v4.5.7
-  * (c) 2021 Abdelrahman Awad
+  * vee-validate v4.5.9
+  * (c) 2022 Abdelrahman Awad
   * @license MIT
   */
 /* eslint-disable no-misleading-character-class */
@@ -19466,8 +19485,8 @@ Object.defineProperty(__vite_ssr_exports__, "url", { enumerable: true, configura
 // --------------------
 const $id_0d8ddd77 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 /**
-  * vee-validate v4.5.7
-  * (c) 2021 Abdelrahman Awad
+  * vee-validate v4.5.9
+  * (c) 2022 Abdelrahman Awad
   * @license MIT
   */
 function isCallable(fn) {
@@ -19601,7 +19620,7 @@ Object.defineProperty(__vite_ssr_exports__, "setLocale", { enumerable: true, con
 // --------------------
 // Request: /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
 // --------------------
@@ -19625,17 +19644,17 @@ __vite_ssr_exports__.default = () => {}
 // Dependencies: 
 
 // --------------------
-const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///Users/zemunkh/Documents/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"/Users/zemunkh/Documents/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs\".") })
+const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import("file:///C:/DEV/VUE/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs").then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error("[vite dev] Error loading external \"C:/DEV/VUE/yes4nuxt/node_modules/ohmyfetch/dist/index.mjs\".") })
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/components.mjs
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs ($id_b63089b7)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs ($id_f92b9082)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // --------------------
-const $id_637b83c5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_5fe6b26c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -19652,13 +19671,13 @@ __vite_ssr_exports__.default = function (nuxtApp) {
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/root-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // --------------------
-const $id_2cd6dcc5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_74e163d3 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/components/nuxt-root.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -19668,7 +19687,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt3/dist/app/components/nuxt-root.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs ($id_2cd6dcc5)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/root-component.mjs ($id_74e163d3)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -19721,18 +19740,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/node_modules/nuxt3/dist/app/components/nuxt-root.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs
+// Request: /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/app-component.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/bootstrap.mjs ($id_fef466a9)
 // Dependencies: 
 // - /app.vue ($id_2b46e842)
 // --------------------
-const $id_935a2b05 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_f69acb79 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/app.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -19742,7 +19761,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /app.vue
 // Parents: 
-// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs ($id_935a2b05)
+// - /@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/app-component.mjs ($id_f69acb79)
 // Dependencies: 
 // - /components/Header/Header.vue ($id_73b23c04)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -19779,7 +19798,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/app.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/app.vue"]]);
 }
 
 
@@ -19820,7 +19839,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/components/Header/Header.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/DEV/VUE/yes4nuxt/components/Header/Header.vue"]]);
 }
 
 
@@ -19837,7 +19856,7 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/yes_logo.png";
 
 
 const __modules__ = {
-  "/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry": $id_947c0482,
+  "C:/DEV/VUE/yes4nuxt/node_modules/nuxt3/dist/app/entry": $id_96d255e5,
   "/node_modules/nuxt3/dist/app/bootstrap.mjs": $id_fef466a9,
   "/node_modules/vue/dist/vue.cjs.js": $id_60f0615f,
   "/node_modules/nuxt3/dist/app/index.mjs": $id_d8c2af0f,
@@ -19858,28 +19877,28 @@ const __modules__ = {
   "/node_modules/h3/dist/index.mjs": $id_57d7ded6,
   "/node_modules/destr/dist/index.mjs": $id_03d15ecd,
   "/node_modules/nuxt3/dist/app/composables/ssr.mjs": $id_4d0dc923,
+  "/node_modules/nuxt3/dist/app/composables/router.mjs": $id_541bda03,
   "/node_modules/nuxt3/dist/meta/runtime/index.mjs": $id_ea12a3fb,
   "/node_modules/nuxt3/dist/meta/runtime/composables.mjs": $id_ca9295be,
   "/node_modules/@vue/shared/dist/shared.cjs.js": $id_852b06a2,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/css.mjs": $id_f4c7371f,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/css.mjs": $id_a565eb3a,
   "/node_modules/primevue/resources/themes/saga-blue/theme.css": $id_4e9f8bcd,
   "/node_modules/primevue/resources/primevue.css": $id_736dcf3c,
   "/node_modules/primeicons/primeicons.css": $id_f890f676,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugins/server.mjs": $id_b63089b7,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/plugins/server.mjs": $id_f92b9082,
   "/node_modules/nuxt3/dist/app/plugins/preload.server.mjs": $id_b9f3c557,
   "/node_modules/nuxt3/dist/meta/runtime/lib/vueuse-head.plugin.mjs": $id_cbe5172d,
   "/node_modules/@vueuse/head/dist/index.mjs": $id_c032264e,
   "/node_modules/nuxt3/dist/meta/runtime/plugin.mjs": $id_9fd5f35e,
   "/node_modules/nuxt3/dist/meta/runtime/components.mjs": $id_94744df3,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/meta.config.mjs": $id_cca9cda5,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/meta.config.mjs": $id_ca2a413a,
   "/node_modules/nuxt3/dist/pages/runtime/router.mjs": $id_a4d6cb5b,
   "/node_modules/nuxt3/dist/pages/runtime/page.mjs": $id_485c89bf,
   "/node_modules/nuxt3/dist/pages/runtime/utils.mjs": $id_e1b210cc,
   "/node_modules/nuxt3/dist/pages/runtime/layout.mjs": $id_9b68c93f,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/layouts.mjs": $id_1cf59b84,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs": $id_238f4431,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/layouts.mjs": $id_fe6968b4,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/routes.mjs": $id_a67a8a7c,
   "/pages/index.vue?macro=true": $id_5dd70240,
-  "/node_modules/nuxt3/dist/pages/runtime/composables.mjs": $id_f55c9203,
   "/store/user.js": $id_6c3c060a,
   "/node_modules/pinia/dist/pinia.mjs": $id_b1920624,
   "/utils/auth.js": $id_0d5e52a5,
@@ -19917,9 +19936,9 @@ const __modules__ = {
   "/components/Forms/Register.vue": $id_7dc4ae3d,
   "/pages/index.vue": $id_cca58e97,
   "/pages/login.vue": $id_b0922173,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/middleware.mjs": $id_81eff317,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/middleware.mjs": $id_163a7712,
   "/middleware/auth.js": $id_3fdca93e,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs": $id_980cc1bf,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/dist.plugin.d8412656.mjs": $id_052b8ccd,
   "/node_modules/nuxt3/dist/app/compat/vue-demi.mjs": $id_132eda61,
   "/node_modules/nuxt3/dist/app/compat/capi.mjs": $id_7674cc72,
   "/plugins/persistedstate.js": $id_88d211c2,
@@ -19939,10 +19958,10 @@ const __modules__ = {
   "/node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js": $id_0d8ddd77,
   "/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs": $id_7b587af2,
   "/node_modules/ohmyfetch/dist/index.mjs": $id_780217c4,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs": $id_637b83c5,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/root-component.mjs": $id_2cd6dcc5,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/components.mjs": $id_5fe6b26c,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/root-component.mjs": $id_74e163d3,
   "/node_modules/nuxt3/dist/app/components/nuxt-root.vue": $id_f8564e04,
-  "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/app-component.mjs": $id_935a2b05,
+  "/@id/__x00__virtual:C:/DEV/VUE/yes4nuxt/.nuxt/app-component.mjs": $id_f69acb79,
   "/app.vue": $id_2b46e842,
   "/components/Header/Header.vue": $id_73b23c04,
   "/assets/images/yes_logo.png": $id_66f3e6b7
@@ -20022,4 +20041,4 @@ async function __instantiateModule__(url, urlStack) {
 }
 
 
-export default await __ssrLoadModule__("/Users/zemunkh/Documents/yes4nuxt/node_modules/nuxt3/dist/app/entry")
+export default await __ssrLoadModule__("C:/DEV/VUE/yes4nuxt/node_modules/nuxt3/dist/app/entry")
