@@ -5,8 +5,7 @@ export const useStore = defineStore('global', {
   state: () => ({
     counter: 0,
     items: [],
-    posts: [],
-    nick: ''
+    posts: []
   }),
   actions: {
     increment() {
