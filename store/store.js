@@ -10,8 +10,6 @@ export const useStore = defineStore('global', {
   actions: {
     increment() {
       this.counter++
-      // this.$nuxt.$hello(`val: ${this.counter}`)
-      // console.log('Clicked: ', $nuxt.$hello('zaza ene dee'));
     },
     decrement() {
       this.counter--

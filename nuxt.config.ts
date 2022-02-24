@@ -1,5 +1,11 @@
 import { defineNuxtConfig } from 'nuxt3'
+import { IntlifyModuleOptions } from '@intlify/nuxt3';
 
+declare module '@nuxt/schema' {
+  export interface NuxtConfig {
+    intlify?: IntlifyModuleOptions;
+  }
+}
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   meta: {
@@ -24,11 +30,32 @@ export default defineNuxtConfig({
     firebaseAppId: process.env.FIREBASE_APP_ID,
     firebaseMeasurementId: process.env.FIREBASE_MEASUREMENT_ID,
   },
-  buildModules: ["@pinia/nuxt"],
+  buildModules: [
+    "@pinia/nuxt",
+    '@intlify/nuxt3'
+  ],
+  intlify: {
+    vueI18n: {
+      locale: 'en',
+      messages: {
+        en: {
+          hello: 'Hello'
+        },
+        ja: {
+          hello: 'こんにちは'
+        },
+        mn: {
+          hello: 'Сайн уу'
+        },
+        pt: {
+          hello: 'Olá'
+        }
+      }
+    }
+  },
   css: [
     'primevue/resources/themes/saga-blue/theme.css',
     'primevue/resources/primevue.css',
     'primeicons/primeicons.css'
-  ],
-
+  ]
 })

@@ -12,7 +12,7 @@ export default function ({ $pinia, ssrContext }) {
       state.nick = theNick.nick
     })
   }
-
+  
   $pinia.use(
     createPersistedStatePlugin({
       storage: {

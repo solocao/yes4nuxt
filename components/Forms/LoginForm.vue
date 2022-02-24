@@ -2,10 +2,8 @@
   <div class="container mt-4">
     <loader :isLoading="isActive"/> 
     <Form @submit="loginWithEmail">
-
-      <AppFormField label="Email" name="email" type="email" v-model="user.email" rules="required|email" />
-      <AppFormField label="Password" name="password" type="password" v-model="user.password" rules="required|min:6" />
-
+      <FormField label="Email" name="email" type="email" v-model="user.email" rules="required|email" />
+      <FormField label="Password" name="password" type="password" v-model="user.password" rules="required|min:6" />
       <button type="submit" class="btn btn-primary" style="width: 100%">Login</button>
     </Form>
   </div>
@@ -17,10 +15,11 @@
   import { useAuthStore } from '~/store/user'
   import Loader from '~/components/Tools/Loader'
   import ErrorMsg from "~/components/Tools/ErrorMsg";
-  import AppFormField from "~/components/reusable/AppFormField";
+  import FormField from "~/components/FormField/FormField";
   import { Form } from 'vee-validate';
+
   export default ({
-    components: { Loader, ErrorMsg, Form, AppFormField },
+    components: { Loader, ErrorMsg, Form, FormField },
     setup() {
       const authStore = useAuthStore();
       const { logInUser } = authStore;

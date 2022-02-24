@@ -11,18 +11,21 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-          <login-form/>
+          <LoginForm/>
         </div>
         <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
-          <register/>
+          <Register/>
         </div>
       </div>
     </div>
-  </div>
-  <h2 class="d-flex justify-content-center">{{ store.counter }}</h2>
-  <div class="d-flex justify-content-center">
-    <button @click="store.increment()" type="button" class="btn btn-outline-primary">Add</button>
-    <button @click="store.decrement()"  type="button" class="btn btn-outline-success">Subtract</button>
+
+    
+    <div class="d-flex justify-content-center">
+      <h2 class="d-flex justify-content-center">{{ store.counter }}</h2>
+      <button @click="store.increment()" type="button" class="btn btn-outline-primary">Add</button>
+      <button @click="store.decrement()"  type="button" class="btn btn-outline-success">Subtract</button>
+    </div>
+
   </div>
 </template>
 
@@ -34,7 +37,10 @@
     components: { LoginForm, Register },
     setup() {
       const store = useStore();
+      const counter = ref(0);
+      counter.value = store.counter
       return {
+        counter,
         store,
       }
     }
