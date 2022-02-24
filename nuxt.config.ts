@@ -35,22 +35,10 @@ export default defineNuxtConfig({
     '@intlify/nuxt3'
   ],
   intlify: {
+    localeDir: 'locales',
     vueI18n: {
       locale: 'en',
-      messages: {
-        en: {
-          hello: 'Hello'
-        },
-        ja: {
-          hello: 'こんにちは'
-        },
-        mn: {
-          hello: 'Сайн уу'
-        },
-        pt: {
-          hello: 'Olá'
-        }
-      }
+      fallbackLocale: 'en'
     }
   },
   css: [

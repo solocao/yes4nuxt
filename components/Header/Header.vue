@@ -9,18 +9,11 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       </ul>
       <div class="d-flex pe-5 me-5">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ label }}
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" @click="setLanguage('en')">English</a></li>
-              <li><a class="dropdown-item" @click="setLanguage('pt')">Portuguese</a></li>
-              <li><a class="dropdown-item" @click="setLanguage('mn')">Mongolia</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="locale-changer">
+          <select v-model="$i18n.locale">
+            <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
@@ -33,7 +26,9 @@
   const label = ref('en')
 
   const setLanguage = (code) => {
-    const lan = code !== null ? code : 'en'
+    // const lan = code !== null ? code : 'en'
+    console.log('Locale: ', $nuxt.i18n);
+    $nuxt.$i18n.locale = code
     label.value = code;
     setLocale(lan)
   }

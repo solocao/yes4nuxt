@@ -145,7 +145,7 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "/_nuxt/Users/zemunkh/Documents/yes4nuxt/dist" + "/" + "1645696420";
+const STATIC_ASSETS_BASE = "/_nuxt/Users/zemunkh/Documents/yes4nuxt/dist" + "/" + "1645720496";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist/server/server.mjs'));

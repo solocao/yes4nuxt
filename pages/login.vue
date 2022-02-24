@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script >
+<script>
   import { useStore } from '~/store/store'
   import LoginForm from "~/components/Forms/LoginForm";
   import Register from "~/components/Forms/Register";
@@ -37,6 +37,9 @@
     components: { LoginForm, Register },
     setup() {
       const store = useStore();
+      useMeta({
+        title: `👉 ${store.nick === undefined ? 'Yes4mkt' : store.nick}`
+      })
       const counter = ref(0);
       counter.value = store.counter
       return {

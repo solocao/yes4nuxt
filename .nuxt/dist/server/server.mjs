@@ -115,10 +115,6 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt3/dist/app/compat/capi.mjs ($id_7674cc72)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
 // - /node_modules/primevue/button/button.esm.js ($id_9578581f)
-// - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
-// - /node_modules/primevue/inputtext/inputtext.esm.js ($id_743d0bd5)
-// - /node_modules/primevue/virtualscroller/virtualscroller.esm.js ($id_8b34d48c)
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/components.mjs ($id_637b83c5)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /components/Header/Header.vue ($id_73b23c04)
@@ -921,6 +917,10 @@ Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: t
 // Request: /node_modules/nuxt3/dist/meta/runtime/index.mjs
 // Parents: 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/index.vue ($id_cca58e97)
+// - /pages/login.vue ($id_b0922173)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
 // --------------------
@@ -2129,6 +2129,7 @@ __vite_ssr_exports__.default = [
 // Parents: 
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/user.js ($id_6c3c060a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -2136,8 +2137,10 @@ __vite_ssr_exports__.default = [
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_5dd70240 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/user.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/user.js");
 
 
   
@@ -2145,62 +2148,64 @@ const _sfc_main = {
   setup(__props, { expose }) {
   expose();
 
-  const authStore = __vite_ssr_import_1__.useAuthStore();
+  __vite_ssr_import_0__.useMeta({
+    title: '👉 Home',
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  })
+
+  const authStore = __vite_ssr_import_2__.useAuthStore();
   const { logoutUser } = authStore;
 
   const logout = () => {
     logoutUser().then((res) => {
       if(res) {
-        __vite_ssr_import_0__.navigateTo('/login')
+        __vite_ssr_import_1__.navigateTo('/login')
       }
     })
   }
 
 
 
-const __returned__ = { authStore, logoutUser, logout, useAuthStore: __vite_ssr_import_1__.useAuthStore }
+const __returned__ = { authStore, logoutUser, logout, useAuthStore: __vite_ssr_import_2__.useAuthStore }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Button = __vite_ssr_import_2__.resolveComponent("Button")
+  const _component_Button = __vite_ssr_import_3__.resolveComponent("Button")
 
   _push(`<div${
-    __vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "container-fluid mt-3" }, _attrs))
-  }><h3>Home</h3><h3>${
-    __vite_ssr_import_3__.ssrInterpolate(_ctx.$t('hello'))
+    __vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({
+      class: "container mt-3",
+      style: {"width":"540px"}
+    }, _attrs))
+  }><h3>${
+    __vite_ssr_import_4__.ssrInterpolate(_ctx.$t('home'))
+  }</h3><h3>${
+    __vite_ssr_import_4__.ssrInterpolate(_ctx.$t('hello'))
   }</h3>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Button, { label: "Logout" }, null, _parent))
-  _push(`<div class="locale-changer"><select><!--[-->`)
-  __vite_ssr_import_3__.ssrRenderList(_ctx.$i18n.availableLocales, (locale) => {
-    _push(`<option${
-      __vite_ssr_import_3__.ssrRenderAttr("value", locale)
-    }>${
-      __vite_ssr_import_3__.ssrInterpolate(locale)
-    }</option>`)
-  })
-  _push(`<!--]--></select></div></div>`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Button, { label: "Logout" }, null, _parent))
+  _push(`</div>`)
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -12135,6 +12140,7 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // Parents: 
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /store/store.js ($id_fa1a709a)
 // - /components/Forms/LoginForm.vue ($id_600babf2)
@@ -12143,19 +12149,24 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_213baa8a = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
 
-  const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/store.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-  const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
+  const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
 
-  const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/Forms/Register.vue");
+  const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
+
+  const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/Forms/Register.vue");
 
   const _sfc_main = ({
-    components: { LoginForm: __vite_ssr_import_2__.default, Register: __vite_ssr_import_3__.default },
+    components: { LoginForm: __vite_ssr_import_3__.default, Register: __vite_ssr_import_4__.default },
     setup() {
-      const store = __vite_ssr_import_1__.useStore();
-      const counter = __vite_ssr_import_0__.ref(0);
+      const store = __vite_ssr_import_2__.useStore();
+      __vite_ssr_import_0__.useMeta({
+        title: `👉 ${store.nick === undefined ? 'Yes4mkt' : store.nick}`
+      })
+      const counter = __vite_ssr_import_1__.ref(0);
       counter.value = store.counter
       return {
         counter,
@@ -12164,37 +12175,37 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/
     }
   })
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_LoginForm = __vite_ssr_import_4__.resolveComponent("LoginForm")
-  const _component_Register = __vite_ssr_import_4__.resolveComponent("Register")
+  const _component_LoginForm = __vite_ssr_import_5__.resolveComponent("LoginForm")
+  const _component_Register = __vite_ssr_import_5__.resolveComponent("Register")
 
-  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({
+  _push(`<div${__vite_ssr_import_6__.ssrRenderAttrs(__vite_ssr_import_5__.mergeProps({
     class: "container",
     style: {"width":"540px"}
   }, _attrs))}><div class="container mt-5"><ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Register</button></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">`)
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_LoginForm, null, null, _parent))
+  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_LoginForm, null, null, _parent))
   _push(`</div><div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">`)
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_Register, null, null, _parent))
-  _push(`</div></div></div><div class="d-flex justify-content-center"><h2 class="d-flex justify-content-center">${__vite_ssr_import_5__.ssrInterpolate($setup.store.counter)}</h2><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div></div>`)
+  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_Register, null, null, _parent))
+  _push(`</div></div></div><div class="d-flex justify-content-center"><h2 class="d-flex justify-content-center">${__vite_ssr_import_6__.ssrInterpolate($setup.store.counter)}</h2><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div></div>`)
 }
 
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_6__.useSSRContext()
+  const ssrContext = __vite_ssr_import_7__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -16124,6 +16135,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_
 // Parents: 
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
 // - /node_modules/nuxt3/dist/pages/runtime/composables.mjs ($id_f55c9203)
 // - /store/user.js ($id_6c3c060a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -16131,8 +16143,10 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_12__.default(_sfc_
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_cca58e97 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/user.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/pages/runtime/composables.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/user.js");
 
 
   
@@ -16140,62 +16154,64 @@ const _sfc_main = {
   setup(__props, { expose }) {
   expose();
 
-  const authStore = __vite_ssr_import_1__.useAuthStore();
+  __vite_ssr_import_0__.useMeta({
+    title: '👉 Home',
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  })
+
+  const authStore = __vite_ssr_import_2__.useAuthStore();
   const { logoutUser } = authStore;
 
   const logout = () => {
     logoutUser().then((res) => {
       if(res) {
-        __vite_ssr_import_0__.navigateTo('/login')
+        __vite_ssr_import_1__.navigateTo('/login')
       }
     })
   }
 
 
 
-const __returned__ = { authStore, logoutUser, logout, useAuthStore: __vite_ssr_import_1__.useAuthStore }
+const __returned__ = { authStore, logoutUser, logout, useAuthStore: __vite_ssr_import_2__.useAuthStore }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Button = __vite_ssr_import_2__.resolveComponent("Button")
+  const _component_Button = __vite_ssr_import_3__.resolveComponent("Button")
 
   _push(`<div${
-    __vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "container-fluid mt-3" }, _attrs))
-  }><h3>Home</h3><h3>${
-    __vite_ssr_import_3__.ssrInterpolate(_ctx.$t('hello'))
+    __vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({
+      class: "container mt-3",
+      style: {"width":"540px"}
+    }, _attrs))
+  }><h3>${
+    __vite_ssr_import_4__.ssrInterpolate(_ctx.$t('home'))
+  }</h3><h3>${
+    __vite_ssr_import_4__.ssrInterpolate(_ctx.$t('hello'))
   }</h3>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Button, { label: "Logout" }, null, _parent))
-  _push(`<div class="locale-changer"><select><!--[-->`)
-  __vite_ssr_import_3__.ssrRenderList(_ctx.$i18n.availableLocales, (locale) => {
-    _push(`<option${
-      __vite_ssr_import_3__.ssrRenderAttr("value", locale)
-    }>${
-      __vite_ssr_import_3__.ssrInterpolate(locale)
-    }</option>`)
-  })
-  _push(`<!--]--></select></div></div>`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Button, { label: "Logout" }, null, _parent))
+  _push(`</div>`)
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/index.vue"]]);
 }
 
 
@@ -16204,6 +16220,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // Parents: 
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/routes.mjs ($id_238f4431)
 // Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /store/store.js ($id_fa1a709a)
 // - /components/Forms/LoginForm.vue ($id_600babf2)
@@ -16212,19 +16229,24 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_b0922173 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
 
-  const __vite_ssr_import_1__ = await __vite_ssr_import__("/store/store.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-  const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
+  const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/store.js");
 
-  const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/Forms/Register.vue");
+  const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/Forms/LoginForm.vue");
+
+  const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/Forms/Register.vue");
 
   const _sfc_main = ({
-    components: { LoginForm: __vite_ssr_import_2__.default, Register: __vite_ssr_import_3__.default },
+    components: { LoginForm: __vite_ssr_import_3__.default, Register: __vite_ssr_import_4__.default },
     setup() {
-      const store = __vite_ssr_import_1__.useStore();
-      const counter = __vite_ssr_import_0__.ref(0);
+      const store = __vite_ssr_import_2__.useStore();
+      __vite_ssr_import_0__.useMeta({
+        title: `👉 ${store.nick === undefined ? 'Yes4mkt' : store.nick}`
+      })
+      const counter = __vite_ssr_import_1__.ref(0);
       counter.value = store.counter
       return {
         counter,
@@ -16233,37 +16255,37 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/
     }
   })
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_LoginForm = __vite_ssr_import_4__.resolveComponent("LoginForm")
-  const _component_Register = __vite_ssr_import_4__.resolveComponent("Register")
+  const _component_LoginForm = __vite_ssr_import_5__.resolveComponent("LoginForm")
+  const _component_Register = __vite_ssr_import_5__.resolveComponent("Register")
 
-  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({
+  _push(`<div${__vite_ssr_import_6__.ssrRenderAttrs(__vite_ssr_import_5__.mergeProps({
     class: "container",
     style: {"width":"540px"}
   }, _attrs))}><div class="container mt-5"><ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button></li><li class="nav-item" role="presentation"><button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Register</button></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">`)
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_LoginForm, null, null, _parent))
+  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_LoginForm, null, null, _parent))
   _push(`</div><div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">`)
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_Register, null, null, _parent))
-  _push(`</div></div></div><div class="d-flex justify-content-center"><h2 class="d-flex justify-content-center">${__vite_ssr_import_5__.ssrInterpolate($setup.store.counter)}</h2><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div></div>`)
+  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_Register, null, null, _parent))
+  _push(`</div></div></div><div class="d-flex justify-content-center"><h2 class="d-flex justify-content-center">${__vite_ssr_import_6__.ssrInterpolate($setup.store.counter)}</h2><button type="button" class="btn btn-outline-primary">Add</button><button type="button" class="btn btn-outline-success">Subtract</button></div></div>`)
 }
 
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_6__.useSSRContext()
+  const ssrContext = __vite_ssr_import_7__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/zemunkh/Documents/yes4nuxt/pages/login.vue"]]);
 }
 
 
@@ -21956,7 +21978,7 @@ Object.defineProperty(__vite_ssr_exports__, "VueDevToolsTimelineColors", { enume
 // --------------------
 const $id_a0c1014d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 // 'vueI18n' option loading ...
-__vite_ssr_exports__.default = () => Promise.resolve({"locale":"en","messages":{"en":{"hello":"Hello"},"ja":{"hello":"こんにちは"},"mn":{"hello":"Сайн уу"},"pt":{"hello":"Olá"}}});
+__vite_ssr_exports__.default = () => Promise.resolve({"locale":"en","fallbackLocale":"en"});
 }
 
 
@@ -21965,13 +21987,65 @@ __vite_ssr_exports__.default = () => Promise.resolve({"locale":"en","messages":{
 // Parents: 
 // - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/plugin.mjs ($id_ff072bd8)
 // Dependencies: 
-
+// - /locales/en.json ($id_f04686dd)
+// - /locales/fr.json ($id_0fa04411)
+// - /locales/pt.json ($id_155ed592)
 // --------------------
 const $id_96412302 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/locales/en.json");
 
-__vite_ssr_exports__.default = {  }
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/locales/fr.json");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/locales/pt.json");
+
+__vite_ssr_exports__.default = { "en":__vite_ssr_import_0__.default,"fr":__vite_ssr_import_1__.default,"pt":__vite_ssr_import_2__.default }
 ;
+}
+
+
+// --------------------
+// Request: /locales/en.json
+// Parents: 
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/intlify.locales.mjs ($id_96412302)
+// Dependencies: 
+
+// --------------------
+const $id_f04686dd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = {
+  "hello": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Hello kk"])};fn.source="Hello kk";return fn;})(),
+  "home": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Home"])};fn.source="Home";return fn;})()
+};
+}
+
+
+// --------------------
+// Request: /locales/fr.json
+// Parents: 
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/intlify.locales.mjs ($id_96412302)
+// Dependencies: 
+
+// --------------------
+const $id_0fa04411 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = {
+  "hello": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Bonjour"])};fn.source="Bonjour";return fn;})(),
+  "home": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Domicile"])};fn.source="Domicile";return fn;})()
+};
+}
+
+
+// --------------------
+// Request: /locales/pt.json
+// Parents: 
+// - /@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/intlify.locales.mjs ($id_96412302)
+// Dependencies: 
+
+// --------------------
+const $id_155ed592 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = {
+  "hello": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Bom dia"])};fn.source="Bom dia";return fn;})(),
+  "home": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["Casa"])};fn.source="Casa";return fn;})()
+};
 }
 
 
@@ -22182,9 +22256,6 @@ const $id_01580015 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
 // - /node_modules/primevue/button/button.esm.js ($id_9578581f)
-// - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
-// - /node_modules/primevue/inputtext/inputtext.esm.js ($id_743d0bd5)
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
 // --------------------
 const $id_934480b9 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
@@ -22193,18 +22264,9 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/primevue/
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/primevue/button/button.esm.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/primevue/menubar/menubar.esm.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/primevue/inputtext/inputtext.esm.js");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/primevue/dropdown/dropdown.esm.js");
-
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(__vite_ssr_import_1__.default, { ripple: true });
   nuxtApp.vueApp.component("Button", __vite_ssr_import_2__.default);
-  nuxtApp.vueApp.component("Menubar", __vite_ssr_import_3__.default);
-  nuxtApp.vueApp.component("InputText", __vite_ssr_import_4__.default);
-  nuxtApp.vueApp.component("Dropdown", __vite_ssr_import_5__.default);
 });
 ;
 }
@@ -22335,7 +22397,6 @@ Object.defineProperty(__vite_ssr_exports__, "usePrimeVue", { enumerable: true, c
 // Request: /node_modules/primevue/api/api.esm.js
 // Parents: 
 // - /node_modules/primevue/config/config.esm.js ($id_d31542f8)
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
 // Dependencies: 
 // - /node_modules/primevue/utils/utils.esm.js ($id_27066acc)
 // --------------------
@@ -22865,9 +22926,6 @@ Object.defineProperty(__vite_ssr_exports__, "ToastSeverity", { enumerable: true,
 // Parents: 
 // - /node_modules/primevue/api/api.esm.js ($id_556c0162)
 // - /node_modules/primevue/ripple/ripple.esm.js ($id_eca4a5be)
-// - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
-// - /node_modules/primevue/overlayeventbus/overlayeventbus.esm.js ($id_a1fcf7c6)
 // Dependencies: 
 
 // --------------------
@@ -23878,8 +23936,6 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // Request: /node_modules/primevue/ripple/ripple.esm.js
 // Parents: 
 // - /node_modules/primevue/button/button.esm.js ($id_9578581f)
-// - /node_modules/primevue/menubar/menubar.esm.js ($id_1db5deaf)
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
 // Dependencies: 
 // - /node_modules/primevue/utils/utils.esm.js ($id_27066acc)
 // --------------------
@@ -23962,2255 +24018,6 @@ const Ripple = {
 
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return Ripple }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/primevue/menubar/menubar.esm.js
-// Parents: 
-// - /plugins/primevue.ts ($id_934480b9)
-// Dependencies: 
-// - /node_modules/primevue/utils/utils.esm.js ($id_27066acc)
-// - /node_modules/primevue/ripple/ripple.esm.js ($id_eca4a5be)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_1db5deaf = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/primevue/utils/utils.esm.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/primevue/ripple/ripple.esm.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-var script$1 = {
-    name: 'MenubarSub',
-    emits: ['keydown-item', 'leaf-click'],
-    props: {
-        model: {
-            type: Array,
-            default: null
-        },
-        root: {
-            type: Boolean,
-            default: false
-        },
-        popup: {
-            type: Boolean,
-            default: false
-        },
-        parentActive: {
-            type: Boolean,
-            default: false
-        },
-        mobileActive: {
-            type: Boolean,
-            default: false
-        },
-        template: {
-            type: Function,
-            default: null
-        },
-        exact: {
-            type: Boolean,
-            default: true
-        }
-    },
-    documentClickListener: null,
-    watch: {
-        parentActive(newValue) {
-            if (!newValue) {
-                this.activeItem = null;
-            }
-        }
-    },
-    data() {
-        return {
-            activeItem: null
-        }
-    },
-    updated() {
-        if (this.root && this.activeItem) {
-            this.bindDocumentClickListener();
-        }
-    },
-    beforeUnmount() {
-        this.unbindDocumentClickListener();
-    },
-    methods: {
-        onItemMouseEnter(event, item) {
-            if (this.disabled(item) || this.mobileActive) {
-                event.preventDefault();
-                return;
-            }
-
-            if (this.root) {
-                if (this.activeItem || this.popup) {
-                    this.activeItem = item;
-                }
-            }
-            else {
-                this.activeItem = item;
-            }
-        },
-        onItemClick(event, item, navigate) {
-            if (this.disabled(item)) {
-                event.preventDefault();
-                return;
-            }
-
-            if (item.command) {
-                item.command({
-                    originalEvent: event,
-                    item: item
-                });
-            }
-
-            if (item.items) {
-                if (this.activeItem && item === this.activeItem)
-                    this.activeItem = null;
-                else
-                   this.activeItem = item;
-            }
-
-            if (!item.items) {
-                this.onLeafClick();
-            }
-
-            if (item.to && navigate) {
-                navigate(event);
-            }
-        },
-        onLeafClick() {
-            this.activeItem = null;
-            this.$emit('leaf-click');
-        },
-        onItemKeyDown(event, item) {
-            let listItem = event.currentTarget.parentElement;
-
-            switch(event.which) {
-                //down
-                case 40:
-                    if (this.root) {
-                        if (item.items) {
-                            this.expandSubmenu(item, listItem);
-                        }
-                    }
-                    else {
-                        this.navigateToNextItem(listItem);
-                    }
-
-                    event.preventDefault();
-                break;
-
-                //up
-                case 38:
-                    if (!this.root) {
-                        this.navigateToPrevItem(listItem);
-                    }
-
-                    event.preventDefault();
-                break;
-
-                //right
-                case 39:
-                    if (this.root) {
-                        var nextItem = this.findNextItem(listItem);
-                        if (nextItem) {
-                            nextItem.children[0].focus();
-                        }
-                    }
-                    else {
-                        if (item.items) {
-                            this.expandSubmenu(item, listItem);
-                        }
-                    }
-
-                    event.preventDefault();
-                break;
-
-                //left
-                case 37:
-                    if (this.root) {
-                        this.navigateToPrevItem(listItem);
-                    }
-
-                    event.preventDefault();
-                break;
-            }
-
-            this.$emit('keydown-item', {
-                originalEvent: event,
-                element: listItem
-            });
-        },
-        onChildItemKeyDown(event) {
-            if (this.root) {
-                //up
-                if (event.originalEvent.which === 38 && event.element.previousElementSibling == null) {
-                    this.collapseMenu(event.element);
-                }
-            }
-            else {
-                //left
-                if (event.originalEvent.which === 37) {
-                    this.collapseMenu(event.element);
-                }
-            }
-        },
-        findNextItem(item) {
-            let nextItem = item.nextElementSibling;
-
-            if (nextItem)
-                return __vite_ssr_import_0__.DomHandler.hasClass(nextItem, 'p-disabled') || !__vite_ssr_import_0__.DomHandler.hasClass(nextItem, 'p-menuitem') ? this.findNextItem(nextItem) : nextItem;
-            else
-                return null;
-        },
-        findPrevItem(item) {
-            let prevItem = item.previousElementSibling;
-
-            if (prevItem)
-                return __vite_ssr_import_0__.DomHandler.hasClass(prevItem, 'p-disabled') || !__vite_ssr_import_0__.DomHandler.hasClass(prevItem, 'p-menuitem') ? this.findPrevItem(prevItem) : prevItem;
-            else
-                return null;
-        },
-        expandSubmenu(item, listItem) {
-            this.activeItem = item;
-
-            setTimeout(() => {
-                listItem.children[1].children[0].children[0].focus();
-            }, 50);
-        },
-        collapseMenu(listItem) {
-            this.activeItem = null;
-            listItem.parentElement.previousElementSibling.focus();
-        },
-        navigateToNextItem(listItem) {
-            var nextItem = this.findNextItem(listItem);
-            if (nextItem) {
-                nextItem.children[0].focus();
-            }
-        },
-        navigateToPrevItem(listItem) {
-            var prevItem = this.findPrevItem(listItem);
-            if (prevItem) {
-                prevItem.children[0].focus();
-            }
-        },
-        getItemClass(item) {
-            return [
-                'p-menuitem', item.class, {
-                    'p-menuitem-active': this.activeItem === item
-                }
-            ]
-        },
-        linkClass(item, routerProps) {
-            return ['p-menuitem-link', {
-                'p-disabled': this.disabled(item),
-                'router-link-active': routerProps && routerProps.isActive,
-                'router-link-active-exact': this.exact && routerProps && routerProps.isExactActive
-            }];
-        },
-        bindDocumentClickListener() {
-            if (!this.documentClickListener) {
-                this.documentClickListener = (event) => {
-                    if (this.$el && !this.$el.contains(event.target)) {
-                        this.activeItem = null;
-                        this.unbindDocumentClickListener();
-                    }
-                };
-
-                document.addEventListener('click', this.documentClickListener);
-            }
-        },
-        unbindDocumentClickListener() {
-            if (this.documentClickListener) {
-                document.removeEventListener('click', this.documentClickListener);
-                this.documentClickListener = null;
-            }
-        },
-        getSubmenuIcon() {
-            return [
-                'p-submenu-icon pi', {'pi-angle-right': !this.root, 'pi-angle-down': this.root}
-            ];
-        },
-        visible(item) {
-            return (typeof item.visible === 'function' ? item.visible() : item.visible !== false);
-        },
-        disabled(item) {
-            return (typeof item.disabled === 'function' ? item.disabled() : item.disabled);
-        },
-        label(item) {
-            return (typeof item.label === 'function' ? item.label() : item.label);
-        }
-    },
-    computed: {
-        containerClass() {
-            return {'p-submenu-list': !this.root, 'p-menubar-root-list': this.root};
-        }
-    },
-    directives: {
-        'ripple': __vite_ssr_import_1__.default
-    }
-};
-
-const _hoisted_1$1 = { class: "p-menuitem-text" };
-const _hoisted_2$1 = { class: "p-menuitem-text" };
-
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_router_link = __vite_ssr_import_2__.resolveComponent("router-link");
-  const _component_MenubarSub = __vite_ssr_import_2__.resolveComponent("MenubarSub", true);
-  const _directive_ripple = __vite_ssr_import_2__.resolveDirective("ripple");
-
-  return (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("ul", {
-    class: $options.containerClass,
-    role: $props.root ? 'menubar' : 'menu'
-  }, [
-    (__vite_ssr_import_2__.openBlock(true), __vite_ssr_import_2__.createBlock(__vite_ssr_import_2__.Fragment, null, __vite_ssr_import_2__.renderList($props.model, (item, i) => {
-      return (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock(__vite_ssr_import_2__.Fragment, {
-        key: $options.label(item) + i.toString()
-      }, [
-        ($options.visible(item) && !item.separator)
-          ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("li", {
-              key: 0,
-              role: "none",
-              class: $options.getItemClass(item),
-              style: item.style,
-              onMouseenter: $event => ($options.onItemMouseEnter($event, item))
-            }, [
-              (!$props.template)
-                ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock(__vite_ssr_import_2__.Fragment, { key: 0 }, [
-                    (item.to && !$options.disabled(item))
-                      ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock(_component_router_link, {
-                          key: 0,
-                          to: item.to,
-                          custom: ""
-                        }, {
-                          default: __vite_ssr_import_2__.withCtx(({navigate, href, isActive, isExactActive}) => [
-                            __vite_ssr_import_2__.withDirectives(__vite_ssr_import_2__.createVNode("a", {
-                              href: href,
-                              onClick: $event => ($options.onItemClick($event, item, navigate)),
-                              class: $options.linkClass(item, {isActive, isExactActive}),
-                              onKeydown: $event => ($options.onItemKeyDown($event, item)),
-                              role: "menuitem"
-                            }, [
-                              __vite_ssr_import_2__.createVNode("span", {
-                                class: ['p-menuitem-icon', item.icon]
-                              }, null, 2),
-                              __vite_ssr_import_2__.createVNode("span", _hoisted_1$1, __vite_ssr_import_2__.toDisplayString($options.label(item)), 1)
-                            ], 42, ["href", "onClick", "onKeydown"]), [
-                              [_directive_ripple]
-                            ])
-                          ]),
-                          _: 2
-                        }, 1032, ["to"]))
-                      : __vite_ssr_import_2__.withDirectives((__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("a", {
-                          key: 1,
-                          href: item.url,
-                          class: $options.linkClass(item),
-                          target: item.target,
-                          "aria-haspopup": item.items != null,
-                          "aria-expanded": item === $data.activeItem,
-                          onClick: $event => ($options.onItemClick($event, item)),
-                          onKeydown: $event => ($options.onItemKeyDown($event, item)),
-                          role: "menuitem",
-                          tabindex: $options.disabled(item) ? null : '0'
-                        }, [
-                          __vite_ssr_import_2__.createVNode("span", {
-                            class: ['p-menuitem-icon', item.icon]
-                          }, null, 2),
-                          __vite_ssr_import_2__.createVNode("span", _hoisted_2$1, __vite_ssr_import_2__.toDisplayString($options.label(item)), 1),
-                          (item.items)
-                            ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("span", {
-                                key: 0,
-                                class: $options.getSubmenuIcon()
-                              }, null, 2))
-                            : __vite_ssr_import_2__.createCommentVNode("", true)
-                        ], 42, ["href", "target", "aria-haspopup", "aria-expanded", "onClick", "onKeydown", "tabindex"])), [
-                          [_directive_ripple]
-                        ])
-                  ], 64))
-                : (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock(__vite_ssr_import_2__.resolveDynamicComponent($props.template), {
-                    key: 1,
-                    item: item
-                  }, null, 8, ["item"])),
-              ($options.visible(item) && item.items)
-                ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock(_component_MenubarSub, {
-                    model: item.items,
-                    key: $options.label(item) + '_sub_',
-                    mobileActive: $props.mobileActive,
-                    onLeafClick: $options.onLeafClick,
-                    onKeydownItem: $options.onChildItemKeyDown,
-                    parentActive: item === $data.activeItem,
-                    template: $props.template,
-                    exact: $props.exact
-                  }, null, 8, ["model", "mobileActive", "onLeafClick", "onKeydownItem", "parentActive", "template", "exact"]))
-                : __vite_ssr_import_2__.createCommentVNode("", true)
-            ], 46, ["onMouseenter"]))
-          : __vite_ssr_import_2__.createCommentVNode("", true),
-        ($options.visible(item) && item.separator)
-          ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("li", {
-              class: ['p-menu-separator', item.class],
-              style: item.style,
-              key: 'separator' + i.toString(),
-              role: "separator"
-            }, null, 6))
-          : __vite_ssr_import_2__.createCommentVNode("", true)
-      ], 64))
-    }), 128))
-  ], 10, ["role"]))
-}
-
-script$1.render = render$1;
-
-var script = {
-    name: 'Menubar',
-    props: {
-		model: {
-            type: Array,
-            default: null
-        },
-        exact: {
-            type: Boolean,
-            default: true
-        }
-    },
-    outsideClickListener: null,
-    data() {
-        return {
-            mobileActive: false
-        }
-    },
-    beforeUnmount() {
-        this.mobileActive = false;
-        this.unbindOutsideClickListener();
-        if (this.$refs.rootmenu && this.$refs.rootmenu.$el) {
-            __vite_ssr_import_0__.ZIndexUtils.clear(this.$refs.rootmenu.$el);
-        }
-    },
-    methods: {
-        toggle(event) {
-            if (this.mobileActive) {
-                this.mobileActive = false;
-                __vite_ssr_import_0__.ZIndexUtils.clear(this.$refs.rootmenu.$el);
-            }
-            else {
-                this.mobileActive = true;
-                __vite_ssr_import_0__.ZIndexUtils.set('menu', this.$refs.rootmenu.$el, this.$primevue.config.zIndex.menu);
-            }
-
-            this.bindOutsideClickListener();
-            event.preventDefault();
-        },
-        bindOutsideClickListener() {
-            if (!this.outsideClickListener) {
-                this.outsideClickListener = (event) => {
-                    if (this.mobileActive && this.$refs.rootmenu.$el !== event.target && !this.$refs.rootmenu.$el.contains(event.target)
-                        && this.$refs.menubutton !== event.target && !this.$refs.menubutton.contains(event.target)) {
-                        this.mobileActive = false;
-                    }
-                };
-                document.addEventListener('click', this.outsideClickListener);
-            }
-        },
-        unbindOutsideClickListener() {
-            if (this.outsideClickListener) {
-                document.removeEventListener('click', this.outsideClickListener);
-                this.outsideClickListener = null;
-            }
-        },
-        onLeafClick() {
-            this.mobileActive = false;
-        }
-    },
-    computed: {
-        containerClass() {
-            return ['p-menubar p-component', {'p-menubar-mobile-active': this.mobileActive}];
-        }
-    },
-    components: {
-        'MenubarSub': script$1
-    }
-};
-
-const _hoisted_1 = {
-  key: 0,
-  class: "p-menubar-start"
-};
-const _hoisted_2 = /*#__PURE__*/__vite_ssr_import_2__.createVNode("i", { class: "pi pi-bars" }, null, -1);
-const _hoisted_3 = {
-  key: 1,
-  class: "p-menubar-end"
-};
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_MenubarSub = __vite_ssr_import_2__.resolveComponent("MenubarSub");
-
-  return (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("div", { class: $options.containerClass }, [
-    (_ctx.$slots.start)
-      ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("div", _hoisted_1, [
-          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "start")
-        ]))
-      : __vite_ssr_import_2__.createCommentVNode("", true),
-    __vite_ssr_import_2__.createVNode("a", {
-      ref: "menubutton",
-      tabindex: "0",
-      class: "p-menubar-button",
-      onClick: _cache[1] || (_cache[1] = $event => ($options.toggle($event)))
-    }, [
-      _hoisted_2
-    ], 512),
-    __vite_ssr_import_2__.createVNode(_component_MenubarSub, {
-      ref: "rootmenu",
-      model: $props.model,
-      root: true,
-      mobileActive: $data.mobileActive,
-      onLeafClick: $options.onLeafClick,
-      template: _ctx.$slots.item,
-      exact: $props.exact
-    }, null, 8, ["model", "mobileActive", "onLeafClick", "template", "exact"]),
-    (_ctx.$slots.end)
-      ? (__vite_ssr_import_2__.openBlock(), __vite_ssr_import_2__.createBlock("div", _hoisted_3, [
-          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "end")
-        ]))
-      : __vite_ssr_import_2__.createCommentVNode("", true)
-  ], 2))
-}
-
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || "undefined" === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css_248z = "\n.p-menubar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.p-menubar ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}\n.p-menubar .p-menuitem-link {\n    cursor: pointer;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    text-decoration: none;\n    overflow: hidden;\n    position: relative;\n}\n.p-menubar .p-menuitem-text {\n    line-height: 1;\n}\n.p-menubar .p-menuitem {\n    position: relative;\n}\n.p-menubar-root-list {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.p-menubar-root-list > li ul {\n    display: none;\n    z-index: 1;\n}\n.p-menubar-root-list > .p-menuitem-active > .p-submenu-list {\n    display: block;\n}\n.p-menubar .p-submenu-list {\n    display: none;\n    position: absolute;\n    z-index: 1;\n}\n.p-menubar .p-submenu-list > .p-menuitem-active > .p-submenu-list  {\n    display: block;\n    left: 100%;\n    top: 0;\n}\n.p-menubar .p-submenu-list .p-menuitem-link .p-submenu-icon {\n    margin-left: auto;\n}\n.p-menubar .p-menubar-custom,\n.p-menubar .p-menubar-end {\n    margin-left: auto;\n    -ms-flex-item-align: center;\n        align-self: center;\n}\n.p-menubar-button {\n    display: none;\n    cursor: pointer;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    text-decoration: none;\n}\n";
-styleInject(css_248z);
-
-script.render = render;
-
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return script }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/primevue/inputtext/inputtext.esm.js
-// Parents: 
-// - /plugins/primevue.ts ($id_934480b9)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_743d0bd5 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-var script = {
-    name: 'InputText',
-    emits: ['update:modelValue'],
-    props: {
-        modelValue: null
-    },
-    methods: {
-        onInput(event) {
-            this.$emit('update:modelValue', event.target.value);
-        }
-    },
-    computed: {
-        filled() {
-            return (this.modelValue != null && this.modelValue.toString().length > 0)
-        }
-    }
-};
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock("input", __vite_ssr_import_0__.mergeProps({
-    class: ['p-inputtext p-component', {'p-filled': $options.filled}],
-    value: $props.modelValue,
-    onInput: _cache[1] || (_cache[1] = (...args) => ($options.onInput && $options.onInput(...args)))
-  }, _ctx.$attrs), null, 16, ["value"]))
-}
-
-script.render = render;
-
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return script }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/primevue/dropdown/dropdown.esm.js
-// Parents: 
-// - /plugins/primevue.ts ($id_934480b9)
-// Dependencies: 
-// - /node_modules/primevue/utils/utils.esm.js ($id_27066acc)
-// - /node_modules/primevue/overlayeventbus/overlayeventbus.esm.js ($id_a1fcf7c6)
-// - /node_modules/primevue/api/api.esm.js ($id_556c0162)
-// - /node_modules/primevue/ripple/ripple.esm.js ($id_eca4a5be)
-// - /node_modules/primevue/virtualscroller/virtualscroller.esm.js ($id_8b34d48c)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_68777992 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/primevue/utils/utils.esm.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/primevue/overlayeventbus/overlayeventbus.esm.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/primevue/api/api.esm.js");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/primevue/ripple/ripple.esm.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/primevue/virtualscroller/virtualscroller.esm.js");
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-var script = {
-    name: 'Dropdown',
-    emits: ['update:modelValue', 'before-show', 'before-hide', 'show', 'hide', 'change', 'filter', 'focus', 'blur'],
-    props: {
-        modelValue: null,
-        options: Array,
-        optionLabel: null,
-        optionValue: null,
-        optionDisabled: null,
-        optionGroupLabel: null,
-        optionGroupChildren: null,
-		scrollHeight: {
-			type: String,
-			default: '200px'
-		},
-		filter: Boolean,
-        filterPlaceholder: String,
-        filterLocale: String,
-        filterMatchMode: {
-            type: String,
-            default: 'contains'
-        },
-        filterFields: {
-            type: Array,
-            default: null
-        },
-		editable: Boolean,
-		placeholder: String,
-		disabled: Boolean,
-        dataKey: null,
-        showClear: Boolean,
-        inputId: String,
-        tabindex: String,
-        ariaLabelledBy: null,
-        appendTo: {
-            type: String,
-            default: 'body'
-        },
-        emptyFilterMessage: {
-            type: String,
-            default: null
-        },
-        emptyMessage: {
-            type: String,
-            default: null
-        },
-        panelClass: null,
-        loading: {
-            type: Boolean,
-            default: false
-        },
-        loadingIcon: {
-            type: String,
-            default: 'pi pi-spinner pi-spin'
-        },
-        virtualScrollerOptions: {
-            type: Object,
-            default: null
-        }
-    },
-    data() {
-        return {
-            focused: false,
-            filterValue: null,
-            overlayVisible: false
-        };
-    },
-    watch: {
-        modelValue() {
-            this.isModelValueChanged = true;
-        }
-    },
-    outsideClickListener: null,
-    scrollHandler: null,
-    resizeListener: null,
-    searchTimeout: null,
-    currentSearchChar: null,
-    previousSearchChar: null,
-    searchValue: null,
-    overlay: null,
-    itemsWrapper: null,
-    virtualScroller: null,
-    isModelValueChanged: false,
-    updated() {
-        if (this.overlayVisible && this.isModelValueChanged) {
-            this.scrollValueInView();
-        }
-
-        this.isModelValueChanged = false;
-    },
-    beforeUnmount() {
-        this.unbindOutsideClickListener();
-        this.unbindResizeListener();
-
-        if (this.scrollHandler) {
-            this.scrollHandler.destroy();
-            this.scrollHandler = null;
-        }
-
-        this.itemsWrapper = null;
-
-        if (this.overlay) {
-            __vite_ssr_import_0__.ZIndexUtils.clear(this.overlay);
-            this.overlay = null;
-        }
-    },
-    methods: {
-        getOptionIndex(index, fn) {
-            return this.virtualScrollerDisabled ? index : (fn && fn(index)['index']);
-        },
-        getOptionLabel(option) {
-            return this.optionLabel ? __vite_ssr_import_0__.ObjectUtils.resolveFieldData(option, this.optionLabel) : option;
-        },
-        getOptionValue(option) {
-            return this.optionValue ? __vite_ssr_import_0__.ObjectUtils.resolveFieldData(option, this.optionValue) : option;
-        },
-        getOptionRenderKey(option) {
-            return this.dataKey ? __vite_ssr_import_0__.ObjectUtils.resolveFieldData(option, this.dataKey) : this.getOptionLabel(option);
-        },
-        isOptionDisabled(option) {
-            return this.optionDisabled ? __vite_ssr_import_0__.ObjectUtils.resolveFieldData(option, this.optionDisabled) : false;
-        },
-        getOptionGroupRenderKey(optionGroup) {
-            return __vite_ssr_import_0__.ObjectUtils.resolveFieldData(optionGroup, this.optionGroupLabel);
-        },
-        getOptionGroupLabel(optionGroup) {
-            return __vite_ssr_import_0__.ObjectUtils.resolveFieldData(optionGroup, this.optionGroupLabel);
-        },
-        getOptionGroupChildren(optionGroup) {
-            return __vite_ssr_import_0__.ObjectUtils.resolveFieldData(optionGroup, this.optionGroupChildren);
-        },
-        getSelectedOption() {
-            let index = this.getSelectedOptionIndex();
-            return index !== -1 ? (this.optionGroupLabel ? this.getOptionGroupChildren(this.visibleOptions[index.group])[index.option]: this.visibleOptions[index]) : null;
-        },
-        getSelectedOptionIndex() {
-            if (this.modelValue != null && this.visibleOptions) {
-                if (this.optionGroupLabel) {
-                    for (let i = 0; i < this.visibleOptions.length; i++) {
-                        let selectedOptionIndex = this.findOptionIndexInList(this.modelValue, this.getOptionGroupChildren(this.visibleOptions[i]));
-                        if (selectedOptionIndex !== -1) {
-                            return {group: i, option: selectedOptionIndex};
-                        }
-                    }
-                }
-                else {
-                    return this.findOptionIndexInList(this.modelValue, this.visibleOptions);
-                }
-            }
-
-            return -1;
-        },
-        findOptionIndexInList(value, list) {
-            for (let i = 0; i < list.length; i++) {
-                if ((__vite_ssr_import_0__.ObjectUtils.equals(value, this.getOptionValue(list[i]), this.equalityKey))) {
-                    return i;
-                }
-            }
-
-            return -1;
-        },
-        isSelected(option) {
-            return __vite_ssr_import_0__.ObjectUtils.equals(this.modelValue, this.getOptionValue(option), this.equalityKey);
-        },
-        show() {
-            this.$emit('before-show');
-            this.overlayVisible = true;
-        },
-        hide() {
-            this.$emit('before-hide');
-            this.overlayVisible = false;
-        },
-        onFocus(event) {
-            this.focused = true;
-            this.$emit('focus', event);
-        },
-        onBlur(event) {
-            this.focused = false;
-            this.$emit('blur', event);
-        },
-        onKeyDown(event) {
-            switch(event.which) {
-                //down
-                case 40:
-                    this.onDownKey(event);
-                break;
-
-                //up
-                case 38:
-                    this.onUpKey(event);
-                break;
-
-                //space
-                case 32:
-                    if (!this.overlayVisible) {
-                        this.show();
-                        event.preventDefault();
-                    }
-                break;
-
-                //enter and escape
-                case 13:
-                case 27:
-                    if (this.overlayVisible) {
-                        this.hide();
-                        event.preventDefault();
-                    }
-                break;
-
-                //tab
-                case 9:
-                    this.hide();
-                break;
-
-                default:
-                    this.search(event);
-                break;
-            }
-        },
-        onFilterKeyDown(event) {
-            switch (event.which) {
-                //down
-                case 40:
-                    this.onDownKey(event);
-                    break;
-
-                //up
-                case 38:
-                    this.onUpKey(event);
-                    break;
-
-                //enter and escape
-                case 13:
-                case 27:
-                    this.overlayVisible = false;
-                    event.preventDefault();
-                break;
-            }
-        },
-        onDownKey(event) {
-            if (this.visibleOptions) {
-                if (!this.overlayVisible && event.altKey) {
-                    this.show();
-                }
-                else {
-                    let nextOption = this.visibleOptions && this.visibleOptions.length > 0 ? this.findNextOption(this.getSelectedOptionIndex()) : null;
-                    if (nextOption) {
-                        this.updateModel(event, this.getOptionValue(nextOption));
-                    }
-                }
-            }
-
-            event.preventDefault();
-        },
-        onUpKey(event) {
-            if (this.visibleOptions) {
-                let prevOption = this.findPrevOption(this.getSelectedOptionIndex());
-                if (prevOption) {
-                    this.updateModel(event, this.getOptionValue(prevOption));
-                }
-            }
-
-            event.preventDefault();
-        },
-        findNextOption(index) {
-            if (this.optionGroupLabel) {
-                let groupIndex = index === -1 ? 0 : index.group;
-                let optionIndex = index === -1 ? -1 : index.option;
-                let option = this.findNextOptionInList(this.getOptionGroupChildren(this.visibleOptions[groupIndex]), optionIndex);
-
-                if (option)
-                    return option;
-                else if ((groupIndex + 1) !== this.visibleOptions.length)
-                    return this.findNextOption({group: (groupIndex + 1), option: -1});
-                else
-                    return null;
-            }
-            else {
-                return this.findNextOptionInList(this.visibleOptions, index);
-            }
-        },
-        findNextOptionInList(list, index) {
-                let i = index + 1;
-                if (i === list.length) {
-                    return null;
-                }
-
-                let option = list[i];
-                if (this.isOptionDisabled(option))
-                    return this.findNextOptionInList(i);
-                else
-                    return option;
-        },
-        findPrevOption(index) {
-            if (index === -1) {
-                return null;
-            }
-
-            if (this.optionGroupLabel) {
-                let groupIndex = index.group;
-                let optionIndex = index.option;
-                let option = this.findPrevOptionInList(this.getOptionGroupChildren(this.visibleOptions[groupIndex]), optionIndex);
-
-                if (option)
-                    return option;
-                else if (groupIndex > 0)
-                    return this.findPrevOption({group: (groupIndex - 1), option: this.getOptionGroupChildren(this.visibleOptions[groupIndex - 1]).length});
-                else
-                    return null;
-            }
-            else {
-                return this.findPrevOptionInList(this.visibleOptions, index);
-            }
-        },
-        findPrevOptionInList(list, index) {
-            let i = index - 1;
-            if (i < 0) {
-                return null;
-            }
-
-            let option = list[i];
-            if (this.isOptionDisabled(option))
-                return this.findPrevOption(i);
-            else
-                return option;
-        },
-        onClearClick(event) {
-            this.updateModel(event, null);
-        },
-        onClick(event) {
-            if (this.disabled || this.loading) {
-                return;
-            }
-
-            if (__vite_ssr_import_0__.DomHandler.hasClass(event.target, 'p-dropdown-clear-icon') || event.target.tagName === 'INPUT') {
-                return;
-            }
-            else if (!this.overlay || !this.overlay.contains(event.target)) {
-                if (this.overlayVisible)
-                    this.hide();
-                else
-                    this.show();
-
-                this.$refs.focusInput.focus();
-            }
-        },
-        onOptionSelect(event, option) {
-            let value = this.getOptionValue(option);
-            this.updateModel(event, value);
-            this.$refs.focusInput.focus();
-
-            setTimeout(() => {
-                this.hide();
-            }, 200);
-        },
-        onEditableInput(event) {
-            this.$emit('update:modelValue', event.target.value);
-        },
-        onOverlayEnter(el) {
-            __vite_ssr_import_0__.ZIndexUtils.set('overlay', el, this.$primevue.config.zIndex.overlay);
-            this.alignOverlay();
-            this.scrollValueInView();
-
-            if (!this.virtualScrollerDisabled) {
-                const selectedIndex = this.getSelectedOptionIndex();
-                if (selectedIndex !== -1) {
-                    setTimeout(() => {
-                        this.virtualScroller && this.virtualScroller.scrollToIndex(selectedIndex);
-                    }, 0);
-                }
-            }
-        },
-        onOverlayAfterEnter() {
-            if (this.filter) {
-                this.$refs.filterInput.focus();
-            }
-
-            this.bindOutsideClickListener();
-            this.bindScrollListener();
-            this.bindResizeListener();
-
-            this.$emit('show');
-        },
-        onOverlayLeave() {
-            this.unbindOutsideClickListener();
-            this.unbindScrollListener();
-            this.unbindResizeListener();
-            this.$emit('hide');
-            this.itemsWrapper = null;
-            this.overlay = null;
-        },
-        onOverlayAfterLeave(el) {
-            __vite_ssr_import_0__.ZIndexUtils.clear(el);
-        },
-        alignOverlay() {
-            if (this.appendDisabled) {
-                __vite_ssr_import_0__.DomHandler.relativePosition(this.overlay, this.$el);
-            }
-            else {
-                this.overlay.style.minWidth = __vite_ssr_import_0__.DomHandler.getOuterWidth(this.$el) + 'px';
-                __vite_ssr_import_0__.DomHandler.absolutePosition(this.overlay, this.$el);
-            }
-        },
-        updateModel(event, value) {
-            this.$emit('update:modelValue', value);
-            this.$emit('change', {originalEvent: event, value: value});
-        },
-        bindOutsideClickListener() {
-            if (!this.outsideClickListener) {
-                this.outsideClickListener = (event) => {
-                    if (this.overlayVisible && this.overlay && !this.$el.contains(event.target) && !this.overlay.contains(event.target)) {
-                        this.hide();
-                    }
-                };
-                document.addEventListener('click', this.outsideClickListener);
-            }
-        },
-        unbindOutsideClickListener() {
-            if (this.outsideClickListener) {
-                document.removeEventListener('click', this.outsideClickListener);
-                this.outsideClickListener = null;
-            }
-        },
-        bindScrollListener() {
-            if (!this.scrollHandler) {
-                this.scrollHandler = new __vite_ssr_import_0__.ConnectedOverlayScrollHandler(this.$refs.container, () => {
-                    if (this.overlayVisible) {
-                        this.hide();
-                    }
-                });
-            }
-
-            this.scrollHandler.bindScrollListener();
-        },
-        unbindScrollListener() {
-            if (this.scrollHandler) {
-                this.scrollHandler.unbindScrollListener();
-            }
-        },
-        bindResizeListener() {
-            if (!this.resizeListener) {
-                this.resizeListener = () => {
-                    if (this.overlayVisible && !__vite_ssr_import_0__.DomHandler.isTouchDevice()) {
-                        this.hide();
-                    }
-                };
-                window.addEventListener('resize', this.resizeListener);
-            }
-        },
-        unbindResizeListener() {
-            if (this.resizeListener) {
-                window.removeEventListener('resize', this.resizeListener);
-                this.resizeListener = null;
-            }
-        },
-        search(event) {
-            if (!this.visibleOptions) {
-                return;
-            }
-
-            if (this.searchTimeout) {
-                clearTimeout(this.searchTimeout);
-            }
-
-            const char = event.key;
-            this.previousSearchChar = this.currentSearchChar;
-            this.currentSearchChar = char;
-
-            if (this.previousSearchChar === this.currentSearchChar)
-                this.searchValue = this.currentSearchChar;
-            else
-                this.searchValue = this.searchValue ? this.searchValue + char : char;
-
-            if (this.searchValue) {
-                let searchIndex = this.getSelectedOptionIndex();
-                let newOption = this.optionGroupLabel ? this.searchOptionInGroup(searchIndex) : this.searchOption(++searchIndex);
-                if (newOption) {
-                    this.updateModel(event, this.getOptionValue(newOption));
-                }
-            }
-
-            this.searchTimeout = setTimeout(() => {
-                this.searchValue = null;
-            }, 250);
-        },
-        searchOption(index) {
-            let option;
-
-            if (this.searchValue) {
-                option = this.searchOptionInRange(index, this.visibleOptions.length);
-
-                if (!option) {
-                    option = this.searchOptionInRange(0, index);
-                }
-            }
-
-            return option;
-        },
-        searchOptionInRange(start, end) {
-            for (let i = start; i < end; i++) {
-                let opt = this.visibleOptions[i];
-                if (this.matchesSearchValue(opt)) {
-                    return opt;
-                }
-            }
-
-            return null;
-        },
-        searchOptionInGroup(index) {
-            let searchIndex = index === -1 ? {group: 0, option: -1} : index;
-
-            for (let i = searchIndex.group; i < this.visibleOptions.length; i++) {
-                let groupOptions = this.getOptionGroupChildren(this.visibleOptions[i]);
-                for (let j = (searchIndex.group === i ? searchIndex.option + 1 : 0); j < groupOptions.length; j++) {
-                    if (this.matchesSearchValue(groupOptions[j])) {
-                        return groupOptions[j];
-                    }
-                }
-            }
-
-            for (let i = 0; i <= searchIndex.group; i++) {
-                let groupOptions = this.getOptionGroupChildren(this.visibleOptions[i]);
-                for (let j = 0; j < (searchIndex.group === i ? searchIndex.option: groupOptions.length); j++) {
-                    if (this.matchesSearchValue(groupOptions[j])) {
-                        return groupOptions[j];
-                    }
-                }
-            }
-
-            return null;
-        },
-        matchesSearchValue(option) {
-            let label = this.getOptionLabel(option).toLocaleLowerCase(this.filterLocale);
-            return label.startsWith(this.searchValue.toLocaleLowerCase(this.filterLocale));
-        },
-        onFilterChange(event) {
-            this.$emit('filter', {originalEvent: event, value: event.target.value});
-        },
-        onFilterUpdated() {
-            if (this.overlayVisible) {
-                this.alignOverlay();
-            }
-        },
-        overlayRef(el) {
-            this.overlay = el;
-        },
-        itemsWrapperRef(el) {
-            this.itemsWrapper = el;
-        },
-        virtualScrollerRef(el) {
-            this.virtualScroller = el;
-        },
-        scrollValueInView() {
-            if (this.overlay) {
-                let selectedItem = __vite_ssr_import_0__.DomHandler.findSingle(this.overlay, 'li.p-highlight');
-                if (selectedItem) {
-                    selectedItem.scrollIntoView({ block: 'nearest', inline: 'start' });
-                }
-            }
-        },
-        onOverlayClick(event) {
-            __vite_ssr_import_1__.default.emit('overlay-click', {
-                originalEvent: event,
-                target: this.$el
-            });
-        }
-    },
-    computed: {
-        visibleOptions() {
-            if (this.filterValue) {
-                if (this.optionGroupLabel) {
-                    let filteredGroups = [];
-                    for (let optgroup of this.options) {
-                        let filteredSubOptions = __vite_ssr_import_2__.FilterService.filter(this.getOptionGroupChildren(optgroup), this.searchFields, this.filterValue, this.filterMatchMode, this.filterLocale);
-                        if (filteredSubOptions && filteredSubOptions.length) {
-                            let filteredGroup = {...optgroup};
-                            filteredGroup[this.optionGroupChildren] = filteredSubOptions;
-                            filteredGroups.push(filteredGroup);
-                        }
-                    }
-                    return filteredGroups
-                }
-                else {
-                    return __vite_ssr_import_2__.FilterService.filter(this.options, this.searchFields, this.filterValue, this.filterMatchMode, this.filterLocale);
-                }
-            }
-            else {
-                return this.options;
-            }
-        },
-        containerClass() {
-            return [
-                'p-dropdown p-component p-inputwrapper',
-                {
-                    'p-disabled': this.disabled,
-                    'p-dropdown-clearable': this.showClear && !this.disabled,
-                    'p-focus': this.focused,
-                    'p-inputwrapper-filled': this.modelValue,
-                    'p-inputwrapper-focus': this.focused || this.overlayVisible
-                }
-            ];
-        },
-        labelClass() {
-            return [
-                'p-dropdown-label p-inputtext',
-                {
-                    'p-placeholder': this.label === this.placeholder,
-                    'p-dropdown-label-empty': !this.$slots['value'] && (this.label === 'p-emptylabel' || this.label.length === 0)
-                }
-            ];
-        },
-        panelStyleClass() {
-            return ['p-dropdown-panel p-component', this.panelClass, {
-                'p-input-filled': this.$primevue.config.inputStyle === 'filled',
-                'p-ripple-disabled': this.$primevue.config.ripple === false
-            }];
-        },
-        label() {
-            let selectedOption = this.getSelectedOption();
-            if (selectedOption !== null)
-                return this.getOptionLabel(selectedOption);
-            else
-                return this.placeholder||'p-emptylabel';
-        },
-        editableInputValue() {
-            let selectedOption = this.getSelectedOption();
-            if (selectedOption)
-                return this.getOptionLabel(selectedOption);
-            else
-                return this.modelValue;
-        },
-        equalityKey() {
-            return this.optionValue ? null : this.dataKey;
-        },
-        searchFields() {
-            return this.filterFields || [this.optionLabel];
-        },
-        emptyFilterMessageText() {
-            return this.emptyFilterMessage || this.$primevue.config.locale.emptyFilterMessage;
-        },
-        emptyMessageText() {
-            return this.emptyMessage || this.$primevue.config.locale.emptyMessage;
-        },
-        appendDisabled() {
-            return this.appendTo === 'self';
-        },
-        virtualScrollerDisabled() {
-            return !this.virtualScrollerOptions;
-        },
-        appendTarget() {
-            return this.appendDisabled ? null : this.appendTo;
-        },
-        dropdownIconClass() {
-            return ['p-dropdown-trigger-icon', this.loading ? this.loadingIcon : 'pi pi-chevron-down'];
-        }
-    },
-    directives: {
-        'ripple': __vite_ssr_import_3__.default
-    },
-    components: {
-        'VirtualScroller': __vite_ssr_import_4__.default
-    }
-};
-
-const _hoisted_1 = { class: "p-hidden-accessible" };
-const _hoisted_2 = {
-  key: 0,
-  class: "p-dropdown-header"
-};
-const _hoisted_3 = { class: "p-dropdown-filter-container" };
-const _hoisted_4 = /*#__PURE__*/__vite_ssr_import_5__.createVNode("span", { class: "p-dropdown-filter-icon pi pi-search" }, null, -1);
-const _hoisted_5 = { class: "p-dropdown-item-group" };
-const _hoisted_6 = {
-  key: 2,
-  class: "p-dropdown-empty-message"
-};
-const _hoisted_7 = {
-  key: 3,
-  class: "p-dropdown-empty-message"
-};
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_VirtualScroller = __vite_ssr_import_5__.resolveComponent("VirtualScroller");
-  const _directive_ripple = __vite_ssr_import_5__.resolveDirective("ripple");
-
-  return (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("div", {
-    ref: "container",
-    class: $options.containerClass,
-    onClick: _cache[13] || (_cache[13] = $event => ($options.onClick($event)))
-  }, [
-    __vite_ssr_import_5__.createVNode("div", _hoisted_1, [
-      __vite_ssr_import_5__.createVNode("input", {
-        ref: "focusInput",
-        type: "text",
-        id: $props.inputId,
-        readonly: "",
-        disabled: $props.disabled,
-        onFocus: _cache[1] || (_cache[1] = (...args) => ($options.onFocus && $options.onFocus(...args))),
-        onBlur: _cache[2] || (_cache[2] = (...args) => ($options.onBlur && $options.onBlur(...args))),
-        onKeydown: _cache[3] || (_cache[3] = (...args) => ($options.onKeyDown && $options.onKeyDown(...args))),
-        tabindex: $props.tabindex,
-        "aria-haspopup": "true",
-        "aria-expanded": $data.overlayVisible,
-        "aria-labelledby": $props.ariaLabelledBy
-      }, null, 40, ["id", "disabled", "tabindex", "aria-expanded", "aria-labelledby"])
-    ]),
-    ($props.editable)
-      ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("input", {
-          key: 0,
-          type: "text",
-          class: "p-dropdown-label p-inputtext",
-          disabled: $props.disabled,
-          onFocus: _cache[4] || (_cache[4] = (...args) => ($options.onFocus && $options.onFocus(...args))),
-          onBlur: _cache[5] || (_cache[5] = (...args) => ($options.onBlur && $options.onBlur(...args))),
-          placeholder: $props.placeholder,
-          value: $options.editableInputValue,
-          onInput: _cache[6] || (_cache[6] = (...args) => ($options.onEditableInput && $options.onEditableInput(...args))),
-          "aria-haspopup": "listbox",
-          "aria-expanded": $data.overlayVisible
-        }, null, 40, ["disabled", "placeholder", "value", "aria-expanded"]))
-      : __vite_ssr_import_5__.createCommentVNode("", true),
-    (!$props.editable)
-      ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("span", {
-          key: 1,
-          class: $options.labelClass
-        }, [
-          __vite_ssr_import_5__.renderSlot(_ctx.$slots, "value", {
-            value: $props.modelValue,
-            placeholder: $props.placeholder
-          }, () => [
-            __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.label||'empty'), 1)
-          ])
-        ], 2))
-      : __vite_ssr_import_5__.createCommentVNode("", true),
-    ($props.showClear && $props.modelValue != null)
-      ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("i", {
-          key: 2,
-          class: "p-dropdown-clear-icon pi pi-times",
-          onClick: _cache[7] || (_cache[7] = $event => ($options.onClearClick($event)))
-        }))
-      : __vite_ssr_import_5__.createCommentVNode("", true),
-    __vite_ssr_import_5__.createVNode("div", {
-      class: "p-dropdown-trigger",
-      role: "button",
-      "aria-haspopup": "listbox",
-      "aria-expanded": $data.overlayVisible
-    }, [
-      __vite_ssr_import_5__.renderSlot(_ctx.$slots, "indicator", {}, () => [
-        __vite_ssr_import_5__.createVNode("span", { class: $options.dropdownIconClass }, null, 2)
-      ])
-    ], 8, ["aria-expanded"]),
-    (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Teleport, {
-      to: $options.appendTarget,
-      disabled: $options.appendDisabled
-    }, [
-      __vite_ssr_import_5__.createVNode(__vite_ssr_import_5__.Transition, {
-        name: "p-connected-overlay",
-        onEnter: $options.onOverlayEnter,
-        onAfterEnter: $options.onOverlayAfterEnter,
-        onLeave: $options.onOverlayLeave,
-        onAfterLeave: $options.onOverlayAfterLeave
-      }, {
-        default: __vite_ssr_import_5__.withCtx(() => [
-          ($data.overlayVisible)
-            ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("div", {
-                key: 0,
-                ref: $options.overlayRef,
-                class: $options.panelStyleClass,
-                onClick: _cache[12] || (_cache[12] = (...args) => ($options.onOverlayClick && $options.onOverlayClick(...args)))
-              }, [
-                __vite_ssr_import_5__.renderSlot(_ctx.$slots, "header", {
-                  value: $props.modelValue,
-                  options: $options.visibleOptions
-                }),
-                ($props.filter)
-                  ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("div", _hoisted_2, [
-                      __vite_ssr_import_5__.createVNode("div", _hoisted_3, [
-                        __vite_ssr_import_5__.withDirectives(__vite_ssr_import_5__.createVNode("input", {
-                          type: "text",
-                          ref: "filterInput",
-                          "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => ($data.filterValue = $event)),
-                          onVnodeUpdated: _cache[9] || (_cache[9] = (...args) => ($options.onFilterUpdated && $options.onFilterUpdated(...args))),
-                          autoComplete: "off",
-                          class: "p-dropdown-filter p-inputtext p-component",
-                          placeholder: $props.filterPlaceholder,
-                          onKeydown: _cache[10] || (_cache[10] = (...args) => ($options.onFilterKeyDown && $options.onFilterKeyDown(...args))),
-                          onInput: _cache[11] || (_cache[11] = (...args) => ($options.onFilterChange && $options.onFilterChange(...args)))
-                        }, null, 40, ["placeholder"]), [
-                          [__vite_ssr_import_5__.vModelText, $data.filterValue]
-                        ]),
-                        _hoisted_4
-                      ])
-                    ]))
-                  : __vite_ssr_import_5__.createCommentVNode("", true),
-                __vite_ssr_import_5__.createVNode("div", {
-                  ref: $options.itemsWrapperRef,
-                  class: "p-dropdown-items-wrapper",
-                  style: {'max-height': $options.virtualScrollerDisabled ? $props.scrollHeight : ''}
-                }, [
-                  __vite_ssr_import_5__.createVNode(_component_VirtualScroller, __vite_ssr_import_5__.mergeProps({ ref: $options.virtualScrollerRef }, $props.virtualScrollerOptions, {
-                    items: $options.visibleOptions,
-                    style: {'height': $props.scrollHeight},
-                    disabled: $options.virtualScrollerDisabled
-                  }), __vite_ssr_import_5__.createSlots({
-                    content: __vite_ssr_import_5__.withCtx(({ styleClass, contentRef, items, getItemOptions, contentStyle }) => [
-                      __vite_ssr_import_5__.createVNode("ul", {
-                        ref: contentRef,
-                        class: ['p-dropdown-items', styleClass],
-                        style: contentStyle,
-                        role: "listbox"
-                      }, [
-                        (!$props.optionGroupLabel)
-                          ? (__vite_ssr_import_5__.openBlock(true), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, { key: 0 }, __vite_ssr_import_5__.renderList(items, (option, i) => {
-                              return __vite_ssr_import_5__.withDirectives((__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("li", {
-                                class: ['p-dropdown-item', {'p-highlight': $options.isSelected(option), 'p-disabled': $options.isOptionDisabled(option)}],
-                                key: $options.getOptionRenderKey(option),
-                                onClick: $event => ($options.onOptionSelect($event, option)),
-                                role: "option",
-                                "aria-label": $options.getOptionLabel(option),
-                                "aria-selected": $options.isSelected(option)
-                              }, [
-                                __vite_ssr_import_5__.renderSlot(_ctx.$slots, "option", {
-                                  option: option,
-                                  index: $options.getOptionIndex(i, getItemOptions)
-                                }, () => [
-                                  __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.getOptionLabel(option)), 1)
-                                ])
-                              ], 10, ["onClick", "aria-label", "aria-selected"])), [
-                                [_directive_ripple]
-                              ])
-                            }), 128))
-                          : (__vite_ssr_import_5__.openBlock(true), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, { key: 1 }, __vite_ssr_import_5__.renderList(items, (optionGroup, i) => {
-                              return (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, {
-                                key: $options.getOptionGroupRenderKey(optionGroup)
-                              }, [
-                                __vite_ssr_import_5__.createVNode("li", _hoisted_5, [
-                                  __vite_ssr_import_5__.renderSlot(_ctx.$slots, "optiongroup", {
-                                    option: optionGroup,
-                                    index: $options.getOptionIndex(i, getItemOptions)
-                                  }, () => [
-                                    __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.getOptionGroupLabel(optionGroup)), 1)
-                                  ])
-                                ]),
-                                (__vite_ssr_import_5__.openBlock(true), __vite_ssr_import_5__.createBlock(__vite_ssr_import_5__.Fragment, null, __vite_ssr_import_5__.renderList($options.getOptionGroupChildren(optionGroup), (option, i) => {
-                                  return __vite_ssr_import_5__.withDirectives((__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("li", {
-                                    class: ['p-dropdown-item', {'p-highlight': $options.isSelected(option), 'p-disabled': $options.isOptionDisabled(option)}],
-                                    key: $options.getOptionRenderKey(option),
-                                    onClick: $event => ($options.onOptionSelect($event, option)),
-                                    role: "option",
-                                    "aria-label": $options.getOptionLabel(option),
-                                    "aria-selected": $options.isSelected(option)
-                                  }, [
-                                    __vite_ssr_import_5__.renderSlot(_ctx.$slots, "option", {
-                                      option: option,
-                                      index: $options.getOptionIndex(i, getItemOptions)
-                                    }, () => [
-                                      __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.getOptionLabel(option)), 1)
-                                    ])
-                                  ], 10, ["onClick", "aria-label", "aria-selected"])), [
-                                    [_directive_ripple]
-                                  ])
-                                }), 128))
-                              ], 64))
-                            }), 128)),
-                        ($data.filterValue && (!items || (items && items.length === 0)))
-                          ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("li", _hoisted_6, [
-                              __vite_ssr_import_5__.renderSlot(_ctx.$slots, "emptyfilter", {}, () => [
-                                __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.emptyFilterMessageText), 1)
-                              ])
-                            ]))
-                          : ((!$props.options || ($props.options && $props.options.length === 0)))
-                            ? (__vite_ssr_import_5__.openBlock(), __vite_ssr_import_5__.createBlock("li", _hoisted_7, [
-                                __vite_ssr_import_5__.renderSlot(_ctx.$slots, "empty", {}, () => [
-                                  __vite_ssr_import_5__.createTextVNode(__vite_ssr_import_5__.toDisplayString($options.emptyMessageText), 1)
-                                ])
-                              ]))
-                            : __vite_ssr_import_5__.createCommentVNode("", true)
-                      ], 6)
-                    ]),
-                    _: 2
-                  }, [
-                    (_ctx.$slots.loader)
-                      ? {
-                          name: "loader",
-                          fn: __vite_ssr_import_5__.withCtx(({ options }) => [
-                            __vite_ssr_import_5__.renderSlot(_ctx.$slots, "loader", { options: options })
-                          ])
-                        }
-                      : undefined
-                  ]), 1040, ["items", "style", "disabled"])
-                ], 4),
-                __vite_ssr_import_5__.renderSlot(_ctx.$slots, "footer", {
-                  value: $props.modelValue,
-                  options: $options.visibleOptions
-                })
-              ], 2))
-            : __vite_ssr_import_5__.createCommentVNode("", true)
-        ]),
-        _: 3
-      }, 8, ["onEnter", "onAfterEnter", "onLeave", "onAfterLeave"])
-    ], 8, ["to", "disabled"]))
-  ], 2))
-}
-
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || "undefined" === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css_248z = "\n.p-dropdown {\n    display: -webkit-inline-box;\n    display: -ms-inline-flexbox;\n    display: inline-flex;\n    cursor: pointer;\n    position: relative;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n.p-dropdown-clear-icon {\n    position: absolute;\n    top: 50%;\n    margin-top: -.5rem;\n}\n.p-dropdown-trigger {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -ms-flex-negative: 0;\n        flex-shrink: 0;\n}\n.p-dropdown-label {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n    width: 1%;\n    text-overflow: ellipsis;\n    cursor: pointer;\n}\n.p-dropdown-label-empty {\n    overflow: hidden;\n    visibility: hidden;\n}\ninput.p-dropdown-label  {\n    cursor: default;\n}\n.p-dropdown .p-dropdown-panel {\n    min-width: 100%;\n}\n.p-dropdown-panel {\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.p-dropdown-items-wrapper {\n    overflow: auto;\n}\n.p-dropdown-item {\n    cursor: pointer;\n    font-weight: normal;\n    white-space: nowrap;\n    position: relative;\n    overflow: hidden;\n}\n.p-dropdown-item-group {\n    cursor: auto;\n}\n.p-dropdown-items {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n}\n.p-dropdown-filter {\n    width: 100%;\n}\n.p-dropdown-filter-container {\n    position: relative;\n}\n.p-dropdown-filter-icon {\n    position: absolute;\n    top: 50%;\n    margin-top: -.5rem;\n}\n.p-fluid .p-dropdown {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.p-fluid .p-dropdown .p-dropdown-label {\n    width: 1%;\n}\n";
-styleInject(css_248z);
-
-script.render = render;
-
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return script }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/primevue/overlayeventbus/overlayeventbus.esm.js
-// Parents: 
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
-// Dependencies: 
-// - /node_modules/primevue/utils/utils.esm.js ($id_27066acc)
-// --------------------
-const $id_a1fcf7c6 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/primevue/utils/utils.esm.js");
-
-
-var OverlayEventBus = __vite_ssr_import_0__.EventBus();
-
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return OverlayEventBus }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/primevue/virtualscroller/virtualscroller.esm.js
-// Parents: 
-// - /node_modules/primevue/dropdown/dropdown.esm.js ($id_68777992)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_8b34d48c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-
-var script = {
-    name: 'VirtualScroller',
-    emits: ['update:numToleratedItems', 'scroll', 'scroll-index-change', 'lazy-load'],
-    props: {
-        id: {
-            type: String,
-            default: null
-        },
-        style: null,
-        class: null,
-        items: {
-            type: Array,
-            default: null
-        },
-        itemSize: {
-            type: [Number,Array],
-            default: 0
-        },
-        scrollHeight: null,
-        scrollWidth: null,
-        orientation: {
-            type: String,
-            default: 'vertical'
-        },
-        numToleratedItems: {
-            type: Number,
-            default: null
-        },
-        delay: {
-            type: Number,
-            default: 0
-        },
-        lazy: {
-            type: Boolean,
-            default: false
-        },
-        disabled: {
-            type: Boolean,
-            default: false
-        },
-        loaderDisabled: {
-            type: Boolean,
-            default: false
-        },
-        columns: {
-            type: Array,
-            default: null
-        },
-        loading: {
-            type: Boolean,
-            default: false
-        },
-        showSpacer: {
-            type: Boolean,
-            default: true
-        },
-        showLoader: {
-            type: Boolean,
-            default: false
-        }
-    },
-    data() {
-        return {
-            first: this.isBoth() ? { rows: 0, cols: 0 } : 0,
-            last: this.isBoth() ? { rows: 0, cols: 0 } : 0,
-            numItemsInViewport: this.isBoth() ? { rows: 0, cols: 0 } : 0,
-            lastScrollPos: this.isBoth() ? { top: 0, left: 0 } : 0,
-            d_numToleratedItems: this.numToleratedItems,
-            d_loading: this.loading,
-            loaderArr: [],
-            spacerStyle: {},
-            contentStyle: {}
-        }
-    },
-    element: null,
-    content: null,
-    lastScrollPos: null,
-    scrollTimeout: null,
-    mounted() {
-        this.init();
-
-        this.lastScrollPos = this.isBoth() ? { top: 0, left: 0 } : 0;
-    },
-    watch: {
-        numToleratedItems(newValue) {
-            this.d_numToleratedItems = newValue;
-        },
-        loading(newValue) {
-            this.d_loading = newValue;
-        },
-        items(newValue, oldValue) {
-            if (!oldValue || oldValue.length !== (newValue || []).length) {
-                this.init();
-            }
-        },
-        orientation() {
-            this.lastScrollPos = this.isBoth() ? { top: 0, left: 0 } : 0;
-        }
-    },
-    methods: {
-        init() {
-            this.setSize();
-            this.calculateOptions();
-            this.setSpacerSize();
-        },
-        isVertical() {
-            return this.orientation === 'vertical';
-        },
-        isHorizontal() {
-            return this.orientation === 'horizontal';
-        },
-        isBoth() {
-            return this.orientation === 'both';
-        },
-        scrollTo(options) {
-            this.element && this.element.scrollTo(options);
-        },
-        scrollToIndex(index, behavior = 'auto') {
-            const both = this.isBoth();
-            const horizontal = this.isHorizontal();
-            const first = this.first;
-            const { numToleratedItems } = this.calculateNumItems();
-            const itemSize = this.itemSize;
-            const contentPos = this.getContentPosition();
-            const calculateFirst = (_index = 0, _numT) => (_index <= _numT ? 0 : _index);
-            const calculateCoord = (_first, _size, _cpos) => (_first * _size) + _cpos;
-            const scrollTo = (left = 0, top = 0) => this.scrollTo({ left, top, behavior });
-
-            if (both) {
-                const newFirst = { rows: calculateFirst(index[0], numToleratedItems[0]), cols: calculateFirst(index[1], numToleratedItems[1]) };
-                if (newFirst.rows !== first.rows || newFirst.cols !== first.cols) {
-                    scrollTo(calculateCoord(newFirst.cols, itemSize[1], contentPos.left), calculateCoord(newFirst.rows, itemSize[0], contentPos.top));
-                    this.first = newFirst;
-                }
-            }
-            else {
-                const newFirst = calculateFirst(index, numToleratedItems);
-
-                if (newFirst !== first) {
-                    horizontal ? scrollTo(calculateCoord(newFirst, itemSize, contentPos.left), 0) : scrollTo(0, calculateCoord(newFirst, itemSize, contentPos.top));
-                    this.first = newFirst;
-                }
-            }
-        },
-        scrollInView(index, to, behavior = 'auto') {
-            if (to) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-                const { first, viewport } = this.getRenderedRange();
-                const scrollTo = (left = 0, top = 0) => this.scrollTo({ left, top, behavior });
-                const isToStart = to === 'to-start';
-                const isToEnd = to === 'to-end';
-
-                if (isToStart) {
-                    if (both) {
-                        if (viewport.first.rows - first.rows > index[0]) {
-                            scrollTo(viewport.first.cols * this.itemSize[1], (viewport.first.rows - 1) * this.itemSize[0]);
-                        }
-                        else if (viewport.first.cols - first.cols > index[1]) {
-                            scrollTo((viewport.first.cols - 1) * this.itemSize[1], viewport.first.rows * this.itemSize[0]);
-                        }
-                    }
-                    else {
-                        if (viewport.first - first > index) {
-                            const pos = (viewport.first - 1) * this.itemSize;
-                            horizontal ? scrollTo(pos, 0) : scrollTo(0, pos);
-                        }
-                    }
-                }
-                else if (isToEnd) {
-                    if (both) {
-                        if (viewport.last.rows - first.rows <= index[0] + 1) {
-                            scrollTo(viewport.first.cols * this.itemSize[1], (viewport.first.rows + 1) * this.itemSize[0]);
-                        }
-                        else if (viewport.last.cols - first.cols <= index[1] + 1) {
-                            scrollTo((viewport.first.cols + 1) * this.itemSize[1], viewport.first.rows * this.itemSize[0]);
-                        }
-                    }
-                    else {
-                        if (viewport.last - first <= index + 1) {
-                            const pos = (viewport.first + 1) * this.itemSize;
-                            horizontal ? scrollTo(pos, 0) : scrollTo(0, pos);
-                        }
-                    }
-                }
-            }
-            else {
-                this.scrollToIndex(index, behavior);
-            }
-        },
-        getRenderedRange() {
-            const calculateFirstInViewport = (_pos, _size) => Math.floor(_pos / (_size || _pos));
-
-            let firstInViewport = this.first;
-            let lastInViewport = 0;
-
-            if (this.element) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-                const scrollTop = this.element.scrollTop;
-                const scrollLeft = this.element.scrollLeft;
-
-                if (both) {
-                    firstInViewport = { rows: calculateFirstInViewport(scrollTop, this.itemSize[0]), cols: calculateFirstInViewport(scrollLeft, this.itemSize[1]) };
-                    lastInViewport = { rows: firstInViewport.rows + this.numItemsInViewport.rows, cols: firstInViewport.cols + this.numItemsInViewport.cols };
-                }
-                else {
-                    const scrollPos = horizontal ? scrollLeft : scrollTop;
-                    firstInViewport = calculateFirstInViewport(scrollPos, this.itemSize);
-                    lastInViewport = firstInViewport + this.numItemsInViewport;
-                }
-            }
-
-            return {
-                first: this.first,
-                last: this.last,
-                viewport: {
-                    first: firstInViewport,
-                    last: lastInViewport
-                }
-            };
-        },
-        calculateNumItems() {
-            const both = this.isBoth();
-            const horizontal = this.isHorizontal();
-            const itemSize = this.itemSize;
-            const contentPos = this.getContentPosition();
-            const contentWidth = this.element ? this.element.offsetWidth - contentPos.left : 0;
-            const contentHeight = this.element ? this.element.offsetHeight - contentPos.top : 0;
-            const calculateNumItemsInViewport = (_contentSize, _itemSize) => Math.ceil(_contentSize / (_itemSize || _contentSize));
-            const calculateNumToleratedItems = (_numItems) => Math.ceil(_numItems / 2);
-            const numItemsInViewport = both ?
-                { rows: calculateNumItemsInViewport(contentHeight, itemSize[0]), cols: calculateNumItemsInViewport(contentWidth, itemSize[1]) } :
-                calculateNumItemsInViewport((horizontal ? contentWidth : contentHeight), itemSize);
-
-            const numToleratedItems = this.d_numToleratedItems || (both ?
-                [calculateNumToleratedItems(numItemsInViewport.rows), calculateNumToleratedItems(numItemsInViewport.cols)] :
-                calculateNumToleratedItems(numItemsInViewport));
-
-            return { numItemsInViewport, numToleratedItems };
-        },
-        calculateOptions() {
-            const both = this.isBoth();
-            const first = this.first;
-            const { numItemsInViewport, numToleratedItems } = this.calculateNumItems();
-            const calculateLast = (_first, _num, _numT, _isCols) => this.getLast(_first + _num + ((_first < _numT ? 2 : 3) * _numT), _isCols);
-            const last = both ?
-                { rows: calculateLast(first.rows, numItemsInViewport.rows, numToleratedItems[0]), cols: calculateLast(first.cols, numItemsInViewport.cols, numToleratedItems[1], true) } :
-                calculateLast(first, numItemsInViewport, numToleratedItems);
-
-            this.last = last;
-            this.numItemsInViewport = numItemsInViewport;
-            this.d_numToleratedItems = numToleratedItems;
-            this.$emit('update:numToleratedItems', this.d_numToleratedItems);
-
-            if (this.showLoader) {
-                this.loaderArr = both ?
-                    Array.from({ length: numItemsInViewport.rows }).map(() => Array.from({ length: numItemsInViewport.cols })) :
-                    Array.from({ length: numItemsInViewport });
-            }
-
-            if (this.lazy) {
-                this.$emit('lazy-load', { first, last });
-            }
-        },
-        getLast(last = 0, isCols) {
-            if (this.items) {
-                return Math.min((isCols ? (this.columns || this.items[0]).length : this.items.length), last);
-            }
-
-            return 0;
-        },
-        getContentPosition() {
-            if (this.content) {
-                const style = getComputedStyle(this.content);
-                const left = parseInt(style.paddingLeft, 10) + Math.max(parseInt(style.left, 10), 0);
-                const right = parseInt(style.paddingRight, 10) + Math.max(parseInt(style.right, 10), 0);
-                const top = parseInt(style.paddingTop, 10) + Math.max(parseInt(style.top, 10), 0);
-                const bottom = parseInt(style.paddingBottom, 10) + Math.max(parseInt(style.bottom, 10), 0);
-
-                return { left, right, top, bottom, x: left + right, y: top + bottom };
-            }
-
-            return { left: 0, right: 0, top: 0, bottom: 0, x: 0, y: 0 };
-        },
-        setSize() {
-            if (this.element) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-                const parentElement = this.element.parentElement;
-                const width = this.scrollWidth || `${(this.element.offsetWidth || parentElement.offsetWidth)}px`;
-                const height = this.scrollHeight || `${(this.element.offsetHeight || parentElement.offsetHeight)}px`;
-                const setProp = (_name, _value) => this.element.style[_name] = _value;
-
-                if (both || horizontal) {
-                    setProp('height', height);
-                    setProp('width', width);
-                }
-                else {
-                    setProp('height', height);
-                }
-            }
-        },
-        setSpacerSize() {
-            const items = this.items;
-
-            if (items) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-                const contentPos = this.getContentPosition();
-                const setProp = (_name, _value, _size, _cpos = 0) => this.spacerStyle = { ...this.spacerStyle, ...{ [`${_name}`]: (((_value || []).length * _size) + _cpos) + 'px' } };
-
-                if (both) {
-                    setProp('height', items, this.itemSize[0], contentPos.y);
-                    setProp('width', (this.columns || items[1]), this.itemSize[1], contentPos.x);
-                }
-                else {
-                    horizontal ? setProp('width', (this.columns || items), this.itemSize, contentPos.x) : setProp('height', items, this.itemSize, contentPos.y);
-                }
-            }
-        },
-        setContentPosition(pos) {
-            if (this.content) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-                const first = pos ? pos.first : this.first;
-                const calculateTranslateVal = (_first, _size) => (_first * _size);
-                const setTransform = (_x = 0, _y = 0) => {
-                    this.contentStyle = { ...this.contentStyle, ...{ transform: `translate3d(${_x}px, ${_y}px, 0)` } };
-                };
-
-                if (both) {
-                    setTransform(calculateTranslateVal(first.cols, this.itemSize[1]), calculateTranslateVal(first.rows, this.itemSize[0]));
-                }
-                else {
-                    const translateVal = calculateTranslateVal(first, this.itemSize);
-                    horizontal ? setTransform(translateVal, 0) : setTransform(0, translateVal);
-                }
-            }
-        },
-        onScrollPositionChange(event) {
-            const target = event.target;
-            const both = this.isBoth();
-            const horizontal = this.isHorizontal();
-            const contentPos = this.getContentPosition();
-            const calculateScrollPos = (_pos, _cpos) => _pos ? (_pos > _cpos ? _pos - _cpos : _pos) : 0;
-            const calculateCurrentIndex = (_pos, _size) => Math.floor(_pos / (_size || _pos));
-            const calculateTriggerIndex = (_currentIndex, _first, _last, _num, _numT, _isScrollDownOrRight) => {
-                return (_currentIndex <= _numT ? _numT : (_isScrollDownOrRight ? (_last - _num - _numT) : (_first + _numT - 1)))
-            };
-            const calculateFirst = (_currentIndex, _triggerIndex, _first, _last, _num, _numT, _isScrollDownOrRight) => {
-                if (_currentIndex <= _numT)
-                    return 0;
-                else
-                    return Math.max(0, _isScrollDownOrRight ?
-                            (_currentIndex < _triggerIndex ? _first : _currentIndex - _numT) :
-                            (_currentIndex > _triggerIndex ? _first : _currentIndex - (2 * _numT)));
-            };
-            const calculateLast = (_currentIndex, _first, _last, _num, _numT, _isCols) => {
-                let lastValue = _first + _num + (2 * _numT);
-
-                if (_currentIndex >= _numT) {
-                    lastValue += (_numT + 1);
-                }
-
-                return this.getLast(lastValue, _isCols);
-            };
-
-            const scrollTop = calculateScrollPos(target.scrollTop, contentPos.top);
-            const scrollLeft = calculateScrollPos(target.scrollLeft, contentPos.left);
-
-            let newFirst = 0;
-            let newLast = this.last;
-            let isRangeChanged = false;
-
-            if (both) {
-                const isScrollDown = this.lastScrollPos.top <= scrollTop;
-                const isScrollRight = this.lastScrollPos.left <= scrollLeft;
-                const currentIndex = { rows: calculateCurrentIndex(scrollTop, this.itemSize[0]), cols: calculateCurrentIndex(scrollLeft, this.itemSize[1]) };
-                const triggerIndex = {
-                    rows: calculateTriggerIndex(currentIndex.rows, this.first.rows, this.last.rows, this.numItemsInViewport.rows, this.d_numToleratedItems[0], isScrollDown),
-                    cols: calculateTriggerIndex(currentIndex.cols, this.first.cols, this.last.cols, this.numItemsInViewport.cols, this.d_numToleratedItems[1], isScrollRight)
-                };
-
-                newFirst = {
-                    rows: calculateFirst(currentIndex.rows, triggerIndex.rows, this.first.rows, this.last.rows, this.numItemsInViewport.rows, this.d_numToleratedItems[0], isScrollDown),
-                    cols: calculateFirst(currentIndex.cols, triggerIndex.cols, this.first.cols, this.last.cols, this.numItemsInViewport.cols, this.d_numToleratedItems[1], isScrollRight)
-                };
-                newLast = {
-                    rows: calculateLast(currentIndex.rows, newFirst.rows, this.last.rows, this.numItemsInViewport.rows, this.d_numToleratedItems[0]),
-                    cols: calculateLast(currentIndex.cols, newFirst.cols, this.last.cols, this.numItemsInViewport.cols, this.d_numToleratedItems[1], true)
-                };
-
-                isRangeChanged = (newFirst.rows !== this.first.rows && newLast.rows !== this.last.rows) || (newFirst.cols !== this.first.cols && newLast.cols !== this.last.cols);
-
-                this.lastScrollPos = { top: scrollTop, left: scrollLeft };
-            }
-            else {
-                const scrollPos = horizontal ? scrollLeft : scrollTop;
-                const isScrollDownOrRight = this.lastScrollPos <= scrollPos;
-                const currentIndex = calculateCurrentIndex(scrollPos, this.itemSize);
-                const triggerIndex = calculateTriggerIndex(currentIndex, this.first, this.last, this.numItemsInViewport, this.d_numToleratedItems, isScrollDownOrRight);
-
-                newFirst = calculateFirst(currentIndex, triggerIndex, this.first, this.last, this.numItemsInViewport, this.d_numToleratedItems, isScrollDownOrRight);
-                newLast = calculateLast(currentIndex, newFirst, this.last, this.numItemsInViewport, this.d_numToleratedItems);
-                isRangeChanged = newFirst !== this.first && newLast !== this.last;
-
-                this.lastScrollPos = scrollPos;
-            }
-
-            return {
-                first: newFirst,
-                last: newLast,
-                isRangeChanged
-            }
-        },
-        onScrollChange(event) {
-            const { first, last, isRangeChanged } = this.onScrollPositionChange(event);
-
-            if (isRangeChanged) {
-                const newState = { first, last };
-
-                this.setContentPosition(newState);
-
-                this.first = first;
-                this.last = last;
-
-                this.$emit('scroll-index-change', newState);
-
-                if (this.lazy) {
-                    this.$emit('lazy-load', newState);
-                }
-            }
-        },
-        onScroll(event) {
-            this.$emit('scroll', event);
-
-            if (this.delay) {
-                if (this.scrollTimeout) {
-                    clearTimeout(this.scrollTimeout);
-                }
-
-                if (!this.d_loading && this.showLoader) {
-                    const { isRangeChanged: changed } = this.onScrollPositionChange(event);
-                    changed && (this.d_loading = true);
-                }
-
-                this.scrollTimeout = setTimeout(() => {
-                    this.onScrollChange(event);
-
-                    if (this.d_loading && this.showLoader && !this.lazy) {
-                        this.d_loading = false;
-                    }
-                }, this.delay);
-            }
-            else {
-                this.onScrollChange(event);
-            }
-        },
-        getOptions(renderedIndex) {
-            const count = (this.items || []).length;
-            const index = this.isBoth() ? this.first.rows + renderedIndex : this.first + renderedIndex;
-            return {
-                index,
-                count,
-                first: index === 0,
-                last: index === (count - 1),
-                even: index % 2 === 0,
-                odd: index % 2 !== 0
-            };
-        },
-        getLoaderOptions(index, extOptions) {
-            let count = this.loaderArr.length;
-            return {
-                index,
-                count,
-                first: index === 0,
-                last: index === (count - 1),
-                even: index % 2 === 0,
-                odd: index % 2 !== 0,
-                ...extOptions
-            }
-        },
-        elementRef(el) {
-            this.element = el;
-        },
-        contentRef(el) {
-            this.content = el;
-        }
-    },
-    computed: {
-        containerClass() {
-            return ['p-virtualscroller', {
-                'p-both-scroll': this.isBoth(),
-                'p-horizontal-scroll': this.isHorizontal()
-            }, this.class];
-        },
-        contentClass() {
-            return ['p-virtualscroller-content', {
-                'p-virtualscroller-loading': this.d_loading
-            }];
-        },
-        loaderClass() {
-            return ['p-virtualscroller-loader', {
-                'p-component-overlay': !this.$slots.loader
-            }];
-        },
-        loadedItems() {
-            const items = this.items;
-            if (items && !this.d_loading) {
-                if (this.isBoth()) {
-                    return items.slice(this.first.rows, this.last.rows).map(item => this.columns ? item : item.slice(this.first.cols, this.last.cols));
-                }
-                else if (this.isHorizontal() && this.columns)
-                    return items;
-                else
-                    return items.slice(this.first, this.last);
-            }
-
-            return [];
-        },
-        loadedRows() {
-            return this.d_loading ? (this.loaderDisabled ? this.loaderArr : []) : this.loadedItems;
-        },
-        loadedColumns() {
-            if (this.columns) {
-                const both = this.isBoth();
-                const horizontal = this.isHorizontal();
-
-                if (both || horizontal) {
-                    return this.d_loading && this.loaderDisabled ?
-                    (both ? this.loaderArr[0] : this.loaderArr):
-                    this.columns.slice((both ? this.first.cols : this.first), (both ? this.last.cols : this.last));
-                }
-            }
-
-            return this.columns;
-        }
-    }
-};
-
-const _hoisted_1 = {
-  key: 1,
-  class: "p-virtualscroller-loading-icon pi pi-spinner pi-spin"
-};
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (!$props.disabled)
-    ? (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock("div", {
-        key: 0,
-        ref: $options.elementRef,
-        class: $options.containerClass,
-        tabindex: 0,
-        style: $props.style,
-        onScroll: _cache[1] || (_cache[1] = (...args) => ($options.onScroll && $options.onScroll(...args)))
-      }, [
-        __vite_ssr_import_0__.renderSlot(_ctx.$slots, "content", {
-          styleClass: $options.contentClass,
-          items: $options.loadedItems,
-          getItemOptions: $options.getOptions,
-          loading: $data.d_loading,
-          getLoaderOptions: $options.getLoaderOptions,
-          itemSize: $props.itemSize,
-          rows: $options.loadedRows,
-          columns: $options.loadedColumns,
-          contentRef: $options.contentRef,
-          spacerStyle: $data.spacerStyle,
-          contentStyle: $data.contentStyle,
-          vertical: $options.isVertical(),
-          horizontal: $options.isHorizontal(),
-          both: $options.isBoth()
-        }, () => [
-          __vite_ssr_import_0__.createVNode("div", {
-            ref: $options.contentRef,
-            class: $options.contentClass,
-            style: $data.contentStyle
-          }, [
-            (__vite_ssr_import_0__.openBlock(true), __vite_ssr_import_0__.createBlock(__vite_ssr_import_0__.Fragment, null, __vite_ssr_import_0__.renderList($options.loadedItems, (item, index) => {
-              return __vite_ssr_import_0__.renderSlot(_ctx.$slots, "item", {
-                key: index,
-                item: item,
-                options: $options.getOptions(index)
-              })
-            }), 128))
-          ], 6)
-        ]),
-        ($props.showSpacer)
-          ? (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock("div", {
-              key: 0,
-              class: "p-virtualscroller-spacer",
-              style: $data.spacerStyle
-            }, null, 4))
-          : __vite_ssr_import_0__.createCommentVNode("", true),
-        (!$props.loaderDisabled && $props.showLoader && $data.d_loading)
-          ? (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock("div", {
-              key: 1,
-              class: $options.loaderClass
-            }, [
-              (_ctx.$slots && _ctx.$slots.loader)
-                ? (__vite_ssr_import_0__.openBlock(true), __vite_ssr_import_0__.createBlock(__vite_ssr_import_0__.Fragment, { key: 0 }, __vite_ssr_import_0__.renderList($data.loaderArr, (_, index) => {
-                    return __vite_ssr_import_0__.renderSlot(_ctx.$slots, "loader", {
-                      key: index,
-                      options: $options.getLoaderOptions(index, $options.isBoth() && { numCols: _ctx.d_numItemsInViewport.cols })
-                    })
-                  }), 128))
-                : (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock("i", _hoisted_1))
-            ], 2))
-          : __vite_ssr_import_0__.createCommentVNode("", true)
-      ], 38))
-    : (__vite_ssr_import_0__.openBlock(), __vite_ssr_import_0__.createBlock(__vite_ssr_import_0__.Fragment, { key: 1 }, [
-        __vite_ssr_import_0__.renderSlot(_ctx.$slots, "default"),
-        __vite_ssr_import_0__.renderSlot(_ctx.$slots, "content", {
-          items: $props.items,
-          rows: $props.items,
-          columns: $options.loadedColumns
-        })
-      ], 64))
-}
-
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || "undefined" === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css_248z = "\n.p-virtualscroller {\n    position: relative;\n    overflow: auto;\n    contain: strict;\n    -webkit-transform: translateZ(0);\n            transform: translateZ(0);\n    will-change: scroll-position;\n    outline: 0 none;\n}\n.p-virtualscroller-content {\n    position: absolute;\n    top: 0;\n    left: 0;\n    contain: content;\n    min-height: 100%;\n    min-width: 100%;\n    will-change: transform;\n}\n.p-virtualscroller-spacer {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 1px;\n    width: 1px;\n    -webkit-transform-origin: 0 0;\n            transform-origin: 0 0;\n    pointer-events: none;\n}\n.p-virtualscroller .p-virtualscroller-loader {\n    position: sticky;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}\n.p-virtualscroller-loader.p-component-overlay {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n";
-styleInject(css_248z);
-
-script.render = render;
-
-
-Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return script }});
 ;
 }
 
@@ -27006,38 +24813,43 @@ Object.defineProperty(__vite_ssr_exports__, "setLocale", { enumerable: true, con
 
 // --------------------
 const $id_6b665ca1 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {
-  "code": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["en"])};fn.source="en";return fn;})(),
-  "messages": {
-    "_default": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " is not valid"])};fn.source="The {field} is not valid";return fn;})(),
-    "alpha": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may only contain alphabetic characters"])};fn.source="The {field} field may only contain alphabetic characters";return fn;})(),
-    "alpha_num": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may only contain alpha-numeric characters"])};fn.source="The {field} field may only contain alpha-numeric characters";return fn;})(),
-    "alpha_dash": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may contain alpha-numeric characters as well as dashes and underscores"])};fn.source="The {field} field may contain alpha-numeric characters as well as dashes and underscores";return fn;})(),
-    "alpha_spaces": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may only contain alphabetic characters as well as spaces"])};fn.source="The {field} field may only contain alphabetic characters as well as spaces";return fn;})(),
-    "between": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be between 0:", _interpolate(_named("min")), " and 1:", _interpolate(_named("max"))])};fn.source="The {field} field must be between 0:{min} and 1:{max}";return fn;})(),
-    "confirmed": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field confirmation does not match"])};fn.source="The {field} field confirmation does not match";return fn;})(),
-    "digits": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be numeric and exactly contain 0:", _interpolate(_named("length")), " digits"])};fn.source="The {field} field must be numeric and exactly contain 0:{length} digits";return fn;})(),
-    "dimensions": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be 0:", _interpolate(_named("width")), " pixels by 1:", _interpolate(_named("height")), " pixels"])};fn.source="The {field} field must be 0:{width} pixels by 1:{height} pixels";return fn;})(),
-    "email": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be a valid email"])};fn.source="The {field} field must be a valid email";return fn;})(),
-    "excluded": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is not a valid value"])};fn.source="The {field} field is not a valid value";return fn;})(),
-    "ext": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is not a valid file"])};fn.source="The {field} field is not a valid file";return fn;})(),
-    "image": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be an image"])};fn.source="The {field} field must be an image";return fn;})(),
-    "integer": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be an integer"])};fn.source="The {field} field must be an integer";return fn;})(),
-    "length": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be 0:", _interpolate(_named("length")), " long"])};fn.source="The {field} field must be 0:{length} long";return fn;})(),
-    "max_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be 0:", _interpolate(_named("max")), " or less"])};fn.source="The {field} field must be 0:{max} or less";return fn;})(),
-    "max": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may not be greater than 0:", _interpolate(_named("length")), " characters"])};fn.source="The {field} field may not be greater than 0:{length} characters";return fn;})(),
-    "mimes": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must have a valid file type"])};fn.source="The {field} field must have a valid file type";return fn;})(),
-    "min_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be 0:", _interpolate(_named("min")), " or more"])};fn.source="The {field} field must be 0:{min} or more";return fn;})(),
-    "min": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field must be at least 0:", _interpolate(_named("length")), " characters"])};fn.source="The {field} field must be at least 0:{length} characters";return fn;})(),
-    "numeric": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field may only contain numeric characters"])};fn.source="The {field} field may only contain numeric characters";return fn;})(),
-    "one_of": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is not a valid value"])};fn.source="The {field} field is not a valid value";return fn;})(),
-    "regex": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field format is invalid"])};fn.source="The {field} field format is invalid";return fn;})(),
-    "required_if": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is required"])};fn.source="The {field} field is required";return fn;})(),
-    "required": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is required"])};fn.source="The {field} field is required";return fn;})(),
-    "size": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field size must be less than 0:", _interpolate(_named("size")), "KB"])};fn.source="The {field} field size must be less than 0:{size}KB";return fn;})(),
-    "url": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["The ", _interpolate(_named("field")), " field is not a valid URL"])};fn.source="The {field} field is not a valid URL";return fn;})()
-  }
+const code = "en";
+Object.defineProperty(__vite_ssr_exports__, "code", { enumerable: true, configurable: true, get(){ return code }});
+const messages = {
+	_default: "The {field} is not valid",
+	alpha: "The {field} field may only contain alphabetic characters",
+	alpha_num: "The {field} field may only contain alpha-numeric characters",
+	alpha_dash: "The {field} field may contain alpha-numeric characters as well as dashes and underscores",
+	alpha_spaces: "The {field} field may only contain alphabetic characters as well as spaces",
+	between: "The {field} field must be between 0:{min} and 1:{max}",
+	confirmed: "The {field} field confirmation does not match",
+	digits: "The {field} field must be numeric and exactly contain 0:{length} digits",
+	dimensions: "The {field} field must be 0:{width} pixels by 1:{height} pixels",
+	email: "The {field} field must be a valid email",
+	excluded: "The {field} field is not a valid value",
+	ext: "The {field} field is not a valid file",
+	image: "The {field} field must be an image",
+	integer: "The {field} field must be an integer",
+	length: "The {field} field must be 0:{length} long",
+	max_value: "The {field} field must be 0:{max} or less",
+	max: "The {field} field may not be greater than 0:{length} characters",
+	mimes: "The {field} field must have a valid file type",
+	min_value: "The {field} field must be 0:{min} or more",
+	min: "The {field} field must be at least 0:{length} characters",
+	numeric: "The {field} field may only contain numeric characters",
+	one_of: "The {field} field is not a valid value",
+	regex: "The {field} field format is invalid",
+	required_if: "The {field} field is required",
+	required: "The {field} field is required",
+	size: "The {field} field size must be less than 0:{size}KB",
+	url: "The {field} field is not a valid URL"
 };
+Object.defineProperty(__vite_ssr_exports__, "messages", { enumerable: true, configurable: true, get(){ return messages }});
+__vite_ssr_exports__.default = {
+	code: code,
+	messages: messages
+};
+;
 }
 
 
@@ -27049,36 +24861,41 @@ __vite_ssr_exports__.default = {
 
 // --------------------
 const $id_0197d4ea = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {
-  "code": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["pt_PT"])};fn.source="pt_PT";return fn;})(),
-  "messages": {
-    "alpha": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve conter somente letras"])};fn.source="O campo {field} deve conter somente letras";return fn;})(),
-    "alpha_dash": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve conter letras, números e traços"])};fn.source="O campo {field} deve conter letras, números e traços";return fn;})(),
-    "alpha_num": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve conter somente letras e números"])};fn.source="O campo {field} deve conter somente letras e números";return fn;})(),
-    "alpha_spaces": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O ", _interpolate(_named("field")), " só pode conter caracteres alfabéticos e espaços"])};fn.source="O {field} só pode conter caracteres alfabéticos e espaços";return fn;})(),
-    "between": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve estar entre 0:", _interpolate(_named("min")), " e 1:", _interpolate(_named("max"))])};fn.source="O campo {field} deve estar entre 0:{min} e 1:{max}";return fn;})(),
-    "confirmed": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["A confirmação do campo ", _interpolate(_named("field")), " deve ser igual"])};fn.source="A confirmação do campo {field} deve ser igual";return fn;})(),
-    "digits": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser numérico e ter 0:", _interpolate(_named("length")), " dígitos"])};fn.source="O campo {field} deve ser numérico e ter 0:{length} dígitos";return fn;})(),
-    "dimensions": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ter 0:", _interpolate(_named("width")), " pixels de largura por 1:", _interpolate(_named("height")), " pixels de altura"])};fn.source="O campo {field} deve ter 0:{width} pixels de largura por 1:{height} pixels de altura";return fn;})(),
-    "email": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser um email válido"])};fn.source="O campo {field} deve ser um email válido";return fn;})(),
-    "excluded": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser um valor válido"])};fn.source="O campo {field} deve ser um valor válido";return fn;})(),
-    "ext": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser um ficheiro válido"])};fn.source="O campo {field} deve ser um ficheiro válido";return fn;})(),
-    "image": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser uma imagem"])};fn.source="O campo {field} deve ser uma imagem";return fn;})(),
-    "is": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O valor inserido no campo ", _interpolate(_named("field")), " não é válido"])};fn.source="O valor inserido no campo {field} não é válido";return fn;})(),
-    "one_of": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ter um valor válido"])};fn.source="O campo {field} deve ter um valor válido";return fn;})(),
-    "max": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " não deve ter mais que 0:", _interpolate(_named("length")), " caracteres"])};fn.source="O campo {field} não deve ter mais que 0:{length} caracteres";return fn;})(),
-    "max_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " precisa ser 0:", _interpolate(_named("max")), " ou menor"])};fn.source="O campo {field} precisa ser 0:{max} ou menor";return fn;})(),
-    "mimes": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser um tipo de ficheiro válido"])};fn.source="O campo {field} deve ser um tipo de ficheiro válido";return fn;})(),
-    "min": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve conter pelo menos 0:", _interpolate(_named("length")), " caracteres"])};fn.source="O campo {field} deve conter pelo menos 0:{length} caracteres";return fn;})(),
-    "min_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " precisa ser 0:", _interpolate(_named("min")), " ou maior"])};fn.source="O campo {field} precisa ser 0:{min} ou maior";return fn;})(),
-    "numeric": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve conter apenas números"])};fn.source="O campo {field} deve conter apenas números";return fn;})(),
-    "regex": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " possui um formato inválido"])};fn.source="O campo {field} possui um formato inválido";return fn;})(),
-    "required": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " é obrigatório"])};fn.source="O campo {field} é obrigatório";return fn;})(),
-    "required_if": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " é obrigatório"])};fn.source="O campo {field} é obrigatório";return fn;})(),
-    "size": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser menor que 0:", _interpolate(_named("size")), "KB"])};fn.source="O campo {field} deve ser menor que 0:{size}KB";return fn;})(),
-    "url": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize(["O campo ", _interpolate(_named("field")), " deve ser uma URL válida"])};fn.source="O campo {field} deve ser uma URL válida";return fn;})()
-  }
+const code = "pt_PT";
+Object.defineProperty(__vite_ssr_exports__, "code", { enumerable: true, configurable: true, get(){ return code }});
+const messages = {
+	alpha: "O campo {field} deve conter somente letras",
+	alpha_dash: "O campo {field} deve conter letras, números e traços",
+	alpha_num: "O campo {field} deve conter somente letras e números",
+	alpha_spaces: "O {field} só pode conter caracteres alfabéticos e espaços",
+	between: "O campo {field} deve estar entre 0:{min} e 1:{max}",
+	confirmed: "A confirmação do campo {field} deve ser igual",
+	digits: "O campo {field} deve ser numérico e ter 0:{length} dígitos",
+	dimensions: "O campo {field} deve ter 0:{width} pixels de largura por 1:{height} pixels de altura",
+	email: "O campo {field} deve ser um email válido",
+	excluded: "O campo {field} deve ser um valor válido",
+	ext: "O campo {field} deve ser um ficheiro válido",
+	image: "O campo {field} deve ser uma imagem",
+	is: "O valor inserido no campo {field} não é válido",
+	one_of: "O campo {field} deve ter um valor válido",
+	max: "O campo {field} não deve ter mais que 0:{length} caracteres",
+	max_value: "O campo {field} precisa ser 0:{max} ou menor",
+	mimes: "O campo {field} deve ser um tipo de ficheiro válido",
+	min: "O campo {field} deve conter pelo menos 0:{length} caracteres",
+	min_value: "O campo {field} precisa ser 0:{min} ou maior",
+	numeric: "O campo {field} deve conter apenas números",
+	regex: "O campo {field} possui um formato inválido",
+	required: "O campo {field} é obrigatório",
+	required_if: "O campo {field} é obrigatório",
+	size: "O campo {field} deve ser menor que 0:{size}KB",
+	url: "O campo {field} deve ser uma URL válida"
 };
+Object.defineProperty(__vite_ssr_exports__, "messages", { enumerable: true, configurable: true, get(){ return messages }});
+__vite_ssr_exports__.default = {
+	code: code,
+	messages: messages
+};
+;
 }
 
 
@@ -27090,36 +24907,41 @@ __vite_ssr_exports__.default = {
 
 // --------------------
 const $id_161caa49 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {
-  "code": (()=>{const fn=(ctx) => {const { normalize: _normalize } = ctx;return _normalize(["mn"])};fn.source="mn";return fn;})(),
-  "messages": {
-    "alpha": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн үсэг агуулах боломжтой"])};fn.source="{field}-н утга зөвхөн үсэг агуулах боломжтой";return fn;})(),
-    "alpha_num": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн тоо болон үсэг агуулах боломжтой"])};fn.source="{field}-н утга зөвхөн тоо болон үсэг агуулах боломжтой";return fn;})(),
-    "alpha_dash": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн үсэг, дундуур зураас, доогуур зураас агуулах боломжтой"])};fn.source="{field}-н утга зөвхөн үсэг, дундуур зураас, доогуур зураас агуулах боломжтой";return fn;})(),
-    "alpha_spaces": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн үсэг болон зай агуулах боломжтой"])};fn.source="{field}-н утга зөвхөн үсэг болон зай агуулах боломжтой";return fn;})(),
-    "between": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн 0:", _interpolate(_named("min")), "-с 1:", _interpolate(_named("max")), " -ны хооронд байх ёстой"])};fn.source="{field}-н утга зөвхөн 0:{min}-с 1:{max} -ны хооронд байх ёстой";return fn;})(),
-    "confirmed": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга буруу байна"])};fn.source="{field}-н утга буруу байна";return fn;})(),
-    "digits": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн тоо байх ба яг  0:", _interpolate(_named("length")), " оронтой байна"])};fn.source="{field}-н утга зөвхөн тоо байх ба яг  0:{length} оронтой байна";return fn;})(),
-    "dimensions": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н хэмжээ 0:", _interpolate(_named("width")), "x", _interpolate(_named("height")), " пикселээс хэтрэх байх шаардлагатай"])};fn.source="{field}-н хэмжээ 0:{width}x{height} пикселээс хэтрэх байх шаардлагатай";return fn;})(),
-    "email": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга бодит майл байх ёстой"])};fn.source="{field}-н утга бодит майл байх ёстой";return fn;})(),
-    "excluded": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга ", _interpolate(_named("excluded")), " байж болохгүй"])};fn.source="{field}-н утга {excluded} байж болохгүй";return fn;})(),
-    "ext": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), " заавал файл заавал ", _interpolate(_named("ext")), " форматтай байх ёстой"])};fn.source="{field} заавал файл заавал {ext} форматтай байх ёстой";return fn;})(),
-    "image": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), " заавал зураг байх ёстой"])};fn.source="{field} заавал зураг байх ёстой";return fn;})(),
-    "integer": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга тоо байх ёстой"])};fn.source="{field}-н утга тоо байх ёстой";return fn;})(),
-    "length": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н урт нь 0:", _interpolate(_named("length")), " байна"])};fn.source="{field}-н урт нь 0:{length} байна";return fn;})(),
-    "max_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга 0:", _interpolate(_named("max")), "-с хэтрэхгүй байна"])};fn.source="{field}-н утга 0:{max}-с хэтрэхгүй байна";return fn;})(),
-    "max": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н урт нь хамгийн ихдээ 0:", _interpolate(_named("length")), " байна"])};fn.source="{field}-н урт нь хамгийн ихдээ 0:{length} байна";return fn;})(),
-    "mimes": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), " зөвшөөрөгдөөгүй файл форматтай байна"])};fn.source="{field} зөвшөөрөгдөөгүй файл форматтай байна";return fn;})(),
-    "min_value": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга 0:", _interpolate(_named("min")), "-с багагүй байна"])};fn.source="{field}-н утга 0:{min}-с багагүй байна";return fn;})(),
-    "min": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н урт нь хамгийн багадаа 0:", _interpolate(_named("length")), " байна"])};fn.source="{field}-н урт нь хамгийн багадаа 0:{length} байна";return fn;})(),
-    "numeric": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга зөвхөн тоо байна"])};fn.source="{field}-н утга зөвхөн тоо байна";return fn;})(),
-    "one_of": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга заавал дараахын нэг нь байна. (", _interpolate(_named("one_of")), ")"])};fn.source="{field}-н утга заавал дараахын нэг нь байна. ({one_of})";return fn;})(),
-    "regex": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга буруу форматтай байна"])};fn.source="{field}-н утга буруу форматтай байна";return fn;})(),
-    "required": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга заавал байх ёстой"])};fn.source="{field}-н утга заавал байх ёстой";return fn;})(),
-    "required_if": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), "-н утга заавал байх ёстой"])};fn.source="{field}-н утга заавал байх ёстой";return fn;})(),
-    "size": (()=>{const fn=(ctx) => {const { normalize: _normalize, interpolate: _interpolate, named: _named } = ctx;return _normalize([_interpolate(_named("field")), " хэмжээ 0:", _interpolate(_named("size")), "KB-с хэтрэхгүй байна"])};fn.source="{field} хэмжээ 0:{size}KB-с хэтрэхгүй байна";return fn;})()
-  }
+const code = "mn";
+Object.defineProperty(__vite_ssr_exports__, "code", { enumerable: true, configurable: true, get(){ return code }});
+const messages = {
+	alpha: "{field}-н утга зөвхөн үсэг агуулах боломжтой",
+	alpha_num: "{field}-н утга зөвхөн тоо болон үсэг агуулах боломжтой",
+	alpha_dash: "{field}-н утга зөвхөн үсэг, дундуур зураас, доогуур зураас агуулах боломжтой",
+	alpha_spaces: "{field}-н утга зөвхөн үсэг болон зай агуулах боломжтой",
+	between: "{field}-н утга зөвхөн 0:{min}-с 1:{max} -ны хооронд байх ёстой",
+	confirmed: "{field}-н утга буруу байна",
+	digits: "{field}-н утга зөвхөн тоо байх ба яг  0:{length} оронтой байна",
+	dimensions: "{field}-н хэмжээ 0:{width}x{height} пикселээс хэтрэх байх шаардлагатай",
+	email: "{field}-н утга бодит майл байх ёстой",
+	excluded: "{field}-н утга {excluded} байж болохгүй",
+	ext: "{field} заавал файл заавал {ext} форматтай байх ёстой",
+	image: "{field} заавал зураг байх ёстой",
+	integer: "{field}-н утга тоо байх ёстой",
+	length: "{field}-н урт нь 0:{length} байна",
+	max_value: "{field}-н утга 0:{max}-с хэтрэхгүй байна",
+	max: "{field}-н урт нь хамгийн ихдээ 0:{length} байна",
+	mimes: "{field} зөвшөөрөгдөөгүй файл форматтай байна",
+	min_value: "{field}-н утга 0:{min}-с багагүй байна",
+	min: "{field}-н урт нь хамгийн багадаа 0:{length} байна",
+	numeric: "{field}-н утга зөвхөн тоо байна",
+	one_of: "{field}-н утга заавал дараахын нэг нь байна. ({one_of})",
+	regex: "{field}-н утга буруу форматтай байна",
+	required: "{field}-н утга заавал байх ёстой",
+	required_if: "{field}-н утга заавал байх ёстой",
+	size: "{field} хэмжээ 0:{size}KB-с хэтрэхгүй байна"
 };
+Object.defineProperty(__vite_ssr_exports__, "messages", { enumerable: true, configurable: true, get(){ return messages }});
+__vite_ssr_exports__.default = {
+	code: code,
+	messages: messages
+};
+;
 }
 
 
@@ -27331,7 +25153,9 @@ const _sfc_main = {
   const label = __vite_ssr_import_0__.ref('en')
 
   const setLanguage = (code) => {
-    const lan = code !== null ? code : 'en'
+    // const lan = code !== null ? code : 'en'
+    console.log('Locale: ', $nuxt.i18n);
+    $nuxt.$i18n.locale = code
     label.value = code;
     __vite_ssr_import_1__.setLocale(lan)
   }
@@ -27348,11 +25172,15 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<nav${
-    __vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "navbar navbar-expand-lg navbar-light bg-light" }, _attrs))
-  }><div class="container-fluid"><a class="navbar-brand" href="#">Yes4mkt</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul><div class="d-flex pe-5 me-5"><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">${
-    __vite_ssr_import_3__.ssrInterpolate($setup.label)
-  }</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item">English</a></li><li><a class="dropdown-item">Portuguese</a></li><li><a class="dropdown-item">Mongolia</a></li></ul></li></ul></div></div></div></nav>`)
+  _push(`<nav${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "navbar navbar-expand-lg navbar-light bg-light" }, _attrs))}><div class="container-fluid"><a class="navbar-brand" href="#">Yes4mkt</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul><div class="d-flex pe-5 me-5"><div class="locale-changer"><select><!--[-->`)
+  __vite_ssr_import_3__.ssrRenderList(_ctx.$i18n.availableLocales, (locale) => {
+    _push(`<option${
+      __vite_ssr_import_3__.ssrRenderAttr("value", locale)
+    }>${
+      __vite_ssr_import_3__.ssrInterpolate(locale)
+    }</option>`)
+  })
+  _push(`<!--]--></select></div></div></div></div></nav>`)
 }
 
 
@@ -27462,6 +25290,9 @@ const __modules__ = {
   "/node_modules/@intlify/nuxt3/node_modules/@intlify/vue-devtools/dist/vue-devtools.esm-bundler.js": $id_55cfc277,
   "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/intlify.vuei18n.options.mjs": $id_a0c1014d,
   "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/intlify.locales.mjs": $id_96412302,
+  "/locales/en.json": $id_f04686dd,
+  "/locales/fr.json": $id_0fa04411,
+  "/locales/pt.json": $id_155ed592,
   "/@id/__x00__virtual:/Users/zemunkh/Documents/yes4nuxt/.nuxt/dist.plugin.0e8dcab4.mjs": $id_980cc1bf,
   "/node_modules/nuxt3/dist/app/compat/vue-demi.mjs": $id_132eda61,
   "/node_modules/nuxt3/dist/app/compat/capi.mjs": $id_7674cc72,
@@ -27475,11 +25306,6 @@ const __modules__ = {
   "/node_modules/primevue/utils/utils.esm.js": $id_27066acc,
   "/node_modules/primevue/button/button.esm.js": $id_9578581f,
   "/node_modules/primevue/ripple/ripple.esm.js": $id_eca4a5be,
-  "/node_modules/primevue/menubar/menubar.esm.js": $id_1db5deaf,
-  "/node_modules/primevue/inputtext/inputtext.esm.js": $id_743d0bd5,
-  "/node_modules/primevue/dropdown/dropdown.esm.js": $id_68777992,
-  "/node_modules/primevue/overlayeventbus/overlayeventbus.esm.js": $id_a1fcf7c6,
-  "/node_modules/primevue/virtualscroller/virtualscroller.esm.js": $id_8b34d48c,
   "/plugins/validate.js": $id_eb85e80e,
   "/node_modules/@vee-validate/rules/dist/vee-validate-rules.esm.js": $id_c1357939,
   "/node_modules/@vee-validate/i18n/dist/vee-validate-i18n.esm.js": $id_0d8ddd77,
